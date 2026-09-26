@@ -13,8 +13,10 @@ def spec_condition(spec: Mapping[str, int]) -> str:
     return ' OR '.join(f"(channel = '{c}' AND rnk <= {int(k)})" for c, k in spec.items()) or 'false'
 
 
-def evaluate(con, spec: Mapping[str, int], country: str = 'all') -> Dict[str, float]:
-    where_q = '' if country == 'all' else f"WHERE country = '{country}'"
+def evaluate(con, spec: Mapping[str, int], country: str = 'all', where: str = '') -> Dict[str, float]:
+    """``where`` = optional SQL condition over the columns of ``bench_q`` (for query-level slices)."""
+    conds = ([f"country = '{country}'"] if country != 'all' else []) + ([f'({where})'] if where else [])
+    where_q = ('WHERE ' + ' AND '.join(conds)) if conds else ''
     con.execute(f"CREATE OR REPLACE TEMP TABLE _qs AS SELECT id FROM bench_q {where_q}")
     con.execute(f"CREATE OR REPLACE TEMP TABLE _sel AS SELECT DISTINCT q, t FROM cand WHERE ({spec_condition(spec)}) AND q IN (SELECT id FROM _qs)")
     con.execute("CREATE OR REPLACE TEMP TABLE _tr AS SELECT q, t FROM truth WHERE q IN (SELECT id FROM _qs)")
@@ -31,13 +33,17 @@ def evaluate(con, spec: Mapping[str, int], country: str = 'all') -> Dict[str, fl
            avg(CASE WHEN n_true = 0 THEN 1.0 ELSE 1.25 * n_hit / (1.25 * n_hit + 0.25 * (n_true - n_hit)) END),
            count(*) FILTER (WHERE n_true = 0)
     FROM _per""").fetchone()
+    if r[0] == 0:
+        nan = float('nan')
+        return {'queries': 0, 'singletons': 0, 'links': 0, 'hits': 0, 'micro_recall': nan, 'macro_recall_nonsingleton': nan, 'all_links_coverage': nan, 'zero_candidate_rate': nan,
+                'pairs': 0, 'cand_mean': nan, 'cand_p50': nan, 'cand_p90': nan, 'cand_p99': nan, 'cand_max': 0, 'precision_proxy': nan, 'oracle_macro_f05': nan}
     queries, links, hits, pairs = r[0], int(r[1]), int(r[2]), int(r[3])
     # oracle through the shared scorer as a cross-check of the closed form above
     con.execute("CREATE OR REPLACE TEMP TABLE _oracle AS SELECT q, t FROM _sel JOIN _tr USING (q, t)")
     scored = macro_f05_tables(con, '_qs', '_tr', '_oracle')['macro_f05']
     assert abs(scored - r[12]) < 1e-9, (scored, r[12])
     return {'queries': queries, 'singletons': int(r[13]), 'links': links, 'hits': hits, 'micro_recall': hits / links if links else float('nan'),
-            'macro_recall_nonsingleton': r[4], 'all_links_coverage': r[5], 'zero_candidate_rate': r[6], 'pairs': pairs, 'cand_mean': r[7],
+            'macro_recall_nonsingleton': r[4] if r[4] is not None else float('nan'), 'all_links_coverage': r[5] if r[5] is not None else float('nan'), 'zero_candidate_rate': r[6], 'pairs': pairs, 'cand_mean': r[7],
             'cand_p50': r[8], 'cand_p90': r[9], 'cand_p99': r[10], 'cand_max': int(r[11]), 'precision_proxy': hits / pairs if pairs else float('nan'),
             'oracle_macro_f05': r[12]}
 

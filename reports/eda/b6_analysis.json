@@ -1,0 +1,454 @@
+{
+  "pair_eda": {
+    "strata": [
+      [
+        "cleaned_equal",
+        832212,
+        75864,
+        0.09115946417499388,
+        45428
+      ],
+      [
+        "exact_v1_key",
+        362506,
+        50180,
+        0.13842529502959952,
+        38102
+      ],
+      [
+        "sparse_address_only",
+        8131678,
+        18375,
+        0.0022596812121680175,
+        49979
+      ],
+      [
+        "sparse_name",
+        5687941,
+        14644,
+        0.002574569602603121,
+        40360
+      ],
+      [
+        "skeleton_or_secondary",
+        531817,
+        9018,
+        0.016956960759058098,
+        27577
+      ]
+    ],
+    "by_country": [
+      [
+        "India",
+        6022461,
+        66769,
+        0.01108666374095241
+      ],
+      [
+        "US",
+        9523693,
+        101312,
+        0.01063789015458604
+      ]
+    ],
+    "negative_kinds": [
+      [
+        "A same cleaned name AND similar address",
+        7200,
+        84698,
+        0.9216522666434526
+      ],
+      [
+        "B same cleaned name, different address",
+        1089272,
+        10622,
+        0.009657294248354842
+      ],
+      [
+        "C similar address, different name",
+        34912,
+        48127,
+        0.5795710449306952
+      ],
+      [
+        "D similar name and partly similar address",
+        11050,
+        9901,
+        0.47257887451672953
+      ],
+      [
+        "E one moderately similar field",
+        976972,
+        11293,
+        0.011427096983096638
+      ],
+      [
+        "F weak (retrieved by rare token or n-gram only)",
+        13258667,
+        3440,
+        0.0002593856315591482
+      ]
+    ],
+    "per_query": [
+      310.92308,
+      310.0,
+      456.0,
+      569,
+      3.36162,
+      0.05864
+    ],
+    "by_rank": [
+      [
+        "1-3",
+        365126,
+        0.3219573517087252
+      ],
+      [
+        "11-20",
+        1460017,
+        0.0031506482458765893
+      ],
+      [
+        "4-10",
+        971230,
+        0.03512350318668081
+      ],
+      [
+        "none/21+",
+        12749781,
+        0.0009265257183633193
+      ]
+    ]
+  },
+  "error_analysis": {
+    "val_B_queries": 10007,
+    "val_B_links": 34770,
+    "links_in_candidates": 34513,
+    "true_positives_selected": 32833,
+    "false_positives": 462,
+    "links_missed_by_retrieval": 257,
+    "links_retrieved_but_rejected": 1680,
+    "macro_f05": 0.9708349245320304,
+    "loss": {
+      "singleton_queries_with_false_positive": 0.041742286751361164,
+      "mean_loss_singletons": 0.0022983911262116517,
+      "mean_loss_nonsingleton": 0.02686668434175814
+    },
+    "by_stratum": [
+      {
+        "stratum": "cleaned_equal",
+        "pairs": 50953,
+        "positives": 15300,
+        "selected": 15026,
+        "tp": 14889,
+        "fp": 137,
+        "fn_retrieved_rejected": 411
+      },
+      {
+        "stratum": "exact_v1_key",
+        "pairs": 19749,
+        "positives": 10081,
+        "selected": 10091,
+        "tp": 10021,
+        "fp": 70,
+        "fn_retrieved_rejected": 60
+      },
+      {
+        "stratum": "skeleton_or_secondary",
+        "pairs": 30690,
+        "positives": 1861,
+        "selected": 1814,
+        "tp": 1791,
+        "fp": 23,
+        "fn_retrieved_rejected": 70
+      },
+      {
+        "stratum": "sparse_address_only",
+        "pairs": 1502425,
+        "positives": 1942,
+        "selected": 1608,
+        "tp": 1561,
+        "fp": 47,
+        "fn_retrieved_rejected": 381
+      },
+      {
+        "stratum": "sparse_name",
+        "pairs": 1567834,
+        "positives": 5329,
+        "selected": 4756,
+        "tp": 4571,
+        "fp": 185,
+        "fn_retrieved_rejected": 758
+      }
+    ],
+    "fn_error_types": [
+      [
+        "08 fuzzy name or address",
+        648
+      ],
+      [
+        "06 target address missing",
+        343
+      ],
+      [
+        "07 equal after v2 cleaning (name_core or address_canon)",
+        287
+      ],
+      [
+        "09 weak partial evidence",
+        226
+      ],
+      [
+        "04 cross-script target name",
+        86
+      ],
+      [
+        "02 exact name, address differs",
+        44
+      ],
+      [
+        "10 no shared textual evidence",
+        30
+      ],
+      [
+        "03 exact address, name differs",
+        16
+      ]
+    ],
+    "fp_by_confidence": [
+      [
+        "0.5-0.7",
+        227
+      ],
+      [
+        "0.7-0.9",
+        144
+      ],
+      [
+        "0.9-1.0",
+        91
+      ]
+    ],
+    "fp_same_cleaned_name": 0.3939393939393939,
+    "fp_examples": [
+      [
+        "S1-987828197",
+        "S3-140462491",
+        0.9300000071525574,
+        "Bangalore Finance Pvt Ltd",
+        "1503 Tower 6 Hospalya Junction Salarpuria Cadenza Apartments Kudlu Gate, Bangalore, Karnataka",
+        "Bangalore F\u00ednance Pvt Ltd",
+        ""
+      ],
+      [
+        "S1-975357807",
+        "S3-981561628",
+        0.7450000047683716,
+        "Ridge Initiative",
+        "7230 261st Street, Stanwood, WA",
+        "Ridge [Initiative]",
+        ""
+      ],
+      [
+        "S1-225953642",
+        "S2-129357256",
+        0.9440000057220459,
+        "Burge All Inc",
+        "3255 Arapaho Drive, Yucca, AZ",
+        "BURGE \u00c1LL",
+        ""
+      ],
+      [
+        "S1-365093941",
+        "S3-745932161",
+        0.9100000262260437,
+        "High Impex Limited",
+        "C/O Yudhishthir Ghosh, Khottadihi, Jamuria, Bardhaman, West Bengal",
+        "HIGH IMPEX PRIVATE LIMITED",
+        ""
+      ],
+      [
+        "S1-896167510",
+        "S2-953518212",
+        0.5659999847412109,
+        "Maxim Institute of Technology",
+        "Smt Manorama Devi Ashok Kumar Near Pani Illahibagh Opp Petrol Pump, Patna, Bihar",
+        "Maxim Maxim Institute",
+        "NO 75 SMT MANORAMA DEVI ASHOK KUMAR NEAR PANI ILLAHIBAGH OPP PETROL PUMP, PATNA, Bihar"
+      ],
+      [
+        "S1-172898409",
+        "S3-207878255",
+        0.6710000038146973,
+        "Buldhana Super Limited",
+        "Nisarg Heights Apartment, Flat No.10, Buldhana, Maharashtra",
+        "Lyrarizaquoio",
+        "Nisarg Heights Apartment, Flat No.10, Buldhana, Maharashtra"
+      ],
+      [
+        "S1-633215345",
+        "S3-624763009",
+        0.6710000038146973,
+        "Diamond Asset Concepts Inc",
+        "630 Peachtree Lane, Kingston, TN",
+        "Glover Diamond Concepts Inc",
+        ""
+      ],
+      [
+        "S1-616924991",
+        "S2-349765839",
+        0.6710000038146973,
+        "Christ Presbyterian Church",
+        "1108 Rowland Lane, Brookings, OR",
+        "Christ Presbyterian Church Clinic Corp",
+        ""
+      ],
+      [
+        "S1-179198293",
+        "S2-201005736",
+        0.9100000262260437,
+        "Firefighters Local Union 749",
+        "73 Dawnlight Lane, Charleston, WV",
+        "Firefighters Union Local No",
+        ""
+      ],
+      [
+        "S1-115342514",
+        "S2-292103682",
+        0.8090000152587891,
+        "Gulf Charities",
+        "53 Millham Street, Marlborough, MA",
+        "Gulf Charities V Inc",
+        ""
+      ],
+      [
+        "S1-746778804",
+        "S2-94511572",
+        0.8090000152587891,
+        "Advanced Staffing Industries Corp",
+        "2030 26, Unit Apartment 200, Vestal, NY",
+        "ADVANCED STAFFING LNDUSTRIES",
+        ""
+      ],
+      [
+        "S1-132627794",
+        "S3-605744273",
+        0.9599999785423279,
+        "Smart Data Brands LLC",
+        "1624 Grand Bay Drive, Oregon, OH",
+        "Smart Data Brhds LLC",
+        ""
+      ]
+    ],
+    "fn_examples": [
+      [
+        "S1-763748923",
+        "S3-216107877",
+        0.4779999852180481,
+        "Alpha Hospitality",
+        "Chandrasen Appt Cts 34/15 Fp 35/15 Prabhat Road Erandawane, Pune, Maharashtra",
+        "Alpha  Services",
+        "#0581 Chandrasen Appt Cts 34/15 Fp 35/15 Prabhat Road Erandawane, Pune, Deccan Gymkhana, MH"
+      ],
+      [
+        "S1-262784900",
+        "S2-525062627",
+        0.38499999046325684,
+        "OA Liberty Tidewater",
+        "21170 Sanfilippo Road, Bridgeville, DE",
+        "OA Liberty",
+        "SANFILIPPO ROAD, BRIDGEVILLE, DE"
+      ],
+      [
+        "S1-36426879",
+        "S2-435244853",
+        0.25999999046325684,
+        "24HR Towing, Inc.",
+        "NC, Charlotte, 9813 Adison Gray Lane",
+        "HALOZETA",
+        "ADISON GRAY LANE, CHARLOTTE, NC"
+      ],
+      [
+        "S1-641495347",
+        "S3-622053855",
+        0.03500000014901161,
+        "Department of Motor Vehicles",
+        "908 36 Avenue, Saint Cloud, MN",
+        "Department of  Motor Vehicles Ventures",
+        ""
+      ],
+      [
+        "S1-208698343",
+        "S3-206233402",
+        0.09000000357627869,
+        "Abagael Fisher Kongsberg Inc",
+        "300 Gene Moody Drive, San Benito, TX",
+        "Abagael Fisher Inc Center",
+        "318 Gene Moody Dr, San Benito, Texas"
+      ],
+      [
+        "S1-456014913",
+        "S2-83661693",
+        0.3790000081062317,
+        "Quality Software Partners",
+        "Unit Apartment 52, City Of Waukesha, 2715 University Drive, WI",
+        "Quality S0ftware Partners",
+        ""
+      ],
+      [
+        "S1-105762345",
+        "S2-431105947",
+        0.2370000034570694,
+        "Bright Logistics Private Limited",
+        "Ff/27, Aditya Complex, Manisagar Co Op Ho So Ltd Part-8, Opp Sal Hospital, Thaltej, Ahmedabad, Gujarat",
+        "Caloflux",
+        "AHMEDABAD, ADITYA COMPLEX, MANISAGAR CO OP HO SO LTD PART-8, OPP SAL HOSPITAL, FF/27, \u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4, THALTAJ"
+      ],
+      [
+        "S1-392956974",
+        "S3-803364848",
+        0.40299999713897705,
+        "Jay It Private Limited",
+        "B-242, First Floor Okhla, Industrial Area Phase-1, New Delhi, South Delhi, Delhi",
+        "Jay It L\u00edmited Private",
+        "B-d/242, New Delhi, DL"
+      ],
+      [
+        "S1-912137146",
+        "S2-269293762",
+        0.05900000035762787,
+        "Guru Consultancy Limited",
+        "0-1101/11 Tower B, Palm Village, Sector 126, Kharar, Rupnagar, Punjab",
+        "Mr Guru Limited Center",
+        "2-1101/11 TOWER B, PALM VILLAG, SECTOR 126, KHARAR, Punjab"
+      ],
+      [
+        "S1-40440028",
+        "S3-143807656",
+        0.3790000081062317,
+        "Oakwood & Co",
+        "Building No 5/3403/B21, Markaz Commercial Complex Second Floor, Indira Gandhi Road, Kozhikode, Kerala",
+        "Oaikwod and C\u00f3",
+        "Building No C-5/3403/b21, Kozhikode, KL"
+      ],
+      [
+        "S1-209450372",
+        "S3-34843838",
+        0.44699999690055847,
+        "Parnell Runway Inc",
+        "706 Audubon Street, Sac City, IA",
+        "Parnell Ruttynw Inc",
+        "707 Audubon St, Sac City, Iowa"
+      ],
+      [
+        "S1-171268020",
+        "S2-229262557",
+        0.3790000081062317,
+        "Custom Staffing Partners LLC",
+        "2121 H Street, Unit 204, Washington, DC",
+        "Custom Staffing Partners",
+        "2120 H ST, WASHINGTON, DC"
+      ]
+    ]
+  }
+}

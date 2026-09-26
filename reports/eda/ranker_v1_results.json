@@ -1,0 +1,208 @@
+{
+  "train": "train50k",
+  "val": "val20k",
+  "train_pairs": 15546154,
+  "train_positives": 168081,
+  "train_queries": 50000,
+  "val_pairs": 6340480,
+  "val_queries": 20000,
+  "val_A_queries": 9993,
+  "val_B_queries": 10007,
+  "diagnostics": {
+    "auc": 0.9999444599321572,
+    "average_precision": 0.9960425308726839,
+    "logloss_calibrated": 0.0018066470511257648
+  },
+  "threshold_policy": {
+    "tau": 0.5,
+    "top_k": 8,
+    "margin": 0.0,
+    "val_A": 0.9696927524581102,
+    "val_B": 0.9708349245320304
+  },
+  "expected_f_policy": {
+    "top_k": 12,
+    "empty_bias": 0.02,
+    "recall_est": 0.9917769348814315,
+    "val_A": 0.9681654901366108,
+    "val_B": 0.9702834274114166
+  },
+  "chosen": "threshold",
+  "oracle_val_B": 0.9975657109951173,
+  "all_empty_val_B": 0.05506145698011392,
+  "slices": [
+    {
+      "slice": "all val-B queries",
+      "queries": 10007,
+      "macro_f05": 0.9708349245320304
+    },
+    {
+      "slice": "India",
+      "queries": 3969,
+      "macro_f05": 0.9659532388829724
+    },
+    {
+      "slice": "US",
+      "queries": 6038,
+      "macro_f05": 0.9740438364798789
+    },
+    {
+      "slice": "singleton queries (0 true links)",
+      "queries": 551,
+      "macro_f05": 0.9582577132486388
+    },
+    {
+      "slice": "match count 1",
+      "queries": 540,
+      "macro_f05": 0.9368742368742369
+    },
+    {
+      "slice": "match count 2",
+      "queries": 1667,
+      "macro_f05": 0.9626040159933381
+    },
+    {
+      "slice": "match count 3-4",
+      "queries": 4633,
+      "macro_f05": 0.9742509371659408
+    },
+    {
+      "slice": "match count 5+",
+      "queries": 2616,
+      "macro_f05": 0.9796894171747862
+    },
+    {
+      "slice": "has a cross-script target",
+      "queries": 1219,
+      "macro_f05": 0.9522655225123325
+    },
+    {
+      "slice": "has a target with missing address",
+      "queries": 1434,
+      "macro_f05": 0.9626245374568505
+    },
+    {
+      "slice": "has a target with a conflicting number",
+      "queries": 1800,
+      "macro_f05": 0.9404282282601398
+    }
+  ],
+  "singleton_false_positive_rate": 0.041742286751361164,
+  "mean_selected_per_query": 3.3271709803137806,
+  "mean_true_positives_per_query": 3.281003297691616,
+  "ablations": [
+    {
+      "features": "base features only (no retrieval provenance)",
+      "n_features": 34,
+      "val_B_macro_f05": 0.9678450800409922,
+      "policy": {
+        "tau": 0.4,
+        "top_k": 12,
+        "margin": 0.0
+      }
+    },
+    {
+      "features": "name features + retrieval",
+      "n_features": 56,
+      "val_B_macro_f05": 0.9515225393217251,
+      "policy": {
+        "tau": 0.5,
+        "top_k": 12,
+        "margin": 0.0
+      }
+    },
+    {
+      "features": "address features + retrieval",
+      "n_features": 55,
+      "val_B_macro_f05": 0.9449198151259784,
+      "policy": {
+        "tau": 0.4,
+        "top_k": 12,
+        "margin": 0.0
+      }
+    }
+  ],
+  "top_features": [
+    [
+      "score_eq_skeleton_number",
+      0.5164602398872375
+    ],
+    [
+      "address_token_jaccard",
+      0.1596270352602005
+    ],
+    [
+      "retrieval_channel_count",
+      0.1257496029138565
+    ],
+    [
+      "n_sparse_channels",
+      0.03900668025016785
+    ],
+    [
+      "name_skeleton_ratio",
+      0.03079119138419628
+    ],
+    [
+      "address_missing_any",
+      0.028469786047935486
+    ],
+    [
+      "retrieval_rank_best",
+      0.015366907231509686
+    ],
+    [
+      "address_number_conflicts",
+      0.014764435589313507
+    ],
+    [
+      "name_core_char3_dice",
+      0.005819386336952448
+    ],
+    [
+      "address_state_both_present",
+      0.004386230371892452
+    ],
+    [
+      "name_domain_any",
+      0.004075014032423496
+    ],
+    [
+      "address_number_jaccard",
+      0.004047505557537079
+    ],
+    [
+      "candidate_block_size",
+      0.00342581351287663
+    ],
+    [
+      "address_char3_dice",
+      0.0033845321740955114
+    ],
+    [
+      "name_translit_ratio",
+      0.00337287038564682
+    ],
+    [
+      "rank_eq_name_skeleton",
+      0.0033219470642507076
+    ],
+    [
+      "address_parse_conf_min",
+      0.002611626638099551
+    ],
+    [
+      "name_cross_script",
+      0.002215528627857566
+    ],
+    [
+      "legal_form_equal",
+      0.002062113955616951
+    ],
+    [
+      "name_hyg_token_set_ratio",
+      0.0020286745857447386
+    ]
+  ],
+  "seconds": 5559.157149199999
+}

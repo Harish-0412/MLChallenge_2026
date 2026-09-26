@@ -22,15 +22,15 @@ DERIVED = {
 }
 
 
-def sample_queries(con, manifest: str, n: int = 10_000, seed: str = SEED) -> str:
+def sample_queries(con, manifest: str, n: int = 10_000, seed: str = SEED, fold: str = 'dev', table: str = 'bench_q') -> str:
     """Deterministic stratified sample of dev queries (country x match-count bucket, proportional, largest-remainder rounding).
 
-    Creates the temp table ``bench_q(id, country, stratum, match_count)`` and returns a content digest.
+    Creates the temp table ``table`` (default ``bench_q``: id, country, stratum, match_count) from the queries of ``fold`` and returns a content digest.
     """
     con.execute(f"""
-    CREATE OR REPLACE TEMP TABLE bench_q AS
+    CREATE OR REPLACE TEMP TABLE {table} AS
     WITH d AS (SELECT entity_id AS id, country, stratum, match_count, sha256('{seed}|bench|' || entity_id) AS h
-               FROM read_parquet('{manifest}') WHERE role = 'query' AND fold = 'dev'),
+               FROM read_parquet('{manifest}') WHERE role = 'query' AND fold = '{fold}'),
          s AS (SELECT stratum, count(*) AS sz FROM d GROUP BY 1),
          tot AS (SELECT sum(sz) AS total FROM s),
          quota AS (SELECT stratum, floor({n} * sz::DOUBLE / total)::INT AS q0, ({n} * sz::DOUBLE / total) - floor({n} * sz::DOUBLE / total) AS frac
@@ -39,25 +39,27 @@ def sample_queries(con, manifest: str, n: int = 10_000, seed: str = SEED) -> str
                    FROM quota),
          r AS (SELECT d.*, row_number() OVER (PARTITION BY d.stratum ORDER BY h, id) AS rk FROM d)
     SELECT r.id, r.country, r.stratum, r.match_count FROM r JOIN extra USING (stratum) WHERE r.rk <= extra.quota""")
-    rows = con.execute("SELECT id FROM bench_q ORDER BY id").fetchall()
+    rows = con.execute(f"SELECT id FROM {table} ORDER BY id").fetchall()
     return hashlib.sha256(','.join(r[0] for r in rows).encode()).hexdigest()
 
 
-def load_corpus(con, feature_glob: str, manifest: str, country: str, fold: str = 'dev') -> Dict[str, int]:
-    """Create ``bq`` (benchmark queries of the country) and ``tt`` (retrieval corpus = the targets of ``fold``, protocol A) with the derived columns."""
+def load_corpus(con, feature_glob: str, manifest: str, country: str, fold: Optional[str] = 'dev', queries: str = 'bench_q') -> Dict[str, int]:
+    """Create ``bq`` (queries of the country from table ``queries``) and ``tt`` (retrieval corpus = the targets of ``fold`` (protocol A);
+    ``fold=None`` = every training target (protocol B, full corpus)) with the derived columns."""
+    fold_filter = f"AND fold = '{fold}'" if fold else ""
     cols = ', '.join(FEATURE_COLUMNS)
     derived = ', '.join(f'{expr} AS {name}' for name, expr in DERIVED.items())
     src = f"read_parquet('{feature_glob}', hive_partitioning=false)"
     con.execute(f"""
     CREATE OR REPLACE TEMP TABLE bq AS
     SELECT row_number() OVER (ORDER BY entity_id)::INT AS qid, {cols}, {derived}
-    FROM (SELECT {cols} FROM {src} WHERE country = '{country}' AND entity_id IN (SELECT id FROM bench_q WHERE country = '{country}'))""")
+    FROM (SELECT {cols} FROM {src} WHERE country = '{country}' AND entity_id IN (SELECT id FROM {queries} WHERE country = '{country}'))""")
     con.execute(f"""
     CREATE OR REPLACE TEMP TABLE tt AS
     SELECT row_number() OVER (ORDER BY entity_id)::INT AS tid, {cols}, {derived}
     FROM (SELECT {cols} FROM {src} WHERE country = '{country}' AND entity_id IN
-          (SELECT entity_id FROM read_parquet('{manifest}') WHERE role = 'target' AND fold = '{fold}' AND country = '{country}'))""")
-    con.execute('CREATE OR REPLACE TEMP TABLE cand (channel VARCHAR, qid INT, tid INT, rnk INT, score DOUBLE)')
+          (SELECT entity_id FROM read_parquet('{manifest}') WHERE role = 'target' {fold_filter} AND country = '{country}'))""")
+    con.execute('CREATE OR REPLACE TEMP TABLE cand (channel VARCHAR, qid INT, tid INT, rnk INT, score DOUBLE, blk INT)')
     con.execute('CREATE OR REPLACE TEMP TABLE chan_stats (channel VARCHAR, seconds DOUBLE, pairs_before_cap BIGINT, oversize_blocks BIGINT, note VARCHAR)')
     return {'queries': con.execute('SELECT count(*) FROM bq').fetchone()[0], 'targets': con.execute('SELECT count(*) FROM tt').fetchone()[0]}
 
@@ -76,8 +78,8 @@ def equality_channel(con, name: str, expr: str, secondary: Optional[str] = None,
     pairs, oversize = con.execute(f"SELECT count(*), count(DISTINCT qid) FILTER (WHERE nt > {cap}) FROM _j").fetchone()
     con.execute(f"""
     INSERT INTO cand
-    SELECT '{name}', qid, tid, row_number() OVER (PARTITION BY qid ORDER BY score DESC, tid)::INT AS rnk, score FROM (
-        SELECT j.qid, j.tid, CASE WHEN j.nt > {cap} THEN {sec} ELSE 1.0 END AS score
+    SELECT '{name}', qid, tid, row_number() OVER (PARTITION BY qid ORDER BY score DESC, tid)::INT AS rnk, score, nt::INT AS blk FROM (
+        SELECT j.qid, j.tid, j.nt, CASE WHEN j.nt > {cap} THEN {sec} ELSE 1.0 END AS score
         FROM _j j JOIN bq a ON a.qid = j.qid JOIN tt b ON b.tid = j.tid) QUALIFY rnk <= {MAX_K}""")
     con.execute(f"INSERT INTO chan_stats VALUES ('{name}', {time.perf_counter() - started}, {pairs}, {oversize or 0}, 'equality on {expr.replace(chr(39), '')[:80]}')")
     con.execute('DROP TABLE _j')
@@ -108,7 +110,7 @@ def postings_channel(con, name: str, tokens: str, df_cap: int, rarest: int = 6, 
     pairs = con.execute('SELECT count(*) FROM _sc').fetchone()[0]
     con.execute(f"""
     INSERT INTO cand
-    SELECT '{name}', qid, tid, row_number() OVER (PARTITION BY qid ORDER BY score DESC, tid)::INT AS rnk, score / 1000000.0 FROM _sc QUALIFY rnk <= {MAX_K}""")
+    SELECT '{name}', qid, tid, row_number() OVER (PARTITION BY qid ORDER BY score DESC, tid)::INT AS rnk, score / 1000000.0, shared::INT FROM _sc QUALIFY rnk <= {MAX_K}""")
     con.execute(f"INSERT INTO chan_stats VALUES ('{name}', {time.perf_counter() - started}, {pairs}, 0, 'postings df<={df_cap}, rarest={rarest}')")
     for t in ('_pt', '_pv', '_qt', '_sc'):
         con.execute(f'DROP TABLE {t}')

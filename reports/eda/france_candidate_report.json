@@ -1,0 +1,207 @@
+{
+  "queries": 5000,
+  "targets": 1434993,
+  "channels": {
+    "eq_name_key": {
+      "mean": 7.9088,
+      "p50": 2.0,
+      "p90": 19.0,
+      "p99": 100.0,
+      "max": 100.0,
+      "zero_rate": 0.1946
+    },
+    "eq_address_key": {
+      "mean": 0.674,
+      "p50": 0.0,
+      "p90": 2.0,
+      "p99": 7.0,
+      "max": 100.0,
+      "zero_rate": 0.6886
+    },
+    "eq_name_core": {
+      "mean": 20.04,
+      "p50": 5.0,
+      "p90": 100.0,
+      "p99": 100.0,
+      "max": 100.0,
+      "zero_rate": 0.0384
+    },
+    "eq_name_compact": {
+      "mean": 20.2868,
+      "p50": 5.0,
+      "p90": 100.0,
+      "p99": 100.0,
+      "max": 100.0,
+      "zero_rate": 0.0372
+    },
+    "eq_address_tokset": {
+      "mean": 3.2982,
+      "p50": 2.0,
+      "p90": 6.0,
+      "p99": 29.0,
+      "max": 100.0,
+      "zero_rate": 0.1976
+    },
+    "eq_name_skeleton": {
+      "mean": 33.6014,
+      "p50": 14.0,
+      "p90": 100.0,
+      "p99": 100.0,
+      "max": 100.0,
+      "zero_rate": 0.0172
+    },
+    "eq_core_postal": {
+      "mean": 0.0068,
+      "p50": 0.0,
+      "p90": 0.0,
+      "p99": 0.0,
+      "max": 6.0,
+      "zero_rate": 0.9972
+    },
+    "eq_core_number": {
+      "mean": 2.501,
+      "p50": 2.0,
+      "p90": 5.0,
+      "p99": 15.0,
+      "max": 69.0,
+      "zero_rate": 0.1478
+    },
+    "eq_skeleton_number": {
+      "mean": 3.0428,
+      "p50": 2.0,
+      "p90": 5.0,
+      "p99": 20.0,
+      "max": 80.0,
+      "zero_rate": 0.1202
+    },
+    "tok_name": {
+      "mean": 58.7974,
+      "p50": 94.0,
+      "p90": 100.0,
+      "p99": 100.0,
+      "max": 100.0,
+      "zero_rate": 0.2064
+    },
+    "tri_name": {
+      "mean": 82.3262,
+      "p50": 100.0,
+      "p90": 100.0,
+      "p99": 100.0,
+      "max": 100.0,
+      "zero_rate": 0.1728
+    },
+    "tok_address": {
+      "mean": 91.707,
+      "p50": 100.0,
+      "p90": 100.0,
+      "p99": 100.0,
+      "max": 100.0,
+      "zero_rate": 0.0288
+    },
+    "bigram_address": {
+      "mean": 96.6012,
+      "p50": 100.0,
+      "p90": 100.0,
+      "p99": 100.0,
+      "max": 100.0,
+      "zero_rate": 0.0002
+    }
+  },
+  "unions": {
+    "v1 exact keys": {
+      "mean": 8.4878,
+      "p50": 2.0,
+      "p90": 20.0,
+      "p99": 100.0,
+      "max": 119.0,
+      "zero_rate": 0.1446
+    },
+    "union sparse k=20": {
+      "mean": 94.0878,
+      "p50": 76.5,
+      "p90": 167.0,
+      "p99": 239.0,
+      "max": 302.0,
+      "zero_rate": 0.0
+    },
+    "union sparse k=100": {
+      "mean": 293.7356,
+      "p50": 295.0,
+      "p90": 384.0,
+      "p99": 452.0,
+      "max": 504.0,
+      "zero_rate": 0.0
+    }
+  },
+  "coverage": {
+    "queries": {
+      "accented_name": 0.1654,
+      "address_missing": 0.0,
+      "indic_script_name": 0.0
+    },
+    "targets": {
+      "accented_name": 0.2423691265392932,
+      "address_missing": 0.030019658632481135,
+      "indic_script_name": 0.0
+    }
+  },
+  "examples": [
+    {
+      "query_name": "riders amnesty comite",
+      "query_address": "6 avenue antares nantes pays de la loire",
+      "top_candidate_name": "riders amnesty comite",
+      "top_candidate_address": "6 avenue antares nantes pays de la loire",
+      "channel": "bigram_address"
+    },
+    {
+      "query_name": "syndicat maternelle",
+      "query_address": "13 a avenue jean cordier pessac nouvelle aquitaine",
+      "top_candidate_name": "syndicat mateenlle",
+      "top_candidate_address": "13 a avenue jean cordier pessac",
+      "channel": "bigram_address"
+    },
+    {
+      "query_name": "ca club",
+      "query_address": "5 allee des pingouins lege cap ferret nouvelle aquitaine",
+      "top_candidate_name": "caclub",
+      "top_candidate_address": "5 allee des pingouins lege cap ferret nouvelle aquitaine",
+      "channel": "bigram_address"
+    },
+    {
+      "query_name": "lyc\u00e9e sainte serenity",
+      "query_address": "calais 13 rue alfred veron hauts de france",
+      "top_candidate_name": "chasseurs ehpad international",
+      "top_candidate_address": "10 rue alfred veron hauts de france calais",
+      "channel": "bigram_address"
+    },
+    {
+      "query_name": "wo gestion",
+      "query_address": "46 allee serpentine merignac nouvelle aquitaine",
+      "top_candidate_name": "africa",
+      "top_candidate_address": "nouvelle aquitaine 54 allee serpentine merignac",
+      "channel": "bigram_address"
+    },
+    {
+      "query_name": "ets voix",
+      "query_address": "32 rue mouneyra bordeaux nouvelle aquitaine",
+      "top_candidate_name": "french comite et fils",
+      "top_candidate_address": "215 rue mouneyra bordeaux",
+      "channel": "bigram_address"
+    },
+    {
+      "query_name": "comit\u00e9 des communale",
+      "query_address": "6 rue rubens roubaix hauts de france",
+      "top_candidate_name": "rl pharmacie",
+      "top_candidate_address": "hauts de france 40 rue rubens roubaix",
+      "channel": "bigram_address"
+    },
+    {
+      "query_name": "soz btp",
+      "query_address": "249 bd de l egalite app destailleur lavalard hauts de france tourcoing",
+      "top_candidate_name": "soz d\u00e9veloppement",
+      "top_candidate_address": "249 bd de l egalite app destailleur lavalard tourcoing hauts de france",
+      "channel": "bigram_address"
+    }
+  ],
+  "seconds": 50.25202309999986
+}
