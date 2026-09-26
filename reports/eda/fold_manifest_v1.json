@@ -1,0 +1,176 @@
+{
+  "protocol": "val_v1",
+  "seed": "mlch2026-val-v1",
+  "fractions": "80/10/10",
+  "buckets": [
+    "0",
+    "1",
+    "2",
+    "3-4",
+    "5+"
+  ],
+  "main_manifest": {
+    "file": "fold_manifest_v1.parquet",
+    "rows": 12527040,
+    "rows_by_fold": {
+      "dev": 10021865,
+      "holdout": 1252990,
+      "val": 1252185
+    },
+    "content_digest": "1de251f881a5a59ac701590b564d6157ce8cd6ed1cf3580a91fcede66e4d5c00",
+    "file_sha256_note": "parquet bytes may differ across DuckDB versions; the content digest is the contract"
+  },
+  "stress_manifest": {
+    "file": "fold_manifest_stress_v1.parquet",
+    "rows_by_fold": {
+      "val": 1254898,
+      "dev": 10019256,
+      "holdout": 1252886
+    },
+    "content_digest": "c523d00affe1415dad4f5a4b4a7f5e40ddecccb8d8b10e73a26ff2b62a96fc35",
+    "groups_by_country": [
+      {
+        "country": "India",
+        "groups": 559665,
+        "largest": 99,
+        "p99_size": 45.0,
+        "queries_in_shared_name_groups": 392116
+      },
+      {
+        "country": "US",
+        "groups": 961759,
+        "largest": 253,
+        "p99_size": 101.0,
+        "queries_in_shared_name_groups": 474025
+      }
+    ]
+  },
+  "balance": {
+    "queries": {
+      "dev": {
+        "India": {
+          "queries": 706548,
+          "singletons": 39480,
+          "singleton_fraction": 0.055877307698839994,
+          "links": 2448031,
+          "links_per_query": 3.4647766323024056
+        },
+        "US": {
+          "queries": 1058904,
+          "singletons": 59116,
+          "singleton_fraction": 0.055827534885126505,
+          "links": 3662900,
+          "links_per_query": 3.4591426607133413
+        }
+      },
+      "holdout": {
+        "India": {
+          "queries": 88321,
+          "singletons": 4936,
+          "singleton_fraction": 0.05588704838033989,
+          "links": 305981,
+          "links_per_query": 3.4644195604669332
+        },
+        "US": {
+          "queries": 132366,
+          "singletons": 7390,
+          "singleton_fraction": 0.05583004699091912,
+          "links": 458135,
+          "links_per_query": 3.461122946980342
+        }
+      },
+      "val": {
+        "India": {
+          "queries": 88319,
+          "singletons": 4935,
+          "singleton_fraction": 0.05587699136086233,
+          "links": 305831,
+          "links_per_query": 3.462799624089947
+        },
+        "US": {
+          "queries": 132363,
+          "singletons": 7390,
+          "singleton_fraction": 0.05583131237581499,
+          "links": 457487,
+          "links_per_query": 3.456305765206289
+        }
+      }
+    },
+    "targets": [
+      {
+        "fold": "dev",
+        "assignment": "owner",
+        "source": 2,
+        "count": 2955107
+      },
+      {
+        "fold": "dev",
+        "assignment": "owner",
+        "source": 3,
+        "count": 3155824
+      },
+      {
+        "fold": "dev",
+        "assignment": "unmatched_hash",
+        "source": 2,
+        "count": 1072797
+      },
+      {
+        "fold": "dev",
+        "assignment": "unmatched_hash",
+        "source": 3,
+        "count": 1072685
+      },
+      {
+        "fold": "holdout",
+        "assignment": "owner",
+        "source": 2,
+        "count": 369423
+      },
+      {
+        "fold": "holdout",
+        "assignment": "owner",
+        "source": 3,
+        "count": 394693
+      },
+      {
+        "fold": "holdout",
+        "assignment": "unmatched_hash",
+        "source": 2,
+        "count": 134101
+      },
+      {
+        "fold": "holdout",
+        "assignment": "unmatched_hash",
+        "source": 3,
+        "count": 134086
+      },
+      {
+        "fold": "val",
+        "assignment": "owner",
+        "source": 2,
+        "count": 369089
+      },
+      {
+        "fold": "val",
+        "assignment": "owner",
+        "source": 3,
+        "count": 394229
+      },
+      {
+        "fold": "val",
+        "assignment": "unmatched_hash",
+        "source": 2,
+        "count": 134099
+      },
+      {
+        "fold": "val",
+        "assignment": "unmatched_hash",
+        "source": 3,
+        "count": 134086
+      }
+    ]
+  },
+  "checks_passed": 20,
+  "checks_total": 20
+}

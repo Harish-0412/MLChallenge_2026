@@ -1,0 +1,37 @@
+error_type,country,target_source,links,share_of_country_source_links
+01 exact name and address,India,S2,24015,0.016220
+01 exact name and address,India,S3,211,0.000134
+01 exact name and address,US,S2,75757,0.034232
+02 exact name, address differs,India,S2,196765,0.132900
+02 exact name, address differs,India,S3,265215,0.167932
+02 exact name, address differs,US,S2,495472,0.223884
+02 exact name, address differs,US,S3,611358,0.258453
+03 exact address, name differs,India,S2,142648,0.096348
+03 exact address, name differs,India,S3,65538,0.041498
+03 exact address, name differs,US,S2,218508,0.098735
+03 exact address, name differs,US,S3,104692,0.044259
+04 cross-script target name,India,S2,303252,0.204825
+04 cross-script target name,India,S3,206688,0.130873
+05 placeholder target name (NA-style),India,S3,2,0.000001
+05 placeholder target name (NA-style),US,S2,5,0.000002
+05 placeholder target name (NA-style),US,S3,9,0.000004
+06 target address missing,India,S2,43474,0.029364
+06 target address missing,India,S3,48340,0.030609
+06 target address missing,US,S2,78217,0.035343
+06 target address missing,US,S3,77495,0.032761
+07 equal after v2 cleaning (name_core or address_canon),India,S2,411079,0.277654
+07 equal after v2 cleaning (name_core or address_canon),India,S3,543867,0.344373
+07 equal after v2 cleaning (name_core or address_canon),US,S2,650840,0.294089
+07 equal after v2 cleaning (name_core or address_canon),US,S3,842881,0.356330
+08 fuzzy name or address,India,S2,336788,0.227476
+08 fuzzy name or address,India,S3,415160,0.262876
+08 fuzzy name or address,US,S2,638000,0.288287
+08 fuzzy name or address,US,S3,681498,0.288105
+09 weak partial evidence,India,S2,18291,0.012354
+09 weak partial evidence,India,S3,29417,0.018627
+09 weak partial evidence,US,S2,54361,0.024564
+09 weak partial evidence,US,S3,46087,0.019483
+10 no shared textual evidence,India,S2,4233,0.002859
+10 no shared textual evidence,India,S3,4860,0.003077
+10 no shared textual evidence,US,S2,1914,0.000865
+10 no shared textual evidence,US,S3,1428,0.000604

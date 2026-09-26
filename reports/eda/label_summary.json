@@ -1,0 +1,1003 @@
+{
+  "integrity": {
+    "truth_rows": 2206821,
+    "distinct_s1_in_truth": 2206821,
+    "training_s1_entities": 2206821,
+    "s1_without_truth_row": 0,
+    "truth_rows_without_s1": 0,
+    "singleton_queries": 123247,
+    "singleton_fraction": 0.05584820880352326,
+    "positive_pairs": 7638365,
+    "unique_pairs": 7638365,
+    "distinct_targets_linked": 7638365,
+    "targets_missing_from_training_sources": 0,
+    "targets_in_wrong_source_table": 0,
+    "targets_with_multiple_owners": 0,
+    "pairs_with_country_mismatch": 0,
+    "exact_duplicate_s1_tuples": 0,
+    "name_key_groups": [
+      {
+        "country": "India",
+        "groups_with_2plus_s1": 68593,
+        "largest_group": 99,
+        "entities_in_shared_groups": 392116,
+        "entities": 883188,
+        "share_in_shared_groups": 0.44397795259899364
+      },
+      {
+        "country": "US",
+        "groups_with_2plus_s1": 112151,
+        "largest_group": 253,
+        "entities_in_shared_groups": 474025,
+        "entities": 1323633,
+        "share_in_shared_groups": 0.3581241930353807
+      }
+    ]
+  },
+  "integrity_assertions": {
+    "one truth row per S1": true,
+    "no duplicate pairs": true,
+    "every target exists in its own training source": true,
+    "one owner per target": true,
+    "country preserved on every link": true,
+    "no exact duplicate S1 tuples": true,
+    "singleton queries equal S1 minus queries with links (123,247)": true
+  },
+  "pairs": 7638365,
+  "error_taxonomy": [
+    {
+      "error_type": "01 exact name and address",
+      "country": "India",
+      "target_source": "S2",
+      "links": 24015,
+      "share": 0.016220378306637084
+    },
+    {
+      "error_type": "01 exact name and address",
+      "country": "India",
+      "target_source": "S3",
+      "links": 211,
+      "share": 0.0001336036644129227
+    },
+    {
+      "error_type": "01 exact name and address",
+      "country": "US",
+      "target_source": "S2",
+      "links": 75757,
+      "share": 0.034231571108783526
+    },
+    {
+      "error_type": "02 exact name, address differs",
+      "country": "India",
+      "target_source": "S2",
+      "links": 196765,
+      "share": 0.13290038465565046
+    },
+    {
+      "error_type": "02 exact name, address differs",
+      "country": "India",
+      "target_source": "S3",
+      "links": 265215,
+      "share": 0.1679322078543758
+    },
+    {
+      "error_type": "02 exact name, address differs",
+      "country": "US",
+      "target_source": "S2",
+      "links": 495472,
+      "share": 0.22388406352431053
+    },
+    {
+      "error_type": "02 exact name, address differs",
+      "country": "US",
+      "target_source": "S3",
+      "links": 611358,
+      "share": 0.2584533669731907
+    },
+    {
+      "error_type": "03 exact address, name differs",
+      "country": "India",
+      "target_source": "S2",
+      "links": 142648,
+      "share": 0.09634830417177458
+    },
+    {
+      "error_type": "03 exact address, name differs",
+      "country": "India",
+      "target_source": "S3",
+      "links": 65538,
+      "share": 0.04149818463646506
+    },
+    {
+      "error_type": "03 exact address, name differs",
+      "country": "US",
+      "target_source": "S2",
+      "links": 218508,
+      "share": 0.09873506263233855
+    },
+    {
+      "error_type": "03 exact address, name differs",
+      "country": "US",
+      "target_source": "S3",
+      "links": 104692,
+      "share": 0.044258846527169486
+    },
+    {
+      "error_type": "04 cross-script target name",
+      "country": "India",
+      "target_source": "S2",
+      "links": 303252,
+      "share": 0.20482457473430393
+    },
+    {
+      "error_type": "04 cross-script target name",
+      "country": "India",
+      "target_source": "S3",
+      "links": 206688,
+      "share": 0.13087333739420934
+    },
+    {
+      "error_type": "05 placeholder target name (NA-style)",
+      "country": "India",
+      "target_source": "S3",
+      "links": 2,
+      "share": 1.2663854446722532e-06
+    },
+    {
+      "error_type": "05 placeholder target name (NA-style)",
+      "country": "US",
+      "target_source": "S2",
+      "links": 5,
+      "share": 2.2593008638662784e-06
+    },
+    {
+      "error_type": "05 placeholder target name (NA-style)",
+      "country": "US",
+      "target_source": "S3",
+      "links": 9,
+      "share": 3.8047760931544467e-06
+    },
+    {
+      "error_type": "06 target address missing",
+      "country": "India",
+      "target_source": "S2",
+      "links": 43474,
+      "share": 0.029363511409649826
+    },
+    {
+      "error_type": "06 target address missing",
+      "country": "India",
+      "target_source": "S3",
+      "links": 48340,
+      "share": 0.030608536197728357
+    },
+    {
+      "error_type": "06 target address missing",
+      "country": "US",
+      "target_source": "S2",
+      "links": 78217,
+      "share": 0.035343147133805736
+    },
+    {
+      "error_type": "06 target address missing",
+      "country": "US",
+      "target_source": "S3",
+      "links": 77495,
+      "share": 0.032761235926555984
+    },
+    {
+      "error_type": "07 equal after v2 cleaning (name_core or address_canon)",
+      "country": "India",
+      "target_source": "S2",
+      "links": 411079,
+      "share": 0.27765383693167045
+    },
+    {
+      "error_type": "07 equal after v2 cleaning (name_core or address_canon)",
+      "country": "India",
+      "target_source": "S3",
+      "links": 543867,
+      "share": 0.3443726263187821
+    },
+    {
+      "error_type": "07 equal after v2 cleaning (name_core or address_canon)",
+      "country": "US",
+      "target_source": "S2",
+      "links": 650840,
+      "share": 0.2940886748477457
+    },
+    {
+      "error_type": "07 equal after v2 cleaning (name_core or address_canon)",
+      "country": "US",
+      "target_source": "S3",
+      "links": 842881,
+      "share": 0.3563303864637904
+    },
+    {
+      "error_type": "08 fuzzy name or address",
+      "country": "India",
+      "target_source": "S2",
+      "links": 336788,
+      "share": 0.22747569307248344
+    },
+    {
+      "error_type": "08 fuzzy name or address",
+      "country": "India",
+      "target_source": "S3",
+      "links": 415160,
+      "share": 0.2628762906050663
+    },
+    {
+      "error_type": "08 fuzzy name or address",
+      "country": "US",
+      "target_source": "S2",
+      "links": 638000,
+      "share": 0.2882867902293371
+    },
+    {
+      "error_type": "08 fuzzy name or address",
+      "country": "US",
+      "target_source": "S3",
+      "links": 681498,
+      "share": 0.288105255325841
+    },
+    {
+      "error_type": "09 weak partial evidence",
+      "country": "India",
+      "target_source": "S2",
+      "links": 18291,
+      "share": 0.012354234420433017
+    },
+    {
+      "error_type": "09 weak partial evidence",
+      "country": "India",
+      "target_source": "S3",
+      "links": 29417,
+      "share": 0.018626630312961835
+    },
+    {
+      "error_type": "09 weak partial evidence",
+      "country": "US",
+      "target_source": "S2",
+      "links": 54361,
+      "share": 0.024563570852126952
+    },
+    {
+      "error_type": "09 weak partial evidence",
+      "country": "US",
+      "target_source": "S3",
+      "links": 46087,
+      "share": 0.019483412867245444
+    },
+    {
+      "error_type": "10 no shared textual evidence",
+      "country": "India",
+      "target_source": "S2",
+      "links": 4233,
+      "share": 0.002859082297397242
+    },
+    {
+      "error_type": "10 no shared textual evidence",
+      "country": "India",
+      "target_source": "S3",
+      "links": 4860,
+      "share": 0.003077316630553575
+    },
+    {
+      "error_type": "10 no shared textual evidence",
+      "country": "US",
+      "target_source": "S2",
+      "links": 1914,
+      "share": 0.0008648603706880114
+    },
+    {
+      "error_type": "10 no shared textual evidence",
+      "country": "US",
+      "target_source": "S3",
+      "links": 1428,
+      "share": 0.0006036911401138389
+    }
+  ],
+  "pair_flags": [
+    {
+      "country": "India",
+      "target_source": 2,
+      "links": 1480545,
+      "target_address_missing": 56635,
+      "cross_script": 344448,
+      "placeholder_target": 0,
+      "number_conflict": 127557,
+      "name_similarity_below_0.6": 360168,
+      "exact_name_key": 220780,
+      "exact_address_key": 166663
+    },
+    {
+      "country": "India",
+      "target_source": 3,
+      "links": 1579298,
+      "target_address_missing": 63452,
+      "cross_script": 206792,
+      "placeholder_target": 7,
+      "number_conflict": 139315,
+      "name_similarity_below_0.6": 272631,
+      "exact_name_key": 265426,
+      "exact_address_key": 65749
+    },
+    {
+      "country": "US",
+      "target_source": 2,
+      "links": 2213074,
+      "target_address_missing": 108549,
+      "cross_script": 0,
+      "placeholder_target": 6,
+      "number_conflict": 254001,
+      "name_similarity_below_0.6": 42795,
+      "exact_name_key": 571229,
+      "exact_address_key": 294265
+    },
+    {
+      "country": "US",
+      "target_source": 3,
+      "links": 2365448,
+      "target_address_missing": 108382,
+      "cross_script": 0,
+      "placeholder_target": 11,
+      "number_conflict": 227727,
+      "name_similarity_below_0.6": 98398,
+      "exact_name_key": 611358,
+      "exact_address_key": 104692
+    }
+  ],
+  "script_pairs_non_latin": [
+    {
+      "script_pair": "Latin -> Devanagari",
+      "country": "India",
+      "links": 289794
+    },
+    {
+      "script_pair": "Latin -> Telugu",
+      "country": "India",
+      "links": 42245
+    },
+    {
+      "script_pair": "Latin -> Mixed",
+      "country": "India",
+      "links": 40348
+    },
+    {
+      "script_pair": "Latin -> Kannada",
+      "country": "India",
+      "links": 40218
+    },
+    {
+      "script_pair": "Latin -> Tamil",
+      "country": "India",
+      "links": 36441
+    },
+    {
+      "script_pair": "Latin -> Bengali",
+      "country": "India",
+      "links": 33273
+    },
+    {
+      "script_pair": "Latin -> Gujarati",
+      "country": "India",
+      "links": 33178
+    },
+    {
+      "script_pair": "Latin -> Malayalam",
+      "country": "India",
+      "links": 20338
+    },
+    {
+      "script_pair": "Latin -> Oriya",
+      "country": "India",
+      "links": 8073
+    },
+    {
+      "script_pair": "Latin -> Gurmukhi",
+      "country": "India",
+      "links": 7332
+    }
+  ],
+  "query_slices": [
+    {
+      "slice": "all queries",
+      "country": "all",
+      "queries": 2206821,
+      "share_of_country_queries": 1.0,
+      "links": 7638365,
+      "denominator": 2206821
+    },
+    {
+      "slice": "all queries",
+      "country": "India",
+      "queries": 883188,
+      "share_of_country_queries": 1.0,
+      "links": 3059843,
+      "denominator": 883188
+    },
+    {
+      "slice": "all queries",
+      "country": "US",
+      "queries": 1323633,
+      "share_of_country_queries": 1.0,
+      "links": 4578522,
+      "denominator": 1323633
+    },
+    {
+      "slice": "singleton (0 true links)",
+      "country": "all",
+      "queries": 123247,
+      "share_of_country_queries": 0.05584820880352326,
+      "links": 0,
+      "denominator": 2206821
+    },
+    {
+      "slice": "singleton (0 true links)",
+      "country": "India",
+      "queries": 49351,
+      "share_of_country_queries": 0.05587825015738439,
+      "links": 0,
+      "denominator": 883188
+    },
+    {
+      "slice": "singleton (0 true links)",
+      "country": "US",
+      "queries": 73896,
+      "share_of_country_queries": 0.055828163849042746,
+      "links": 0,
+      "denominator": 1323633
+    },
+    {
+      "slice": "has any link",
+      "country": "all",
+      "queries": 2083574,
+      "share_of_country_queries": 0.9441517911964767,
+      "links": 7638365,
+      "denominator": 2206821
+    },
+    {
+      "slice": "has any link",
+      "country": "India",
+      "queries": 833837,
+      "share_of_country_queries": 0.9441217498426157,
+      "links": 3059843,
+      "denominator": 883188
+    },
+    {
+      "slice": "has any link",
+      "country": "US",
+      "queries": 1249737,
+      "share_of_country_queries": 0.9441718361509572,
+      "links": 4578522,
+      "denominator": 1323633
+    },
+    {
+      "slice": "match count 1",
+      "country": "all",
+      "queries": 119157,
+      "share_of_country_queries": 0.05399486410542586,
+      "links": 119157,
+      "denominator": 2206821
+    },
+    {
+      "slice": "match count 1",
+      "country": "India",
+      "queries": 47468,
+      "share_of_country_queries": 0.053746201261792505,
+      "links": 47468,
+      "denominator": 883188
+    },
+    {
+      "slice": "match count 1",
+      "country": "US",
+      "queries": 71689,
+      "share_of_country_queries": 0.05416078323825411,
+      "links": 71689,
+      "denominator": 1323633
+    },
+    {
+      "slice": "match count 2",
+      "country": "all",
+      "queries": 375212,
+      "share_of_country_queries": 0.17002375815709567,
+      "links": 750424,
+      "denominator": 2206821
+    },
+    {
+      "slice": "match count 2",
+      "country": "India",
+      "queries": 149927,
+      "share_of_country_queries": 0.16975660901189782,
+      "links": 299854,
+      "denominator": 883188
+    },
+    {
+      "slice": "match count 2",
+      "country": "US",
+      "queries": 225285,
+      "share_of_country_queries": 0.17020201218917932,
+      "links": 450570,
+      "denominator": 1323633
+    },
+    {
+      "slice": "match count 3-4",
+      "country": "all",
+      "queries": 1014956,
+      "share_of_country_queries": 0.4599176824944116,
+      "links": 3528983,
+      "denominator": 2206821
+    },
+    {
+      "slice": "match count 3-4",
+      "country": "India",
+      "queries": 405634,
+      "share_of_country_queries": 0.45928386708152735,
+      "links": 1410571,
+      "denominator": 883188
+    },
+    {
+      "slice": "match count 3-4",
+      "country": "US",
+      "queries": 609322,
+      "share_of_country_queries": 0.4603405928984847,
+      "links": 2118412,
+      "denominator": 1323633
+    },
+    {
+      "slice": "match count 5+",
+      "country": "all",
+      "queries": 574249,
+      "share_of_country_queries": 0.26021548643954356,
+      "links": 3239801,
+      "denominator": 2206821
+    },
+    {
+      "slice": "match count 5+",
+      "country": "India",
+      "queries": 230808,
+      "share_of_country_queries": 0.2613350724873979,
+      "links": 1301950,
+      "denominator": 883188
+    },
+    {
+      "slice": "match count 5+",
+      "country": "US",
+      "queries": 343441,
+      "share_of_country_queries": 0.25946844782503914,
+      "links": 1937851,
+      "denominator": 1323633
+    },
+    {
+      "slice": "has an S2 target",
+      "country": "all",
+      "queries": 1919076,
+      "share_of_country_queries": 0.8696110830919227,
+      "links": 7303691,
+      "denominator": 2206821
+    },
+    {
+      "slice": "has an S2 target",
+      "country": "India",
+      "queries": 768187,
+      "share_of_country_queries": 0.8697887652459046,
+      "links": 2925941,
+      "denominator": 883188
+    },
+    {
+      "slice": "has an S2 target",
+      "country": "US",
+      "queries": 1150889,
+      "share_of_country_queries": 0.8694925254961157,
+      "links": 4377750,
+      "denominator": 1323633
+    },
+    {
+      "slice": "has an S3 target",
+      "country": "all",
+      "queries": 1940545,
+      "share_of_country_queries": 0.8793395567651386,
+      "links": 7362662,
+      "denominator": 2206821
+    },
+    {
+      "slice": "has an S3 target",
+      "country": "India",
+      "queries": 776635,
+      "share_of_country_queries": 0.8793541126011676,
+      "links": 2949510,
+      "denominator": 883188
+    },
+    {
+      "slice": "has an S3 target",
+      "country": "US",
+      "queries": 1163910,
+      "share_of_country_queries": 0.879329844450841,
+      "links": 4413152,
+      "denominator": 1323633
+    },
+    {
+      "slice": "has both S2 and S3 targets",
+      "country": "all",
+      "queries": 1776047,
+      "share_of_country_queries": 0.8047988486605846,
+      "links": 7027988,
+      "denominator": 2206821
+    },
+    {
+      "slice": "has both S2 and S3 targets",
+      "country": "India",
+      "queries": 710985,
+      "share_of_country_queries": 0.8050211280044566,
+      "links": 2815608,
+      "denominator": 883188
+    },
+    {
+      "slice": "has both S2 and S3 targets",
+      "country": "US",
+      "queries": 1065062,
+      "share_of_country_queries": 0.8046505337959994,
+      "links": 4212380,
+      "denominator": 1323633
+    },
+    {
+      "slice": "a target address is missing",
+      "country": "all",
+      "queries": 312600,
+      "share_of_country_queries": 0.14165172435825107,
+      "links": 1327671,
+      "denominator": 2206821
+    },
+    {
+      "slice": "a target address is missing",
+      "country": "India",
+      "queries": 111962,
+      "share_of_country_queries": 0.12677029126301534,
+      "links": 478014,
+      "denominator": 883188
+    },
+    {
+      "slice": "a target address is missing",
+      "country": "US",
+      "queries": 200638,
+      "share_of_country_queries": 0.15158129179311788,
+      "links": 849657,
+      "denominator": 1323633
+    },
+    {
+      "slice": "S1 address missing",
+      "country": "all",
+      "queries": 0,
+      "share_of_country_queries": 0.0,
+      "links": 0,
+      "denominator": 2206821
+    },
+    {
+      "slice": "S1 address missing",
+      "country": "India",
+      "queries": 0,
+      "share_of_country_queries": 0.0,
+      "links": 0,
+      "denominator": 883188
+    },
+    {
+      "slice": "S1 address missing",
+      "country": "US",
+      "queries": 0,
+      "share_of_country_queries": 0.0,
+      "links": 0,
+      "denominator": 1323633
+    },
+    {
+      "slice": "a target name is in another script (cross-script)",
+      "country": "all",
+      "queries": 273136,
+      "share_of_country_queries": 0.1237689871539196,
+      "links": 1030475,
+      "denominator": 2206821
+    },
+    {
+      "slice": "a target name is in another script (cross-script)",
+      "country": "India",
+      "queries": 273136,
+      "share_of_country_queries": 0.3092614482986635,
+      "links": 1030475,
+      "denominator": 883188
+    },
+    {
+      "slice": "a target name is in another script (cross-script)",
+      "country": "US",
+      "queries": 0,
+      "share_of_country_queries": 0.0,
+      "links": 0,
+      "denominator": 1323633
+    },
+    {
+      "slice": "a placeholder (NA-style) name is involved",
+      "country": "all",
+      "queries": 24,
+      "share_of_country_queries": 1.087537231157398e-05,
+      "links": 116,
+      "denominator": 2206821
+    },
+    {
+      "slice": "a placeholder (NA-style) name is involved",
+      "country": "India",
+      "queries": 7,
+      "share_of_country_queries": 7.925832325620367e-06,
+      "links": 30,
+      "denominator": 883188
+    },
+    {
+      "slice": "a placeholder (NA-style) name is involved",
+      "country": "US",
+      "queries": 17,
+      "share_of_country_queries": 1.2843439231267277e-05,
+      "links": 86,
+      "denominator": 1323633
+    },
+    {
+      "slice": "best target name similarity < 0.6 (all targets low)",
+      "country": "all",
+      "queries": 44537,
+      "share_of_country_queries": 0.02018151902669043,
+      "links": 97390,
+      "denominator": 2206821
+    },
+    {
+      "slice": "best target name similarity < 0.6 (all targets low)",
+      "country": "India",
+      "queries": 42594,
+      "share_of_country_queries": 0.04822755743963913,
+      "links": 95240,
+      "denominator": 883188
+    },
+    {
+      "slice": "best target name similarity < 0.6 (all targets low)",
+      "country": "US",
+      "queries": 1943,
+      "share_of_country_queries": 0.0014679295544913129,
+      "links": 2150,
+      "denominator": 1323633
+    },
+    {
+      "slice": "a target has a conflicting number",
+      "country": "all",
+      "queries": 401717,
+      "share_of_country_queries": 0.18203424745369018,
+      "links": 1552608,
+      "denominator": 2206821
+    },
+    {
+      "slice": "a target has a conflicting number",
+      "country": "India",
+      "queries": 141001,
+      "share_of_country_queries": 0.15965004053497103,
+      "links": 544140,
+      "denominator": 883188
+    },
+    {
+      "slice": "a target has a conflicting number",
+      "country": "US",
+      "queries": 260716,
+      "share_of_country_queries": 0.19697000603641643,
+      "links": 1008468,
+      "denominator": 1323633
+    },
+    {
+      "slice": "common name (name_core shared by >= 10 S1 records)",
+      "country": "all",
+      "queries": 546693,
+      "share_of_country_queries": 0.24772874646380472,
+      "links": 1887570,
+      "denominator": 2206821
+    },
+    {
+      "slice": "common name (name_core shared by >= 10 S1 records)",
+      "country": "India",
+      "queries": 293178,
+      "share_of_country_queries": 0.3319542385086754,
+      "links": 1014951,
+      "denominator": 883188
+    },
+    {
+      "slice": "common name (name_core shared by >= 10 S1 records)",
+      "country": "US",
+      "queries": 253515,
+      "share_of_country_queries": 0.1915296762773367,
+      "links": 872619,
+      "denominator": 1323633
+    },
+    {
+      "slice": "no exact name_key or address_key match to any target",
+      "country": "all",
+      "queries": 734864,
+      "share_of_country_queries": 0.3329966499321875,
+      "links": 2245095,
+      "denominator": 2206821
+    },
+    {
+      "slice": "no exact name_key or address_key match to any target",
+      "country": "India",
+      "queries": 370648,
+      "share_of_country_queries": 0.41967055711807677,
+      "links": 1177006,
+      "denominator": 883188
+    },
+    {
+      "slice": "no exact name_key or address_key match to any target",
+      "country": "US",
+      "queries": 364216,
+      "share_of_country_queries": 0.2751638860620731,
+      "links": 1068089,
+      "denominator": 1323633
+    }
+  ],
+  "queries_by_fold": [
+    {
+      "fold": "dev",
+      "country": "India",
+      "queries": 706548,
+      "singletons": 39480,
+      "links": 2448031
+    },
+    {
+      "fold": "dev",
+      "country": "US",
+      "queries": 1058904,
+      "singletons": 59116,
+      "links": 3662900
+    },
+    {
+      "fold": "holdout",
+      "country": "India",
+      "queries": 88321,
+      "singletons": 4936,
+      "links": 305981
+    },
+    {
+      "fold": "holdout",
+      "country": "US",
+      "queries": 132366,
+      "singletons": 7390,
+      "links": 458135
+    },
+    {
+      "fold": "val",
+      "country": "India",
+      "queries": 88319,
+      "singletons": 4935,
+      "links": 305831
+    },
+    {
+      "fold": "val",
+      "country": "US",
+      "queries": 132363,
+      "singletons": 7390,
+      "links": 457487
+    }
+  ],
+  "slice_share_by_fold": [
+    {
+      "fold": "dev",
+      "slice": "common_name",
+      "share": 0.24738990354877957
+    },
+    {
+      "fold": "holdout",
+      "slice": "common_name",
+      "share": 0.24902690235491895
+    },
+    {
+      "fold": "val",
+      "slice": "common_name",
+      "share": 0.24914129833878612
+    },
+    {
+      "fold": "dev",
+      "slice": "cross_script",
+      "share": 0.12367031219200522
+    },
+    {
+      "fold": "holdout",
+      "slice": "cross_script",
+      "share": 0.1243661837806486
+    },
+    {
+      "fold": "val",
+      "slice": "cross_script",
+      "share": 0.12396117490325445
+    },
+    {
+      "fold": "dev",
+      "slice": "has_s2",
+      "share": 0.8697398739812807
+    },
+    {
+      "fold": "holdout",
+      "slice": "has_s2",
+      "share": 0.8693307716358463
+    },
+    {
+      "fold": "val",
+      "slice": "has_s2",
+      "share": 0.8688610761185779
+    },
+    {
+      "fold": "dev",
+      "slice": "has_s3",
+      "share": 0.8794529672854318
+    },
+    {
+      "fold": "holdout",
+      "slice": "has_s3",
+      "share": 0.8787694789452936
+    },
+    {
+      "fold": "val",
+      "slice": "has_s3",
+      "share": 0.8790023653945497
+    },
+    {
+      "fold": "dev",
+      "slice": "number_conflict",
+      "share": 0.1819607669877176
+    },
+    {
+      "fold": "holdout",
+      "slice": "number_conflict",
+      "share": 0.1828743877074771
+    },
+    {
+      "fold": "val",
+      "slice": "number_conflict",
+      "share": 0.18178193056071631
+    },
+    {
+      "fold": "dev",
+      "slice": "placeholder",
+      "share": 9.062834900070917e-06
+    },
+    {
+      "fold": "holdout",
+      "slice": "placeholder",
+      "share": 2.2656522586287365e-05
+    },
+    {
+      "fold": "val",
+      "slice": "placeholder",
+      "share": 1.3594221549560001e-05
+    },
+    {
+      "fold": "dev",
+      "slice": "singleton",
+      "share": 0.055847454362962005
+    },
+    {
+      "fold": "holdout",
+      "slice": "singleton",
+      "share": 0.05585285947971561
+    },
+    {
+      "fold": "val",
+      "slice": "singleton",
+      "share": 0.05584959353277567
+    },
+    {
+      "fold": "dev",
+      "slice": "target_address_missing",
+      "share": 0.14158527108072042
+    },
+    {
+      "fold": "holdout",
+      "slice": "target_address_missing",
+      "share": 0.14171654877722747
+    },
+    {
+      "fold": "val",
+      "slice": "target_address_missing",
+      "share": 0.14211852348628343
+    }
+  ]
+}
