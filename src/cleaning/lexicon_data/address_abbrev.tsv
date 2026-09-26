@@ -1,0 +1,26 @@
+tier	abbr	expansion	rule	observed_s1	observed_s23	lift	evidence
+US	st	street	suffix	13877	1040489	15.3	v1 token occurrences US: S1 13,877 / S2+S3 1,040,489; lift 15.3x
+US	rd	road	suffix	6045	976687	33.1	v1 token occurrences US: S1 6,045 / S2+S3 976,687; lift 33.1x
+US	dr	drive	suffix	4244	886186	42.7	v1 token occurrences US: S1 4,244 / S2+S3 886,186; lift 42.7x
+US	ave	avenue	suffix	4560	726574	32.6	v1 token occurrences US: S1 4,560 / S2+S3 726,574; lift 32.6x
+US	ln	lane	suffix	1668	375569	46.1	v1 token occurrences US: S1 1,668 / S2+S3 375,569; lift 46.1x
+US	cir	circle	suffix	685	108973	32.6	v1 token occurrences US: S1 685 / S2+S3 108,973; lift 32.6x
+US	pl	place	suffix	466	102391	45.0	v1 token occurrences US: S1 466 / S2+S3 102,391; lift 45.0x
+US	blvd	boulevard	suffix	414	83998	41.5	v1 token occurrences US: S1 414 / S2+S3 83,998; lift 41.5x
+US	trl	trail	suffix	231	49401	43.8	v1 token occurrences US: S1 231 / S2+S3 49,401; lift 43.8x
+US	pkwy	parkway	suffix	213	24676	23.7	v1 token occurrences US: S1 213 / S2+S3 24,676; lift 23.7x
+US	ter	terrace	suffix	58	22742	80.3	v1 token occurrences US: S1 58 / S2+S3 22,742; lift 80.3x
+US	cv	cove	suffix	15	10071	137.4	v1 token occurrences US: S1 15 / S2+S3 10,071; lift 137.4x
+US	ft	fort	any	332	16156	10.0	v1 token occurrences US: S1 332 / S2+S3 16,156; lift 10.0x
+US	ct	court	suffix_multi	957	138517	31.0	multi-token segments ending in 'ct', train US: S1 957 / S2+S3 138,517; per-row rate lift 31.0x; a whole-segment 'ct' is never expanded; full form 'court': S1 56,705 / S2+S3 119,150
+US	hwy	highway	suffix_multi	72	16053	47.7	multi-token segments ending in 'hwy', train US: S1 72 / S2+S3 16,053; per-row rate lift 47.7x; a whole-segment 'hwy' is never expanded; full form 'highway': S1 6,504 / S2+S3 13,360
+FR	r	rue	any	47	356780	1699.5	v1 token occurrences France: S1 47 / S2+S3 356,780; lift 1699.5x
+FR	av	avenue	any	2211	55150	5.6	v1 token occurrences France: S1 2,211 / S2+S3 55,150; lift 5.6x
+FR	ave	avenue	any	0	21614	2152368.0	v1 token occurrences France: S1 0 / S2+S3 21,614; lift 2152368.0x
+FR	blvd	boulevard	any	0	6046	602073.5	v1 token occurrences France: S1 0 / S2+S3 6,046; lift 602073.5x
+FR	imp	impasse	any	220	12008	12.2	v1 token occurrences France: S1 220 / S2+S3 12,008; lift 12.2x
+FR	rte	route	any	398	11595	6.5	v1 token occurrences France: S1 398 / S2+S3 11,595; lift 6.5x
+FR	ch	chemin	any	8	7065	197.7	v1 token occurrences France: S1 8 / S2+S3 7,065; lift 197.7x
+FR	all	allee	any	655	25821	8.8	v1 token occurrences France: S1 655 / S2+S3 25,821; lift 8.8x
+FR	st	saint	any	141	24469	38.9	v1 token occurrences France: S1 141 / S2+S3 24,469; lift 38.9x
+FR	crs	cours	any	3	4520	337.3	v1 token occurrences France: S1 3 / S2+S3 4,520; lift 337.3x

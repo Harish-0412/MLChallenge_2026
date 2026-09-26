@@ -1,0 +1,608 @@
+{
+  "passed": 120,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "A1 manifest schema == record.SCHEMA (names, types, order)",
+      "ok": true,
+      "detail": "69 columns"
+    },
+    {
+      "name": "A2 parquet files on disk == files listed in the manifest",
+      "ok": true,
+      "detail": "251 files"
+    },
+    {
+      "name": "A3 every file has exactly the record schema (incl. non-nullable)",
+      "ok": true,
+      "detail": "0 bad"
+    },
+    {
+      "name": "A4 per-file row counts and byte sizes == manifest",
+      "ok": true,
+      "detail": "rows 0 bad, bytes 0 bad"
+    },
+    {
+      "name": "A5 total rows == manifest totals",
+      "ok": true,
+      "detail": "24,229,173"
+    },
+    {
+      "name": "A6 no stray files, no leftover .tmp directory",
+      "ok": true,
+      "detail": "stray=[]"
+    },
+    {
+      "name": "A7 built from the CURRENT source tree and lexicons (hashes recorded in the manifest)",
+      "ok": true,
+      "detail": "tree 5af7d7428b55"
+    },
+    {
+      "name": "A8 built against the current input manifest",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "A9 versions recorded",
+      "ok": true,
+      "detail": "feat_v2_0 / hyg_v2_0"
+    },
+    {
+      "name": "B1 train_source1: entity_id unique",
+      "ok": true,
+      "detail": "2,206,821 rows"
+    },
+    {
+      "name": "B2 train_source1: rows, name/address code points, content hash sum == input manifest",
+      "ok": true,
+      "detail": "rows 2,206,821 == 2,206,821"
+    },
+    {
+      "name": "B3 train_source1: per-country rows and blank addresses == input manifest",
+      "ok": true,
+      "detail": "India 883,188, US 1,323,633"
+    },
+    {
+      "name": "B4 train_source1: every row found in the input copy, raw fields and v1 keys identical (and no input row missing)",
+      "ok": true,
+      "detail": "joined 2,206,821, differing 0"
+    },
+    {
+      "name": "B1 train_source2: entity_id unique",
+      "ok": true,
+      "detail": "5,034,616 rows"
+    },
+    {
+      "name": "B2 train_source2: rows, name/address code points, content hash sum == input manifest",
+      "ok": true,
+      "detail": "rows 5,034,616 == 5,034,616"
+    },
+    {
+      "name": "B3 train_source2: per-country rows and blank addresses == input manifest",
+      "ok": true,
+      "detail": "India 2,017,799, US 3,016,817"
+    },
+    {
+      "name": "B4 train_source2: every row found in the input copy, raw fields and v1 keys identical (and no input row missing)",
+      "ok": true,
+      "detail": "joined 5,034,616, differing 0"
+    },
+    {
+      "name": "B1 train_source3: entity_id unique",
+      "ok": true,
+      "detail": "5,285,603 rows"
+    },
+    {
+      "name": "B2 train_source3: rows, name/address code points, content hash sum == input manifest",
+      "ok": true,
+      "detail": "rows 5,285,603 == 5,285,603"
+    },
+    {
+      "name": "B3 train_source3: per-country rows and blank addresses == input manifest",
+      "ok": true,
+      "detail": "India 2,115,547, US 3,170,056"
+    },
+    {
+      "name": "B4 train_source3: every row found in the input copy, raw fields and v1 keys identical (and no input row missing)",
+      "ok": true,
+      "detail": "joined 5,285,603, differing 0"
+    },
+    {
+      "name": "B1 test_source1: entity_id unique",
+      "ok": true,
+      "detail": "1,732,544 rows"
+    },
+    {
+      "name": "B2 test_source1: rows, name/address code points, content hash sum == input manifest",
+      "ok": true,
+      "detail": "rows 1,732,544 == 1,732,544"
+    },
+    {
+      "name": "B3 test_source1: per-country rows and blank addresses == input manifest",
+      "ok": true,
+      "detail": "France 259,452, India 809,986, US 663,106"
+    },
+    {
+      "name": "B4 test_source1: every row found in the input copy, raw fields and v1 keys identical (and no input row missing)",
+      "ok": true,
+      "detail": "joined 1,732,544, differing 0"
+    },
+    {
+      "name": "B1 test_source2: entity_id unique",
+      "ok": true,
+      "detail": "4,887,273 rows"
+    },
+    {
+      "name": "B2 test_source2: rows, name/address code points, content hash sum == input manifest",
+      "ok": true,
+      "detail": "rows 4,887,273 == 4,887,273"
+    },
+    {
+      "name": "B3 test_source2: per-country rows and blank addresses == input manifest",
+      "ok": true,
+      "detail": "France 703,378, India 2,312,565, US 1,871,330"
+    },
+    {
+      "name": "B4 test_source2: every row found in the input copy, raw fields and v1 keys identical (and no input row missing)",
+      "ok": true,
+      "detail": "joined 4,887,273, differing 0"
+    },
+    {
+      "name": "B1 test_source3: entity_id unique",
+      "ok": true,
+      "detail": "5,082,316 rows"
+    },
+    {
+      "name": "B2 test_source3: rows, name/address code points, content hash sum == input manifest",
+      "ok": true,
+      "detail": "rows 5,082,316 == 5,082,316"
+    },
+    {
+      "name": "B3 test_source3: per-country rows and blank addresses == input manifest",
+      "ok": true,
+      "detail": "France 731,615, India 2,405,000, US 1,945,701"
+    },
+    {
+      "name": "B4 test_source3: every row found in the input copy, raw fields and v1 keys identical (and no input row missing)",
+      "ok": true,
+      "detail": "joined 5,082,316, differing 0"
+    },
+    {
+      "name": "C1 no NULL in any of the columns (list elements included)",
+      "ok": true,
+      "detail": "69 columns x 24,229,173 rows; none"
+    },
+    {
+      "name": "C2 hive partition path (split/source/country, URL-quoted) == in-file column values for every file",
+      "ok": true,
+      "detail": "15 distinct partitions, 0 bad"
+    },
+    {
+      "name": "C3 country labels are exactly the three known values (a new label would be a data change to review)",
+      "ok": true,
+      "detail": "['France', 'India', 'US']"
+    },
+    {
+      "name": "D1 id_num == numeric suffix of entity_id",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D2 entity_id starts with S<source>-",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D3 split is train|test",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D4 feature_version / hygiene_version constant",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D5 name_key == frozen v1 rule (SQL) on the raw name",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D6 address_key == frozen v1 rule (SQL) on the raw address",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D7 name_has_control == independent regex on the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D7 name_has_format == independent regex on the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D7 name_mojibake == independent regex on the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D7 name_multispace == independent regex on the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D7 address_has_control == independent regex on the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D7 address_has_format == independent regex on the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D7 address_mojibake == independent regex on the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D7 address_multispace == independent regex on the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D8 address_missing == blank after Unicode-whitespace strip",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D9 name_hyg is a fixed point of the v1 rule",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D9 name_latin_accent_key is a fixed point of the v1 rule",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D9 name_joiner_key is a fixed point of the v1 rule",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D9 name_compat_key is a fixed point of the v1 rule",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D9 name_apos_join_key is a fixed point of the v1 rule",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D10 name_ntokens == token count of name_hyg",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D11 name_ncore == token count of name_core",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D12 name_core_set == sorted distinct core tokens",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D13 name_core_compact == core without spaces",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D14 legal_form empty <=> legal_form_pos none",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D15 legal_form_pos in the known set",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D16 every legal_form code is a lexicon code",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D17 fallback core == whole name and has a legal form",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D18 core never empty for a non-empty name",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D19 core tokens are tokens of the cleaned name",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D20 name_translit is ASCII",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D21 name_translit is a v1 fixed point",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D22 name_skeleton is ASCII",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D23 non-empty cleaned name has non-empty translit",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D24 name_ninformative <= name_ncore <= name_ntokens",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 name_scripts Latin bit == \\p{Latin} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 name_scripts Devanagari bit == \\p{Devanagari} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 name_scripts Bengali bit == \\p{Bengali} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 name_scripts Gurmukhi bit == \\p{Gurmukhi} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 name_scripts Gujarati bit == \\p{Gujarati} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 name_scripts Oriya bit == \\p{Oriya} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 name_scripts Tamil bit == \\p{Tamil} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 name_scripts Telugu bit == \\p{Telugu} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 name_scripts Kannada bit == \\p{Kannada} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 name_scripts Malayalam bit == \\p{Malayalam} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D26 name_scripts Other bit implies a non-ASCII character",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D27 name_scripts below 2^11",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 address_scripts Latin bit == \\p{Latin} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 address_scripts Devanagari bit == \\p{Devanagari} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 address_scripts Bengali bit == \\p{Bengali} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 address_scripts Gurmukhi bit == \\p{Gurmukhi} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 address_scripts Gujarati bit == \\p{Gujarati} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 address_scripts Oriya bit == \\p{Oriya} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 address_scripts Tamil bit == \\p{Tamil} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 address_scripts Telugu bit == \\p{Telugu} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 address_scripts Kannada bit == \\p{Kannada} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D25 address_scripts Malayalam bit == \\p{Malayalam} in the raw text",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D26 address_scripts Other bit implies a non-ASCII character",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D27 address_scripts below 2^11",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D30 address_nsegments == len(address_segments)",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D31 address_canon == segments joined by single spaces",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D32 address_tokset == sorted distinct canon tokens",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D33 address_segset == sorted distinct segments joined by |",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D34 numbers raw/canon/ctx lists have equal length",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D35 address_parse_conf == missing | high | medium | low by the documented rule",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D36 a missing address has no derived content",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D37 address_state_conf in the known set",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D38 address_state_canon empty <=> conf is conflict|none",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D39 postal candidates: 5 or 6 digits, sorted, distinct",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D40 at most 3 city candidates, each is a segment, distinct",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D41 removed injected components follow the per-country grammar (US: cdp, pmb n, po box n; India: hn n, b3, <x> region; France: none)",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D42 address_had_leading_zero == a 0-led digit run in address_clean",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D43 canonicalisation never drops or invents a digit run (rows without removed extras or stripped zeros)",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "D44 address_null_tokens >= 0 and address_nsegments >= 0",
+      "ok": true,
+      "detail": "0 violating rows"
+    },
+    {
+      "name": "E name_scan_counts.csv: table-level counts reproduce the earlier full-data scan",
+      "ok": true,
+      "detail": "758 (table, country, metric) cells compared, 0 differ; skipped metrics: ['ms_pattern_rows']"
+    },
+    {
+      "name": "E hygiene_change_counts.csv: table-level counts reproduce the earlier full-data scan",
+      "ok": true,
+      "detail": "199 (table, country, metric) cells compared, 0 differ; skipped metrics: []"
+    },
+    {
+      "name": "F1 stored rows == rows recomputed by the Python code, all 69 columns (hash sample + strata + extremes)",
+      "ok": true,
+      "detail": "21,684 rows compared; first mismatches: []"
+    },
+    {
+      "name": "F2 v1 keys equal the frozen scripts/normalization.comparison_key on the same rows",
+      "ok": true,
+      "detail": "21,684 rows; bad: []"
+    },
+    {
+      "name": "F3 address_canon and name_core are idempotent on the same rows",
+      "ok": true,
+      "detail": "bad: []"
+    },
+    {
+      "name": "F4 every stratum is populated in the table (nothing untested because it is empty)",
+      "ok": true,
+      "detail": "26/27 strata populated; empty: ['other_script']; known-empty by the script census: ['other_script']"
+    },
+    {
+      "name": "G1 two scratch rebuilds (2 vs 5 workers, same row-group layout) are byte-identical, file by file",
+      "ok": true,
+      "detail": "15 files, 737,280 rows"
+    },
+    {
+      "name": "G2 the two rebuilds record the same manifest",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "G3 a rebuild with a different flush size (different row groups) has identical logical content",
+      "ok": true,
+      "detail": "737,280 rows"
+    },
+    {
+      "name": "G4 every row of the scratch rebuild equals the row stored in the built table (all columns)",
+      "ok": true,
+      "detail": "0 differing rows"
+    }
+  ],
+  "version": "feat_v2_0",
+  "seconds": 727.2
+}

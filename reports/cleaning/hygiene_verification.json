@@ -1,0 +1,157 @@
+{
+  "audit_sql_comparison_all_equal": true,
+  "checks": {
+    "all_views_idempotent": true,
+    "dotted_lexicon_counts_match_census": true,
+    "every_row_scanned": true,
+    "flags_equal_audit_sql_counts": true,
+    "no_frequent_dotted_form_missing_from_lexicon": true,
+    "no_marks_or_numbers_lost": true,
+    "no_new_empty_views": true,
+    "v1_parity_python_vs_duckdb_all_rows": true
+  },
+  "cpu_seconds_in_workers": 4337.3,
+  "dotted_lexicon_vs_census": {
+    "dba": {
+      "census": 18039,
+      "equal": true,
+      "recorded": 18039
+    },
+    "dc": {
+      "census": 23037,
+      "equal": true,
+      "recorded": 23037
+    },
+    "dd": {
+      "census": 258,
+      "equal": true,
+      "recorded": 258
+    },
+    "dds": {
+      "census": 22547,
+      "equal": true,
+      "recorded": 22547
+    },
+    "do": {
+      "census": 22197,
+      "equal": true,
+      "recorded": 22197
+    },
+    "ei": {
+      "census": 2136,
+      "equal": true,
+      "recorded": 2136
+    },
+    "eurl": {
+      "census": 10318,
+      "equal": true,
+      "recorded": 10318
+    },
+    "lc": {
+      "census": 287,
+      "equal": true,
+      "recorded": 287
+    },
+    "lcsw": {
+      "census": 22753,
+      "equal": true,
+      "recorded": 22753
+    },
+    "llc": {
+      "census": 235309,
+      "equal": true,
+      "recorded": 235309
+    },
+    "llp": {
+      "census": 57039,
+      "equal": true,
+      "recorded": 57039
+    },
+    "md": {
+      "census": 54526,
+      "equal": true,
+      "recorded": 54526
+    },
+    "od": {
+      "census": 21487,
+      "equal": true,
+      "recorded": 21487
+    },
+    "pa": {
+      "census": 21852,
+      "equal": true,
+      "recorded": 21852
+    },
+    "pc": {
+      "census": 132665,
+      "equal": true,
+      "recorded": 132665
+    },
+    "pllc": {
+      "census": 13380,
+      "equal": true,
+      "recorded": 13380
+    },
+    "sa": {
+      "census": 8104,
+      "equal": true,
+      "recorded": 8104
+    },
+    "sarl": {
+      "census": 13117,
+      "equal": true,
+      "recorded": 13117
+    },
+    "sas": {
+      "census": 29153,
+      "equal": true,
+      "recorded": 29153
+    },
+    "sasu": {
+      "census": 7073,
+      "equal": true,
+      "recorded": 7073
+    },
+    "sci": {
+      "census": 5956,
+      "equal": true,
+      "recorded": 5956
+    },
+    "snc": {
+      "census": 1618,
+      "equal": true,
+      "recorded": 1618
+    }
+  },
+  "empties": {},
+  "frequent_dotted_forms_missing_from_lexicon": {},
+  "ftfy_experiment": {
+    "flagged_fields": 5987,
+    "ftfy_differs": 134,
+    "ftfy_equal_to_narrow_rule": 5853,
+    "ftfy_unchanged": 0,
+    "sample_fields": 201888,
+    "sample_fields_changed_by_ftfy": 73
+  },
+  "hygiene_version": "hyg_v2_0",
+  "lexicon_sha256": {
+    "legal_dotted.tsv": "b2334b356883d6eec3091b09c7326a2a3be7e55fa7187306653300b9d161558c"
+  },
+  "mn_lost": {
+    "address_clean": 0,
+    "name_hyg": 0
+  },
+  "not_idempotent": {},
+  "passed": true,
+  "peak_worker_memory_mb": 169,
+  "rows_per_second_wall": 27581,
+  "rows_scanned": 24229173,
+  "us_per_row_cpu": 179.0,
+  "v1_parity_failures": {
+    "address": 0,
+    "first_examples": [],
+    "name": 0
+  },
+  "wall_seconds": 878.5,
+  "workers": 5
+}

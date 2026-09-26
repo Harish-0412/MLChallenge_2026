@@ -1,0 +1,15 @@
+loading pairs ...
+27,230 cross-script India pairs; 883,188 S1 India names for the ambiguity index
+S1 rows sharing a key: core 53.6 {'base': 61.3, 'coarse': 66.2}
+anyascii|base           4.0 us/name  ALL: p50=85.71428571428572 ge80=69.8% exact=19.3% keyshare=64.02
+anyascii|coarse         4.0 us/name  ALL: p50=92.3076923076923 ge80=93.6% exact=40.4% keyshare=70.22
+anyascii_n|base         6.4 us/name  ALL: p50=88.88888888888889 ge80=80.6% exact=24.7% keyshare=64.23
+anyascii_n|coarse       6.4 us/name  ALL: p50=92.3076923076923 ge80=93.6% exact=40.4% keyshare=70.22
+itrans|base            59.4 us/name  ALL: p50=85.71428571428572 ge80=68.4% exact=19.0% keyshare=63.83
+itrans|coarse          59.4 us/name  ALL: p50=92.3076923076923 ge80=93.8% exact=40.5% keyshare=69.95
+hk|base                36.3 us/name  ALL: p50=83.33333333333334 ge80=64.8% exact=17.1% keyshare=61.28
+hk|coarse              36.3 us/name  ALL: p50=91.66666666666666 ge80=90.8% exact=36.3% keyshare=66.7
+iast|base              50.0 us/name  ALL: p50=85.71428571428572 ge80=68.6% exact=19.1% keyshare=64.0
+iast|coarse            50.0 us/name  ALL: p50=92.3076923076923 ge80=93.9% exact=40.7% keyshare=70.09
+wrote translit_bakeoff.md / .json
+exit=0

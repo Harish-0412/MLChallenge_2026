@@ -1,0 +1,228 @@
+{
+  "fusion_recall_percent": {
+    "top10": {
+      "e5-small_only": 49.6,
+      "labse_only": 78.8,
+      "skeleton_only": 82.8,
+      "skeleton_or_any_neural": 94.7,
+      "skeleton_or_e5-small": 89.8,
+      "skeleton_or_labse": 93.6
+    },
+    "top100": {
+      "e5-small_only": 67.0,
+      "labse_only": 89.7,
+      "skeleton_only": 95.9,
+      "skeleton_or_any_neural": 98.8,
+      "skeleton_or_e5-small": 97.3,
+      "skeleton_or_labse": 98.7
+    },
+    "top50": {
+      "e5-small_only": 62.1,
+      "labse_only": 87.1,
+      "skeleton_only": 93.2,
+      "skeleton_or_any_neural": 98.3,
+      "skeleton_or_e5-small": 96.1,
+      "skeleton_or_labse": 98.0
+    },
+    "top500": {
+      "e5-small_only": 76.2,
+      "labse_only": 95.2,
+      "skeleton_only": 98.4,
+      "skeleton_or_any_neural": 99.8,
+      "skeleton_or_e5-small": 99.0,
+      "skeleton_or_labse": 99.7
+    }
+  },
+  "gpu": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+  "provisional_sample_not_a_fold": true,
+  "queries": 10000,
+  "results": {
+    "e5-small": {
+      "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "mean_reciprocal_rank": 0.3433314859867096,
+      "median_rank": 11.0,
+      "names_encoded_per_second": 13867,
+      "peak_vram_gib": 2.42,
+      "per_script": {
+        "Bengali": {
+          "n": 630,
+          "recall@10": 31.9,
+          "recall@100": 53.2
+        },
+        "Devanagari": {
+          "n": 5732,
+          "recall@10": 69.0,
+          "recall@100": 84.7
+        },
+        "Gujarati": {
+          "n": 625,
+          "recall@10": 20.3,
+          "recall@100": 42.7
+        },
+        "Gurmukhi": {
+          "n": 151,
+          "recall@10": 9.9,
+          "recall@100": 25.8
+        },
+        "Kannada": {
+          "n": 794,
+          "recall@10": 23.2,
+          "recall@100": 45.8
+        },
+        "Malayalam": {
+          "n": 389,
+          "recall@10": 38.8,
+          "recall@100": 63.0
+        },
+        "Oriya": {
+          "n": 169,
+          "recall@10": 11.8,
+          "recall@100": 29.0
+        },
+        "Tamil": {
+          "n": 699,
+          "recall@10": 6.4,
+          "recall@100": 15.9
+        },
+        "Telugu": {
+          "n": 811,
+          "recall@10": 32.3,
+          "recall@100": 53.9
+        }
+      },
+      "recall@1": 25.9,
+      "recall@10": 49.6,
+      "recall@100": 67.0,
+      "recall@1000": 80.1,
+      "recall@5": 43.6,
+      "recall@50": 62.1,
+      "recall@500": 76.2,
+      "seconds_to_encode_and_rank": 35.3
+    },
+    "labse": {
+      "device": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+      "mean_reciprocal_rank": 0.6310620307922363,
+      "median_rank": 1.0,
+      "names_encoded_per_second": 7821,
+      "peak_vram_gib": 3.79,
+      "per_script": {
+        "Bengali": {
+          "n": 630,
+          "recall@10": 72.5,
+          "recall@100": 86.0
+        },
+        "Devanagari": {
+          "n": 5732,
+          "recall@10": 82.8,
+          "recall@100": 91.9
+        },
+        "Gujarati": {
+          "n": 625,
+          "recall@10": 83.7,
+          "recall@100": 92.3
+        },
+        "Gurmukhi": {
+          "n": 151,
+          "recall@10": 51.7,
+          "recall@100": 74.8
+        },
+        "Kannada": {
+          "n": 794,
+          "recall@10": 77.3,
+          "recall@100": 89.4
+        },
+        "Malayalam": {
+          "n": 389,
+          "recall@10": 72.0,
+          "recall@100": 88.2
+        },
+        "Oriya": {
+          "n": 169,
+          "recall@10": 59.2,
+          "recall@100": 78.1
+        },
+        "Tamil": {
+          "n": 699,
+          "recall@10": 57.5,
+          "recall@100": 78.7
+        },
+        "Telugu": {
+          "n": 811,
+          "recall@10": 83.5,
+          "recall@100": 90.8
+        }
+      },
+      "recall@1": 54.1,
+      "recall@10": 78.8,
+      "recall@100": 89.7,
+      "recall@1000": 97.0,
+      "recall@5": 73.7,
+      "recall@50": 87.1,
+      "recall@500": 95.2,
+      "seconds_to_encode_and_rank": 62.6
+    },
+    "skeleton": {
+      "device": "CPU (RapidFuzz, all cores)",
+      "mean_reciprocal_rank": 0.7190665741520015,
+      "median_rank": 1.0,
+      "per_script": {
+        "Bengali": {
+          "n": 630,
+          "recall@10": 77.3,
+          "recall@100": 94.4
+        },
+        "Devanagari": {
+          "n": 5732,
+          "recall@10": 84.7,
+          "recall@100": 97.2
+        },
+        "Gujarati": {
+          "n": 625,
+          "recall@10": 86.7,
+          "recall@100": 98.2
+        },
+        "Gurmukhi": {
+          "n": 151,
+          "recall@10": 77.5,
+          "recall@100": 93.4
+        },
+        "Kannada": {
+          "n": 794,
+          "recall@10": 88.5,
+          "recall@100": 97.7
+        },
+        "Malayalam": {
+          "n": 389,
+          "recall@10": 75.6,
+          "recall@100": 91.5
+        },
+        "Oriya": {
+          "n": 169,
+          "recall@10": 76.9,
+          "recall@100": 95.3
+        },
+        "Tamil": {
+          "n": 699,
+          "recall@10": 63.4,
+          "recall@100": 83.0
+        },
+        "Telugu": {
+          "n": 811,
+          "recall@10": 87.3,
+          "recall@100": 97.9
+        }
+      },
+      "recall@1": 64.4,
+      "recall@10": 82.8,
+      "recall@100": 95.9,
+      "recall@1000": 99.0,
+      "recall@5": 78.0,
+      "recall@50": 93.2,
+      "recall@500": 98.4,
+      "seconds": 26.2
+    }
+  },
+  "torch": "2.14.0+cu126",
+  "unique_s1_cores": 479954,
+  "unique_s1_skeletons": 379330
+}

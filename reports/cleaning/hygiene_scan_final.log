@@ -1,0 +1,28 @@
+200 row-group tasks, 5 workers
+  40/200 row groups, 4,911,214 rows, 168s
+  80/200 row groups, 9,821,917 rows, 327s
+  120/200 row groups, 14,505,344 rows, 496s
+  160/200 row groups, 19,392,617 rows, 692s
+  200/200 row groups, 24,229,173 rows, 878s
+{
+  "rows_scanned": 24229173,
+  "wall_seconds": 878.5,
+  "us_per_row_cpu": 179.0,
+  "peak_worker_memory_mb": 169,
+  "checks": {
+    "every_row_scanned": true,
+    "flags_equal_audit_sql_counts": true,
+    "v1_parity_python_vs_duckdb_all_rows": true,
+    "no_new_empty_views": true,
+    "no_marks_or_numbers_lost": true,
+    "all_views_idempotent": true,
+    "dotted_lexicon_counts_match_census": true,
+    "no_frequent_dotted_form_missing_from_lexicon": true
+  },
+  "passed": true
+}
+v1 parity failures: 0 0
+frequent dotted forms missing from lexicon: {}
+wrote ftfy_experiment.md, hygiene_change_counts.csv, hygiene_examples.md, hygiene_scan_final.log, hygiene_verification.json
+ftfy: {'flagged_fields': 5987, 'ftfy_equal_to_narrow_rule': 5853, 'ftfy_differs': 134, 'ftfy_unchanged': 0, 'sample_fields': 201888, 'sample_fields_changed_by_ftfy': 73}
+exit=0

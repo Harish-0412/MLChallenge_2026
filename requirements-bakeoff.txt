@@ -1,0 +1,2 @@
+# OPTIONAL: only for scripts/translit_bakeoff.py candidates (not used by the pipeline). MIT license verified on PyPI 2026-09-25.
+indic-transliteration==2.3.82

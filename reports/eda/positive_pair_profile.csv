@@ -1,0 +1,5 @@
+target_source,country,links,missing_targets,country_mismatches,raw_name_equal,name_key_equal,raw_address_equal,address_key_equal,exact_name_or_address_retrievable,missing_target_addresses,devanagari_target_names,target_contains_combining_marks,both_have_numeric_token,disjoint_numeric_tokens
+2,India,1480545,0,0,39557,220780,0,166663,363428,56635,195441,606998,1287801,51568
+2,US,2213074,0,0,135060,571229,5,294265,789737,108549,0,0,1924505,236328
+3,India,1579298,0,0,43392,265426,65377,65749,330964,63452,117284,501392,1352239,61296
+3,US,2365448,0,0,136109,611358,104692,104692,716050,108382,0,0,2096296,210264

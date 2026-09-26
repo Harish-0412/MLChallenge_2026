@@ -1,0 +1,11 @@
+# Member A feature pipeline (feat_v2_x). Superset of requirements-eda.txt; do not edit requirements-eda.txt.
+# Licenses verified on PyPI on 2026-09-25: pyarrow Apache-2.0, ftfy Apache-2.0, anyascii ISC, psutil BSD-3-Clause,
+# duckdb and rapidfuzz as in requirements-eda.txt.
+# Deliberately NOT used: Unidecode (GPL-2.0-or-later) and aksharamukha (AGPL-3.0).
+duckdb==1.4.3
+rapidfuzz==3.14.3
+pyarrow==25.0.1
+anyascii==0.3.3
+psutil==7.2.2
+ftfy==6.3.1
+wcwidth==0.9.1  # transitive dependency of ftfy

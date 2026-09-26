@@ -1,0 +1,1347 @@
+{
+  "script_census": {
+    "train_source1": [
+      {
+        "country": "India",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      },
+      {
+        "country": "US",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      }
+    ],
+    "train_source2": [
+      {
+        "country": "India",
+        "devanagari_name": 269424,
+        "devanagari_address": 277523,
+        "bengali_name": 30723,
+        "bengali_address": 31770,
+        "gujarati_name": 30929,
+        "gujarati_address": 31543,
+        "gurmukhi_name": 6688,
+        "gurmukhi_address": 7129,
+        "oriya_name": 7493,
+        "oriya_address": 6157,
+        "tamil_name": 33781,
+        "tamil_address": 34777,
+        "telugu_name": 39323,
+        "telugu_address": 34382,
+        "kannada_name": 37211,
+        "kannada_address": 38560,
+        "malayalam_name": 18773,
+        "malayalam_address": 15680,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      },
+      {
+        "country": "US",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      }
+    ],
+    "train_source3": [
+      {
+        "country": "India",
+        "devanagari_name": 158003,
+        "devanagari_address": 275861,
+        "bengali_name": 18144,
+        "bengali_address": 31448,
+        "gujarati_name": 18020,
+        "gujarati_address": 31517,
+        "gurmukhi_name": 4106,
+        "gurmukhi_address": 7195,
+        "oriya_name": 4317,
+        "oriya_address": 6102,
+        "tamil_name": 19790,
+        "tamil_address": 34978,
+        "telugu_name": 23033,
+        "telugu_address": 34324,
+        "kannada_name": 21995,
+        "kannada_address": 38974,
+        "malayalam_name": 11116,
+        "malayalam_address": 15379,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      },
+      {
+        "country": "US",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      }
+    ],
+    "test_source1": [
+      {
+        "country": "France",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      },
+      {
+        "country": "India",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      },
+      {
+        "country": "US",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      }
+    ],
+    "test_source2": [
+      {
+        "country": "France",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      },
+      {
+        "country": "India",
+        "devanagari_name": 309103,
+        "devanagari_address": 318369,
+        "bengali_name": 35546,
+        "bengali_address": 36832,
+        "gujarati_name": 35321,
+        "gujarati_address": 36709,
+        "gurmukhi_name": 7903,
+        "gurmukhi_address": 8195,
+        "oriya_name": 8670,
+        "oriya_address": 7088,
+        "tamil_name": 38953,
+        "tamil_address": 40621,
+        "telugu_name": 45171,
+        "telugu_address": 39624,
+        "kannada_name": 43906,
+        "kannada_address": 45006,
+        "malayalam_name": 22033,
+        "malayalam_address": 18129,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      },
+      {
+        "country": "US",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      }
+    ],
+    "test_source3": [
+      {
+        "country": "France",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      },
+      {
+        "country": "India",
+        "devanagari_name": 181068,
+        "devanagari_address": 319073,
+        "bengali_name": 20872,
+        "bengali_address": 36427,
+        "gujarati_name": 20570,
+        "gujarati_address": 36732,
+        "gurmukhi_name": 4634,
+        "gurmukhi_address": 7992,
+        "oriya_name": 5062,
+        "oriya_address": 7188,
+        "tamil_name": 22808,
+        "tamil_address": 40544,
+        "telugu_name": 26698,
+        "telugu_address": 39430,
+        "kannada_name": 25832,
+        "kannada_address": 45164,
+        "malayalam_name": 13095,
+        "malayalam_address": 17933,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      },
+      {
+        "country": "US",
+        "devanagari_name": 0,
+        "devanagari_address": 0,
+        "bengali_name": 0,
+        "bengali_address": 0,
+        "gujarati_name": 0,
+        "gujarati_address": 0,
+        "gurmukhi_name": 0,
+        "gurmukhi_address": 0,
+        "oriya_name": 0,
+        "oriya_address": 0,
+        "tamil_name": 0,
+        "tamil_address": 0,
+        "telugu_name": 0,
+        "telugu_address": 0,
+        "kannada_name": 0,
+        "kannada_address": 0,
+        "malayalam_name": 0,
+        "malayalam_address": 0,
+        "arabic_name": 0,
+        "arabic_address": 0,
+        "cyrillic_name": 0,
+        "cyrillic_address": 0,
+        "han_name": 0,
+        "han_address": 0
+      }
+    ]
+  },
+  "examples": {
+    "train_source1": {
+      "controls": [
+        {
+          "entity_id": "S1-101401745",
+          "business_name": "Secure Educational Society",
+          "business_address": "New Delhi, Delhi, Unit No \u001a 35, Jasola District Centre, Ground Floor, Omaxe Square, Plot No 14",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-103069906",
+          "business_name": "Phoenix Trading Private Limited",
+          "business_address": "401, Plot No. 7, The YoungâS Cghs Sector 64, Faridabad, Haryana",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-104226194",
+          "business_name": "Global Lotus Construction Pvt Ltd",
+          "business_address": "A-212, Malhotra Complex, Gali No. Â 01, Vikas Marg, Shakarpur, Laxmi Nagar, East Delhi, Delhi",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-105524362",
+          "business_name": "Royal Builders Pvt Ltd",
+          "business_address": "Flat No. 103, ÂWater Edgeâ, Building No. E1-103, S. No. 18, Pimple Nilakh, Pune, Maharashtra",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-109132657",
+          "business_name": "Blue Exports Private Limited",
+          "business_address": "Unit No.606 A, 6Th Floor, A Wing, Mittal Towers 6, M.G. Road, Bangalore Â, Bangalore, Karnataka",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-110502455",
+          "business_name": "Sai Consulting Private Limited",
+          "business_address": "1544 Sector ÂC, Pkt-1, Internal Road-C1 Vasant Kunj, Near Vasant Kunj School, New Delhi, South West Delhi, Delhi",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-110682944",
+          "business_name": "Om (India) Services Pvt. Ltd.",
+          "business_address": "B-904, Signature-2, Sarkhej Â Sanand Highway, Vill: Sarkhej, Ahmedabad, Gujarat",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-112049655",
+          "business_name": "Evolution Brokers Private Limited",
+          "business_address": "C/O ÂCogiace Office No. 221/89 Hemkund Chamber Nehru Place, New Delhi, Delhi",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-112097445",
+          "business_name": "Sun Finance Pvt Ltd",
+          "business_address": "Unit No. 808, 8Th Floor Tower \u001a B Unitech Business Zone, Nirvana Country, South City, Gurgaon, Haryana",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-113356121",
+          "business_name": "Drs Buildcon Private Limited",
+          "business_address": "5Th Floor, 510 \u001a 511, Wast Gate, D- Block, Nr. Ymca Club, S.G.Highway, Makarba, Ahmedabad, Gujarat",
+          "country": "India"
+        }
+      ],
+      "formats": [],
+      "placeholder_names": []
+    },
+    "train_source2": {
+      "controls": [
+        {
+          "entity_id": "S2-102464820",
+          "business_name": "ADITYA CONSULTING ELECTRONICS PRIVATE",
+          "business_address": "##89 C/O Â PRADEEP KR. AGARWAL, S/O Â SRI GOPAL RAM, O1 GROUND FLOOR, BALAJEE RESIDENCY, J. P. D, AS LANE, NEW DAKBANGLOW ROAD, N/A, Bihar",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-104047454",
+          "business_name": "sujata.com",
+          "business_address": "Delhi, UNIT NO.30, FLOOR 3, WORLDMARK Â 3, ASSET Â 7, AEROCITY, N.H Â 8, NEW DELHI, \u001a, NEW DELHI",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-104991230",
+          "business_name": "Tech Seva (Samiti)",
+          "business_address": "H. S \u001a 00868, S. N \u001a 45, HANDEWADI ROAD OPPOSITE MUSDDI COMPLEX, HADAPSAR, PUNE, Maharashtra",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-106475177",
+          "business_name": "Horticulture Trading",
+          "business_address": "KHASHRA NO Â 44/2, SHAHBAD DAULATPUR, DELHI, Delhi",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-108035776",
+          "business_name": "Qsfj Plastics Private Limited",
+          "business_address": "33, EZRA STREET, 2ND FLOR, ROOM NO. Â 267, KOLKATA, KOLKATA, West Bengal",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-108072897",
+          "business_name": "M/s Super Solutions Private-Limited",
+          "business_address": "Maharashtra, NO 78 C/O Â DATTATRYA VISHVANATH TODKAR A/P Â KODOLI, TAL Â PANHALA, KOLHAPUR",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-108214448",
+          "business_name": "સ્ટાર બાબા પ્રોજેક્ટ્સ લિમિટેડ",
+          "business_address": "BARODA, D Â 0401, LOUS AURA-2, NR. IOCL PETROL PUMP, VEMALI, VADODARA, Gujarat",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-112083072",
+          "business_name": "WO Trading [LLP]",
+          "business_address": "NO 408 HN. Â 65, VILL. BARWASNI, SONIPAT, Haryana",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-112811528",
+          "business_name": "Ravi Charitable Trust Infratech [(Company)]",
+          "business_address": "PLOT NO. L4-16, PHASE ÂIII, SIPCOT INDUSTRIAL COMPLEX, RANIPET, Tamil Nadu",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-11294754",
+          "business_name": "TEJYA LIMITED PRIVATE ELECTRONICS",
+          "business_address": "C/O MOHAMAD SHAMSAD ALAM, VILL Â SHANKARPUR MADHAI PANCHYAT - SINGHAR, BLOCK - ALAMNAGAR, MADHEPURA, Bihar",
+          "country": "India"
+        }
+      ],
+      "formats": [
+        {
+          "entity_id": "S2-100080376",
+          "business_name": "ಏಸ್ ಕನ್‌ಸ್ಟ್ರಕ್ಷನ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "SAPTAGIRI NILAYAM, BANGALORE, ಕರ್ನಾಟಕ",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100119914",
+          "business_name": "గ్రీన్ ఇన్‌ఫ్రాస్ట్రక్చర్ ఎల్‌ఎల్‌పీ",
+          "business_address": "HYDERABAD, Telangana, HYDERABAD, N/A, FALT NO 618",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-10013814",
+          "business_name": "కృష్ణా కన్‌స్ట్రక్షన్స్ ప్రైవేట్ లిమిటెడ్",
+          "business_address": "PLOT 80. DONO. 7-1-419/10/N/31, PLOT NO.502, NAGASURI PLAZA BEHIND MAITRIVANAM, AMEERPET, HYDERABAD, Telangana",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100247799",
+          "business_name": "డిజిటల్ ప్రొడక్ట్స్ మోటార్స్ ఎల్‌ఎల్‌పీ",
+          "business_address": "PL NO. 564/A/32, PH-1 J.HILLS, SHAIKPET, HYDERABAD, Telangana",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100263842",
+          "business_name": "ಸ್ಕೈ ಯುನಿವರ್ಸಲ್ ಇನ್‌ಫ್ರಾಸ್ಟ್ರಕ್ಚರ್ ಫಾರ್ಮಸಿ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "854/A, BANGALORE NORTH, BANGALORE, Karnataka",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100288796",
+          "business_name": "వైట్ కన్‌స్ట్రక్షన్ ప్రొవిజన్ లిమిటెడ్",
+          "business_address": "963 6-3-907/A, 4TH FLOOR, CENTRAL PLAZA, RAJBHAVAN ROAD SOMAJIGUDA, HYDERABAD, Telangana",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100296126",
+          "business_name": "పర్‌ఫెక్ట్ ఇన్వెస్ట్‌మెంట్ ప్రైవేట్ లిమిటెడ్",
+          "business_address": "#302, HYDERABAD, Andhra Pradesh",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100312454",
+          "business_name": "లోటస్ టెక్ ఎల్‌ఎల్‌పీ",
+          "business_address": "C-8-3-318/11/19 F NO G1 MG, CLASSIC JAYAPRAKASH NAGAR, KHAIRATABAD, HYDERABAD, తెలంగాణ",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100350435",
+          "business_name": "ఎస్‌ఎస్ గెలాక్సీ పవర్ ప్రైవేట్ లిమిటెడ్",
+          "business_address": "HYDERABAD, 296, ROAD NO:3 BANJARA HILLS, Telangana, 8-2-277/12",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100371006",
+          "business_name": "గ్రేట్ ఇన్‌ఫ్రాస్ట్రక్చర్ ప్రైవేట్ లిమిటెడ్",
+          "business_address": "H.NO.-3-183/40/A/51, P & T COLONY, KAVADIGUDA, HYDERABAD, తెలంగాణ",
+          "country": "India"
+        }
+      ],
+      "placeholder_names": [
+        {
+          "entity_id": "S2-102598836",
+          "business_name": "Na",
+          "business_address": "9-B CLINTON ST, EASTHAMPTON, MA",
+          "country": "US"
+        },
+        {
+          "entity_id": "S2-391540425",
+          "business_name": "Na",
+          "business_address": "3 VILLAGE VIEW, FREEPORT, ME",
+          "country": "US"
+        },
+        {
+          "entity_id": "S2-599473918",
+          "business_name": "NA",
+          "business_address": "BROOKHAVEN, 7 LILAC LANE, NY",
+          "country": "US"
+        },
+        {
+          "entity_id": "S2-776053769",
+          "business_name": "Na",
+          "business_address": "WEBB CITY, 114 MSIN ST, MO",
+          "country": "US"
+        },
+        {
+          "entity_id": "S2-876292278",
+          "business_name": "NAN",
+          "business_address": "1305 3610, SPANISH FORK, UT",
+          "country": "US"
+        },
+        {
+          "entity_id": "S2-982925237",
+          "business_name": "NA",
+          "business_address": "11 OX YOKE CIRCLE, EAST HAMPTON, CT",
+          "country": "US"
+        }
+      ]
+    },
+    "train_source3": {
+      "controls": [
+        {
+          "entity_id": "S3-100953492",
+          "business_name": "मां बिल्डर्स लिमिटेड",
+          "business_address": "Office No-a/g-1515, 15Th Floor, O2 Commercial Premise Opp Asha Nagar, Mulund Â West, Mumbai, MH",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-102306945",
+          "business_name": "Senapati  Edmcatoonaa Society",
+          "business_address": "Omkaresgwar Gursankool Sr No. 31/0, 32/0 A1, 2, 3 Mangalmurti B2- Fl Â 201, Mumbai, Mumbai City, MH",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-103134085",
+          "business_name": "Mundhra Farmers Holdings Private",
+          "business_address": "Unit No.#334, Block Â A, Tower Â 1, Bonsai Homes, Tellapur Village, Ramachandrapuram Manda, L, Medak, Hyderabad, తెలంగాణ",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-105855323",
+          "business_name": "Raj  &-Co",
+          "business_address": "Hn 577/3 Ground Floor Â 39, Heera Panna Shopping, Shankaracharya Road, Powai, Mumbai City, Mumbai, MH",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-1069813",
+          "business_name": "Golden Factory LLP",
+          "business_address": "Flat No Âb-1003, Block B, 10/F Sec-2 Ph-1 Dwarka The Sb Yuth Cghs, Ltd, Pno -6B, New Delhi, South West Delhi, DL",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-107246751",
+          "business_name": "Services Drs",
+          "business_address": "F-4-212, 2Nd Floor, Phase Â 6 Aaya Nagar Extension, Mehrauli, New Delhi, South West Delhi, दिल्ली",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-110754376",
+          "business_name": "secureeducationalsociety.com",
+          "business_address": "Unit No \u001a ##35, Ground Floor, Omaxe Square, Plot No 14, DL, Jasola District Centre, South Delhi",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-111060673",
+          "business_name": "Nagesh Aai Private Limited",
+          "business_address": "B-##1, Bldg Noâ1, Wing-a, New India Chambers, Vlg Mulgaon, Midc Road, Bhd Onida House, And, Heri East, Bombay, N/A, MH",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-112078008",
+          "business_name": "Fluid Traders Public Limited",
+          "business_address": "80ÂA, Indore, Braj Vihar, Indore, MP",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-113862534",
+          "business_name": "Smt Adonis Developers (Índia) Private (Ltd)",
+          "business_address": "KA, 3Rd Floor, 9Th Âaâ Main, 1St Block, 80 Feet Road, Hrbr Layout, Kalyan Nagar, No. 202, Bangalore",
+          "country": "India"
+        }
+      ],
+      "formats": [
+        {
+          "entity_id": "S3-100002913",
+          "business_name": "సన్‌రైజ్ ఆగ్రో ప్రైవేట్ లిమిటెడ్",
+          "business_address": "No 9-7-45 Arundalpet, Narasaraopet, Guntur, ఆంధ్రప్రదేశ్",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100094439",
+          "business_name": "హరి ఇన్వెస్ట్‌మెంట్ లిమిటెడ్",
+          "business_address": "D No 1-83/8, Sv No. 1/2C, Thummalagunta Tirupati, Tirupati, Chittoor, AP",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100242992",
+          "business_name": "Vijay కన్‌స్ట్రక్షన్స్ Garments Private Limited",
+          "business_address": "# C-14-37-15/12, Visakhapatnam, Vishakhapatnam, AP",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100407701",
+          "business_name": "ಬ್ಲೂ ಫೈನಾನ್ಸ್ ಎಲ್ಎಲ್‌ಪಿ",
+          "business_address": "10-117- Manyata Mahogany F3 Block, ಕರ್ನಾಟಕ, Bangalore North, Bangalore",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100434739",
+          "business_name": "బ్లూ ఎస్టేట్ కన్‌స్ట్రక్షన్స్ ప్రైవేట్ లిమిటెడ్",
+          "business_address": "1-2-4 To 43, Hyderabad, Andhra Pradesh",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100642772",
+          "business_name": "ಬಾಲಾಜಿ ಮ್ಯಾನೇಜ್‌ಮೆಂಟ್ ಎಲ್ಎಲ್‌ಪಿ",
+          "business_address": "Bangalore, No 1008 Flat No 401 Pplayout, Bangalore South, KA",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100690072",
+          "business_name": "ಇಂಟರ್‌ನ್ಯಾಷನಲ್ ಕನ್ಸಲ್ಟಿಂಗ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "Unit 801, Bangalore, KA",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100712846",
+          "business_name": "ಸ್ಮಾರ್ಟ್ ಹೆಲ್ತ್‌ಕೇರ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "15, 5Th Main, 8Th Cross, Saraswathi Puram, Mysore, ಕರ್ನಾಟಕ",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100740492",
+          "business_name": "ಹೋಟೆಲ್ ಇನ್‌ಫೋಟೆಕ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "#308, Iii Floor, Embassy Centre, 11, Crescent Road, KA, Bengaluru, Bangalore",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100887064",
+          "business_name": "ವಿಜಯ್ ಎಂಟರ್‌ಪ್ರೈಸಸ್",
+          "business_address": "Hibiscus, 1St Floor, Esteem Park Appt, 3/6, Rose Garden Road, Jp N Ph, Bangalore South, Bangalore, KA, Flat No 101",
+          "country": "India"
+        }
+      ],
+      "placeholder_names": [
+        {
+          "entity_id": "S3-203011842",
+          "business_name": "Na",
+          "business_address": "Blue Ridge Pl, # Unit 215, Altoona, Iowa",
+          "country": "US"
+        },
+        {
+          "entity_id": "S3-207014979",
+          "business_name": "NA",
+          "business_address": "C-2 Mansarovar Riico Industrial Area, Jaipur, Rajasthan",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-263823274",
+          "business_name": "NA",
+          "business_address": "519 Odeneal Street, Dallas, TX",
+          "country": "US"
+        },
+        {
+          "entity_id": "S3-382185873",
+          "business_name": "NA",
+          "business_address": "Kh No. 138, 1St Floor, Vill: Nawada, Vipin Garden, Delhi, 78, West Delhi, New Delhi",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-391601813",
+          "business_name": "NA",
+          "business_address": "209 3rd Street, KY, Hardinsburg",
+          "country": "US"
+        },
+        {
+          "entity_id": "S3-42389827",
+          "business_name": "NA",
+          "business_address": "137 - R, Industrial Area B, Near Pahwa Hospital, Matharoo Street, Ludhiana, Punjab",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-508022313",
+          "business_name": "Na",
+          "business_address": "1449 Sapphire Lane, Waukee, Iowa",
+          "country": "US"
+        },
+        {
+          "entity_id": "S3-615108446",
+          "business_name": "Na",
+          "business_address": "412 Berlin Pvt Rd, Gallatin, Tennessee",
+          "country": "US"
+        },
+        {
+          "entity_id": "S3-617170111",
+          "business_name": "NA",
+          "business_address": "120 Shore Drive, Jarvisburg, North Carolina",
+          "country": "US"
+        },
+        {
+          "entity_id": "S3-640593334",
+          "business_name": "NA",
+          "business_address": "261/12 F/F Amritpuri B Garhi Jharia Maria, South Delhi, Delhi",
+          "country": "India"
+        }
+      ]
+    },
+    "test_source1": {
+      "controls": [
+        {
+          "entity_id": "S1-100454525",
+          "business_name": "Basti India Private Limited",
+          "business_address": "Jamdheeh Pandey Post Â Labnapar, Basti, Uttar Pradesh",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-103917324",
+          "business_name": "Swastik Industries Private Limited",
+          "business_address": "Module No.1201, 12Th Floor, Ticel Biopark Limited, Phase ÂIi, No.5, Csir Campus Road, Tar, Amani, Chennai, Tamil Nadu",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-10646159",
+          "business_name": "Visakha Solutions Private Limited",
+          "business_address": "Shop No. 25, Kesar Nagar Â A Muhana Mandi Road, Gram Sukhiya, Sangane, R, Jaipur, Rajasthan",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-111109879",
+          "business_name": "South Infotech Limited",
+          "business_address": "Mahua, Bihar, Vill Â Mahua Mukundpur Pops- Mahua, Vaishali",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-114400399",
+          "business_name": "Krn School Pvt Ltd",
+          "business_address": "No.435, \u001aSaroja\u001a1St B Cross, 7Th Block, Koramangala, Bangalore, Karnataka",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-123086056",
+          "business_name": "My Foundation Limited",
+          "business_address": "Vasant Vatika, Flat No. F2, 2Nd Floor, Block \u001a B, Jyoti Nagar, Siliguri, Siliguri, Jalpaiguri, West Bengal",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-124163266",
+          "business_name": "WKR Delight Limited",
+          "business_address": "Iii/124 A 1, 3Rd Floor, Black & White Enclave Tejus Nagar, Saly\u001aS Road, Near Rajagiri, School, Kalamassery P O, Ernakulam, Kerala",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-126924435",
+          "business_name": "Saroj & Co",
+          "business_address": "Second Floor, Plot No.6, ÂFâ Block, TvdâS Srishti United Colony 2Nd Street, Medawakkam, Chennai, Tamil Nadu",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-126990969",
+          "business_name": "New Delhi Technologies",
+          "business_address": "Flat-1196 Sect ÂD Pkt I Vasant Kunj Opp Hertaage School, New Delhi, South Delhi, Delhi",
+          "country": "India"
+        },
+        {
+          "entity_id": "S1-127785110",
+          "business_name": "New Delhi Investments Corp",
+          "business_address": "602, Block Â A, Naurang House 21 Kasturba Gandhi Marg, New Delhi, Central Delhi, Delhi",
+          "country": "India"
+        }
+      ],
+      "formats": [],
+      "placeholder_names": []
+    },
+    "test_source2": {
+      "controls": [
+        {
+          "entity_id": "S2-101065308",
+          "business_name": "Sri Magnet Solutions Private Limited",
+          "business_address": "Gujarat, C -21A, ARVIND MEGA PARK VILLAGE Â VASNA, CHACHARVADI, TALUKA Â, SANAND, AHMEDABAD",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-101246846",
+          "business_name": "Zeal Entertainment Private Ltd",
+          "business_address": "H. NO. 547, F/F PKT Â F, CAT ÂIII, SARITA VIHAR, NEW DELHI, Delhi",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-102147788",
+          "business_name": "KT LLP (Center)",
+          "business_address": "##301, FLOOR -3, PLOT ÂFP 84 CS NO.1794, NANDADEEP, DR M B RAUT MARG, SHIVAJI PARK, DADAR WE, ST, MUMBAI, Maharashtra",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-102960921",
+          "business_name": "Black Limited  Pharmacy Logistics",
+          "business_address": "TC 11/1112, KRA - A Â 10 FIRST FLOOR CHATTAMPISWAMY NAGAR, KANNAMOOLA, THIRUVANANTHAPURAM, THIRUVANANTHAPURAM, Kerala",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-10377115",
+          "business_name": "ઇનોવેટિવ ઇન્ડસ્ટ્રીઝ મેડિકલ્સ પ્રાઇવેટ લિમિટેડ",
+          "business_address": "BLOCK C-502 21- SEFRON COMPLEX, B/H POLICE STATION \u001a GAMBHOI, HIMATNAGAR, SABAR KANTHA, Gujarat",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-104040104",
+          "business_name": "डिजिटल इम्पेक्स ट्रेडिंग",
+          "business_address": "0206, EAST BLOCK, MEZZANINE FLOOR, SOUTHERN SIDE P. NO. 273, \u001aSHIKHA\u001a C.B. ROAD, RAMDESHP ETH NA, ETH, NAGPUR, Maharashtra",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-10644529",
+          "business_name": "ZE LÍNE PRIVATE LIMITED",
+          "business_address": "3-01, 3RD FLOOR, EMAAR PALM SQUARE GOLF COURSE EXTENSION ROAD, SECTOR Â 66, GURGAON, HARYANA \u001a, Haryana",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-107183153",
+          "business_name": "राज वेंचर्स प्रा. लि.",
+          "business_address": "B-40 Â SDO, CHARKHI DADRI, BHIWANI, Haryana",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-10742336",
+          "business_name": "Ltd Subhash Jwellers",
+          "business_address": "DOOR NO 299 PLOT NO. B Â75, INDUSTRIAL AREA PHASE Â VII (SECTOR 73), MOHALI, Punjab",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-10811716",
+          "business_name": "ALPHA AGO GROUP PRIVATE LIMITED",
+          "business_address": "UNIT NO. 343, 3RD FLOOR, SUNCITY SUCCESS TOWER SECTOR Â 65, GOLF COURSE EXTENSION ROAD, GURGAON, हरियाणा",
+          "country": "India"
+        }
+      ],
+      "formats": [
+        {
+          "entity_id": "S2-100051010",
+          "business_name": "ಸಿಟಿ ಎಂಟರ್‌ಪ್ರೈಸಸ್",
+          "business_address": "NO.73, 3RD FLOOR, LAXMI BHAVAN, 22ND MAIN ROAD, GNANABHARATHI LAYOUT, 2ND BLOCK, JNANAGANGA NAGAR, MARIYAPPANAPALYA, BENGALURU, BANGALORE, Karnataka",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100087372",
+          "business_name": "ഇന്തോ ഹെൽത്ത്‌കെയർ പ്രൈവറ്റ് ലിമിറ്റഡ്",
+          "business_address": "IX/432-B 17 C ARISTA, ERNAKULAM, Kerala",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100123859",
+          "business_name": "ఆల్ ట్రేడింగ్ ఎల్‌ఎల్‌పీ",
+          "business_address": "2-1-284, P NO. 402 NALLAKUNTA, HYDERABAD, తెలంగాణ",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100129399",
+          "business_name": "ಶ್ರೀ ಕನ್‌ಸ್ಟ್ರಕ್ಷನ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "DOR NO 45. OLD NO763 18TH MAIN, 37TH CROSS ROAD JAYANAGAR, BANGALORE SOUTH, BANGALORE, Karnataka",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100154973",
+          "business_name": "యూనివర్సల్ మేనేజ్‌మెంట్ ఎల్‌ఎల్‌పీ",
+          "business_address": "001-8-8/A, SARVODHAYA COLONY, CHIKKADAPALLY, HYDERABAD, Telangana",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100202356",
+          "business_name": "ಹೈಟೆಕ್ ಹೆಲ್ತ್‌ಕೇರ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "#30, BANGALORE, BANGALORE NORTH, Karnataka",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100233725",
+          "business_name": "ಬ್ರೈಟ್ ಮ್ಯಾನೇಜ್‌ಮೆಂಟ್ ರೆಸ್ಟೋರೆಂಟ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "Karnataka, BANGALORE NORTH, BANGALORE, G##1 NO 2/2 JANAK RESIDENCY",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100234429",
+          "business_name": "స్కై ఎనర్జీ ఎల్‌ఎల్‌పీ",
+          "business_address": "87/1376, 4 CLASS EMPLOIES COLONY, KURNOOL, AMARAVATI, Andhra Pradesh",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100244760",
+          "business_name": "ಟೆಕ್ ಇನ್ವೆಸ್ಟ್‌ಮೆಂಟ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "NO. D/414, BANGALORE, Karnataka",
+          "country": "India"
+        },
+        {
+          "entity_id": "S2-100268026",
+          "business_name": "ರಾಯಲ್ ಇನ್‌ಫ್ರಾ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "URBAN VAULT 1319, 24TH MAIN ROAD, GARDEN LAYOUT, BDA LAYOUT, BANGALORE SOUTH, BANGALORE, ಕರ್ನಾಟಕ",
+          "country": "India"
+        }
+      ],
+      "placeholder_names": [
+        {
+          "entity_id": "S2-109029910",
+          "business_name": "NA",
+          "business_address": "45 RUE DES DOUVES, Bordeaux, Gironde",
+          "country": "France"
+        },
+        {
+          "entity_id": "S2-10975227",
+          "business_name": "NA",
+          "business_address": "15 RUE ARMAED MEESCHAERT, Roubaix",
+          "country": "France"
+        },
+        {
+          "entity_id": "S2-156787089",
+          "business_name": "NA",
+          "business_address": "NO 20 RUE GABRIEL DUPUY, Mérignac, Nouvelle-Aquitaine",
+          "country": "France"
+        },
+        {
+          "entity_id": "S2-16141727",
+          "business_name": "NA",
+          "business_address": "RUE DU FOUR A CHAUX, Lille",
+          "country": "France"
+        },
+        {
+          "entity_id": "S2-165494875",
+          "business_name": "NA",
+          "business_address": "2 RUE SOUBZMAIN, Nantes, Pays de la Loire",
+          "country": "France"
+        },
+        {
+          "entity_id": "S2-17593083",
+          "business_name": "NA",
+          "business_address": "Nº 119 BOULEVARD ERNEST DALBY, Nantes, Loire-Atlantique",
+          "country": "France"
+        },
+        {
+          "entity_id": "S2-189780924",
+          "business_name": "NA",
+          "business_address": "LE BIS D' ACHELLES, Tourcoing, Hauts-de-France",
+          "country": "France"
+        },
+        {
+          "entity_id": "S2-194797905",
+          "business_name": "NA",
+          "business_address": "18 R. DU CHEVAL GRIS, Calais, Hauts-de-France",
+          "country": "France"
+        },
+        {
+          "entity_id": "S2-210220541",
+          "business_name": "NA",
+          "business_address": "3 CH DE LA SÉCHERIE, Nantes, Loire-Atlantique",
+          "country": "France"
+        },
+        {
+          "entity_id": "S2-237980251",
+          "business_name": "Na",
+          "business_address": "SAINT LOUIS PARK, 165 KILMER AVE, MN",
+          "country": "US"
+        }
+      ]
+    },
+    "test_source3": {
+      "controls": [
+        {
+          "entity_id": "S3-100857586",
+          "business_name": "Xylodrex",
+          "business_address": "Gf-1, Tower -11 Ats One Hamlet, Sector Â 104, Noida, Gautam Buddha Nagar, Uttar Pradesh",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-101145657",
+          "business_name": "Bharat  Projects LLP",
+          "business_address": "Gautam Buddha Nagar, #G-13Th Floor, UP, Towerâ1, Plot No.-1, Knowledge Park-iv, Greater Noida",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-101394910",
+          "business_name": "Mr Sierra Transformation  (India) Ltd",
+          "business_address": "Room No.c/7, Malwani Best Chs Ltd., Plot Â 148 Rsc, Mhada Project, Malad West, Mumbai, Mumbai City, MH",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-101973188",
+          "business_name": "Studio & Brothers",
+          "business_address": "#601, Wing G, Radhika Park, S. No. Â 22, Wadgaonsheri, Pune, MH",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-102350063",
+          "business_name": "Ghaziabad Infra Pvt",
+          "business_address": "House No \u001a S-13a, Lower Ground - 11, Shalimar Garden Extension \u001a 2/15, Ghaziabad, UP",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-104363901",
+          "business_name": "गोल्ड प्रोजेक्ट्स प्राइवेट लिमिटेड",
+          "business_address": "Hn 510 C - 29A, Third Floor, Blk Â C-3, Near Ring Road Red Light, Rajouri Garden, New Delhi, West Delhi, DL",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-104927876",
+          "business_name": "Black  Logistics Limited",
+          "business_address": "#20 Tc 13/1099, Kra - A Â 10 First Floor Chattampiswamy Nagar, Kannamoola, Thiruvananthapuram, Trivandrum, KL",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-106502715",
+          "business_name": "NOVELTY PROCESSORS DELHI LTD",
+          "business_address": "No 138 Ansal Chamber Âii, Delhi, South Delhi, दिल्ली",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-106682756",
+          "business_name": "nera logistics logistics public limited (ID: 62329)",
+          "business_address": "B-813, Fairdeal House, Nr. Swastik Char Rasta Opp. St. Xavierâs Ladies Hostel, Navrang, Pura, Ahmedabad Hq Region, ગુજરાત",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-108563395",
+          "business_name": "Optimus  Clinic LLP",
+          "business_address": "Âa, Kasaragod, KL",
+          "country": "India"
+        }
+      ],
+      "formats": [
+        {
+          "entity_id": "S3-10001346",
+          "business_name": "ಬ್ರೈಟ್ ಇನ್‌ಫ್ರಾ ಹಾರ್ಡ್‌ವೇರ್",
+          "business_address": "2/6, Bangalore, ಕರ್ನಾಟಕ",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100036760",
+          "business_name": "మై కన్సల్టింగ్ బేకరీ ఎల్‌ఎల్‌పీ",
+          "business_address": "#611, Behind Sagar Hotel, Tirumalagiri, Hyderabad, TG",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100089184",
+          "business_name": "ಇಂಡೋ ಪ್ರೊಡಕ್ಟ್ಸ್ ಹಾರ್ಡ್‌ವೇರ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್",
+          "business_address": "Bangalore, ಕರ್ನಾಟಕ, Bangalore, #1/21 Lavelle Road",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100198843",
+          "business_name": "ఇండియన్ ఆనంద్ కన్‌స్ట్రక్షన్ లిమిటెడ్",
+          "business_address": "Madanapally, AP, H. No. 5-16/618-1-2-A3 Sheshappa Thota, Chittoor",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100240223",
+          "business_name": "శ్రీ కన్‌స్ట్రక్షన్స్ ఆటోమొబైల్స్ ప్రైవేట్ లిమిటెడ్",
+          "business_address": "H.no 591 12-156, Kakinada, East Godavari, ఆంధ్రప్రదేశ్",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100269991",
+          "business_name": "ప్రైమ్ ఇన్వెస్ట్‌మెంట్ ఎల్‌ఎల్‌పీ",
+          "business_address": "23-11-8 Pappula Vai, Street Near Kurpam Market, Visakhapatnam, Visakhapatnam, Vishakhapatnam, ఆంధ్రప్రదేశ్",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100302861",
+          "business_name": "ಕ್ಲಾಸಿಕ್ ಡೆವಲಪರ್ಸ್ ಎಲ್ಎಲ್‌ಪಿ",
+          "business_address": "Villa87 Tattvam Woodsvale, Ittanguru Rd Sarjapura, Bangalore, Anekal, KA",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100332512",
+          "business_name": "బ్లాక్ గురు ప్రొడక్ట్స్ టెక్స్‌టైల్స్ ప్రైవేట్ లిమిటెడ్",
+          "business_address": "H.no. 3-4-60/12/9, First Floor, Near Raghav Endra Swamy Temple, Lingampally, Kachiguda, Hyderabad, TG",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100340420",
+          "business_name": "పర్‌ఫెక్ట్ బిజినెస్ ప్రైవేట్ లిమిటెడ్",
+          "business_address": "Plot No. 6-0 & 61, Street No. 2 Himayat Nagar, Andhra Pradesh, Hyderabad",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-100370066",
+          "business_name": "ఫ్యూచర్ కన్‌స్ట్రక్షన్ ప్రైవేట్ లిమిటెడ్",
+          "business_address": "B3/51, Hyderabad, TG",
+          "country": "India"
+        }
+      ],
+      "placeholder_names": [
+        {
+          "entity_id": "S3-131417344",
+          "business_name": "NA",
+          "business_address": "1 Cour Saint-dominique, 43 Rue De Cartigny, Roubaix",
+          "country": "France"
+        },
+        {
+          "entity_id": "S3-137727332",
+          "business_name": "NA",
+          "business_address": "F-204 Samsara Luxury Appt, Chhani Jakat Naka T P 13, Vadodara, Gujarat",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-166772876",
+          "business_name": "NA",
+          "business_address": "3 R. De Lesticaire, Pessac, Nouvelle-Aquitaine",
+          "country": "France"
+        },
+        {
+          "entity_id": "S3-167591643",
+          "business_name": "NA",
+          "business_address": "80 Rue Félix Ménétrier, Nantes, Pays de la Loire",
+          "country": "France"
+        },
+        {
+          "entity_id": "S3-184111661",
+          "business_name": "NA",
+          "business_address": "Hauts-de-France, Dunkerque, 16 Rue de la Plage",
+          "country": "France"
+        },
+        {
+          "entity_id": "S3-237015806",
+          "business_name": "NA",
+          "business_address": "16 Bis Blvd Emile Romanet, Nantes, Loire-Atlantique",
+          "country": "France"
+        },
+        {
+          "entity_id": "S3-237198288",
+          "business_name": "NA",
+          "business_address": "S.No.670/71 Lower Indira, Nagar Ch. No. B 40/4, Pune City, Pune, Maharashtra",
+          "country": "India"
+        },
+        {
+          "entity_id": "S3-267206167",
+          "business_name": "NA",
+          "business_address": "19 Rue Eugene Tessier, Nantes, Loire-Atlantique",
+          "country": "France"
+        },
+        {
+          "entity_id": "S3-274625170",
+          "business_name": "NA",
+          "business_address": "31 Rue Rue De Pimodan, Nantes, Loire-Atlantique",
+          "country": "France"
+        },
+        {
+          "entity_id": "S3-278710471",
+          "business_name": "NA",
+          "business_address": "138 Route De Rennes, Nantes, Pays de la Loire",
+          "country": "France"
+        }
+      ]
+    }
+  },
+  "special_codepoint_samples": {
+    "train_source1": {
+      "U+001A UNNAMED": 3,
+      "U+0080 UNNAMED": 8,
+      "U+0099 UNNAMED": 2,
+      "U+0093 UNNAMED": 5,
+      "U+0098 UNNAMED": 1
+    },
+    "train_source2": {
+      "U+0080 UNNAMED": 14,
+      "U+0093 UNNAMED": 14,
+      "U+001A UNNAMED": 3,
+      "U+200C ZERO WIDTH NON-JOINER": 15
+    },
+    "train_source3": {
+      "U+0080 UNNAMED": 11,
+      "U+0093 UNNAMED": 9,
+      "U+001A UNNAMED": 1,
+      "U+0098 UNNAMED": 1,
+      "U+0099 UNNAMED": 1,
+      "U+200C ZERO WIDTH NON-JOINER": 11
+    },
+    "test_source1": {
+      "U+0080 UNNAMED": 9,
+      "U+0093 UNNAMED": 6,
+      "U+001A UNNAMED": 4,
+      "U+0098 UNNAMED": 1,
+      "U+0099 UNNAMED": 2
+    },
+    "test_source2": {
+      "U+0080 UNNAMED": 11,
+      "U+0093 UNNAMED": 11,
+      "U+001A UNNAMED": 4,
+      "U+200C ZERO WIDTH NON-JOINER": 14
+    },
+    "test_source3": {
+      "U+0080 UNNAMED": 9,
+      "U+0093 UNNAMED": 8,
+      "U+001A UNNAMED": 2,
+      "U+0099 UNNAMED": 1,
+      "U+200C ZERO WIDTH NON-JOINER": 14
+    }
+  },
+  "reference_collision_examples": {
+    "train": [],
+    "test": [
+      {
+        "entity_id": "S1-202327133",
+        "business_name": "Lille Club SAS",
+        "business_address": "72-74 RUE Royale, Maison des associations, Lille, Hauts-de-France",
+        "country": "France",
+        "name_key": "lille club sas",
+        "address_key": "72 74 rue royale maison des associations lille hauts de france"
+      },
+      {
+        "entity_id": "S1-628518958",
+        "business_name": "Lille Club SAS",
+        "business_address": "72 -74 RUE Royale, Maison des Associations, Lille, Hauts-de-France",
+        "country": "France",
+        "name_key": "lille club sas",
+        "address_key": "72 74 rue royale maison des associations lille hauts de france"
+      }
+    ]
+  }
+}

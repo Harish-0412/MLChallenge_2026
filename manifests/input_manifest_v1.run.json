@@ -1,0 +1,51 @@
+{
+  "cpu_count": 12,
+  "created_utc": "2026-09-26T03:12:32.067237+00:00",
+  "duckdb": "1.4.3",
+  "duckdb_memory_limit": "4GB",
+  "duckdb_seconds": {
+    "test_source1": 2.48,
+    "test_source2": 6.41,
+    "test_source3": 6.44,
+    "train_source1": 2.85,
+    "train_source2": 6.25,
+    "train_source3": 6.58
+  },
+  "duckdb_threads": 4,
+  "manifest_sha256": "046b2b1d58a703c9200850da410dc26351c0eeb8e2e916b44becc6c990114ce1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "pyarrow": "25.0.1",
+  "python": "3.12.14",
+  "python_parse_workers": {
+    "test_source1": {
+      "peak_memory_mb": 716,
+      "seconds": 9.73
+    },
+    "test_source2": {
+      "peak_memory_mb": 451,
+      "seconds": 28.21
+    },
+    "test_source3": {
+      "peak_memory_mb": 716,
+      "seconds": 29.81
+    },
+    "train_ground_truth": {
+      "peak_memory_mb": 716,
+      "seconds": 20.64
+    },
+    "train_source1": {
+      "peak_memory_mb": 451,
+      "seconds": 11.49
+    },
+    "train_source2": {
+      "peak_memory_mb": 716,
+      "seconds": 28.31
+    },
+    "train_source3": {
+      "peak_memory_mb": 716,
+      "seconds": 29.91
+    }
+  },
+  "seconds_total": 90.65,
+  "workers": 4
+}

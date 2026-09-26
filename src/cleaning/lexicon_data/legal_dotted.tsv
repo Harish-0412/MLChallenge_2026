@@ -1,0 +1,23 @@
+collapsed	category	observed_count	evidence
+llc	legal	235309	US names L.L.C. / l.l.c., counted over all six files
+pc	legal	132665	US names P.C.
+llp	legal	57039	India names L.L.P.
+sas	legal	29153	France S.A.S / S.A.S. (28,286) and India S.A.S (867)
+pa	legal	21852	US names P.A.
+pllc	legal	13380	US names P.L.L.C.
+sarl	legal	13117	France names S.A.R.L.
+eurl	legal	10318	France names E.U.R.L.
+sa	legal	8104	France names S.A.
+sasu	legal	7073	France names S.A.S.U.
+sci	legal	5956	France names S.C.I.
+ei	legal	2136	France names E.I.
+snc	legal	1618	France names S.N.C.
+lc	legal	287	US names L.C.
+md	credential	54526	US professional credential M.D.; joined for consistency, not a legal form
+dc	credential	23037	US names D.C.
+lcsw	credential	22753	US names L.C.S.W.
+dds	credential	22547	US names D.D.S.
+do	credential	22197	US names D.O.
+od	credential	21487	US names O.D.
+dd	credential	258	US names D.D.
+dba	dba	18039	D.B.A. (US 10,644; India 6,423; France 972)

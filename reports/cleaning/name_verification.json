@@ -1,0 +1,52 @@
+{
+  "audit_mismatches": [],
+  "checks": {
+    "every_row_scanned": true,
+    "no_other_scripts_as_in_eda": true,
+    "no_structural_violations": true,
+    "placeholder_counts_equal_audit_sql": true,
+    "python_counts_equal_independent_sql": true,
+    "script_bitmask_equals_eda_census_exactly": true
+  },
+  "collisions_file": "name_view_collisions.csv",
+  "lexicon_sha256": {
+    "appended_noise.tsv": "b574511251cc43e6e78d6aa2f70679a861699e563c8603372ac06d0e354fb092",
+    "country_tiers.tsv": "9b346167b597b3dcde561b3059bc0e4dde4408749db310cd68f1939f644d4af2",
+    "dotted_excluded.tsv": "c8090d86912932b66bb74067665227f8bf338d6f01b21a13245bd3766fddf870",
+    "generic_tokens.tsv": "e881bd92512ece5f9b4eb3860e76a4961a6d67529223cf64ceac8dcddf6138a9",
+    "legal_dotted.tsv": "b2334b356883d6eec3091b09c7326a2a3be7e55fa7187306653300b9d161558c",
+    "legal_forms.tsv": "3b46effac1d594c58c5869fedb5029e12ade48cf533dde2ecf6ec626106f3cff",
+    "name_noise_tokens.tsv": "685fb246319a392fcd85b1f2dd1d334a2876b8f4f3bb952dd58e2c4fae9043c9",
+    "placeholders.tsv": "47cd9deb359058f1356fe18695c4c38dac51c4da1bc2bb8afc9d9fcb7273ccbd"
+  },
+  "passed": true,
+  "peak_worker_memory_mb": 263,
+  "rows_per_second_wall": 19911,
+  "rows_scanned": 24229173,
+  "script_census": {
+    "cells_compared": 270,
+    "mismatches": [],
+    "other_script_rows": 0
+  },
+  "sql_mismatches": [],
+  "totals": {
+    "bracket_text": 1762733,
+    "core_differs_v1": 16817563,
+    "domain_like": 614768,
+    "fallback": 501,
+    "has_legal_form": 15687432,
+    "indic_names": 1620114,
+    "indic_names_with_legal_form": 1480905,
+    "mixed_script_names": 113896,
+    "ms_pattern_rows": 117778,
+    "ninformative_0": 3554566,
+    "ninformative_1": 8837115,
+    "noise_prefix": 332691,
+    "placeholder": 134,
+    "rows": 24229173,
+    "trim_changes": 2355357
+  },
+  "us_per_row_cpu": 299.7,
+  "violations": {},
+  "wall_seconds": 1216.9
+}

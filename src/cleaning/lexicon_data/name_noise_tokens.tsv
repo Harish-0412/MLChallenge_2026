@@ -1,0 +1,9 @@
+kind	token	observed_count	evidence
+leading	the	97843	train names with `the` as first token: S1 1,918 / S2 42,317 / S3 53,608
+leading	dr	55103	train names with `dr` as first token: S1 86 / S2 25,749 / S3 29,268
+leading	mr	55037	train names with `mr` as first token: S1 61 / S2 25,514 / S3 29,462
+leading	sri	55027	train names with `sri` as first token: S1 15 / S2 25,652 / S3 29,360
+leading	shri	54904	train names with `shri` as first token: S1 3 / S2 25,702 / S3 29,199
+leading	smt	54757	train names with `smt` as first token: S1 3 / S2 25,476 / S3 29,278
+leading_pattern	m/s	54994	train names starting with M/s (raw pattern): S1 10 / S2 25,677 / S3 29,307
+connector	and	297717	train names with `and` as a token: S1 57,296 / S2 118,201 / S3 122,220

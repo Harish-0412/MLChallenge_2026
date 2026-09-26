@@ -1,0 +1,149 @@
+country	form	canonical	kind	observed_s1	observed_s2	observed_s3	evidence
+US	al	alabama	code	32583	71647	3779	whole-segment occurrences in train S1/S2/S3: 32,583 / 71,647 / 3,779
+US	alabama	alabama	name	13	16	71631	whole-segment occurrences in train S1/S2/S3: 13 / 16 / 71,631
+US	ak	alaska	code	3680	8093	421	whole-segment occurrences in train S1/S2/S3: 3,680 / 8,093 / 421
+US	alaska	alaska	name	0	0	8185	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 8,185
+US	az	arizona	code	56535	124397	6431	whole-segment occurrences in train S1/S2/S3: 56,535 / 124,397 / 6,431
+US	arizona	arizona	name	0	0	124371	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 124,371
+US	ar	arkansas	code	27099	59458	3190	whole-segment occurrences in train S1/S2/S3: 27,099 / 59,458 / 3,190
+US	arkansas	arkansas	name	0	0	59650	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 59,650
+US	ca	california	code	37396	82063	4174	whole-segment occurrences in train S1/S2/S3: 37,396 / 82,063 / 4,174
+US	california	california	name	145	295	82539	whole-segment occurrences in train S1/S2/S3: 145 / 295 / 82,539
+US	co	colorado	code	4254	9345	480	whole-segment occurrences in train S1/S2/S3: 4,254 / 9,345 / 480
+US	colorado	colorado	name	0	1	9375	whole-segment occurrences in train S1/S2/S3: 0 / 1 / 9,375
+US	ct	connecticut	code	18427	40691	2095	whole-segment occurrences in train S1/S2/S3: 18,427 / 40,691 / 2,095
+US	connecticut	connecticut	name	0	0	40292	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 40,292
+US	de	delaware	code	8726	18890	1003	whole-segment occurrences in train S1/S2/S3: 8,726 / 18,890 / 1,003
+US	delaware	delaware	name	524	1019	20348	whole-segment occurrences in train S1/S2/S3: 524 / 1,019 / 20,348
+US	dc	district of columbia	code	6764	14857	801	whole-segment occurrences in train S1/S2/S3: 6,764 / 14,857 / 801
+US	district of columbia	district of columbia	name	0	0	14894	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 14,894
+US	fl	florida	code	675	1477	84	whole-segment occurrences in train S1/S2/S3: 675 / 1,477 / 84
+US	florida	florida	name	72	120	1587	whole-segment occurrences in train S1/S2/S3: 72 / 120 / 1,587
+US	ga	georgia	code	3255	7176	367	whole-segment occurrences in train S1/S2/S3: 3,255 / 7,176 / 367
+US	georgia	georgia	name	28	48	7170	whole-segment occurrences in train S1/S2/S3: 28 / 48 / 7,170
+US	id	idaho	code	1174	2588	148	whole-segment occurrences in train S1/S2/S3: 1,174 / 2,588 / 148
+US	idaho	idaho	name	0	0	2575	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 2,575
+US	il	illinois	code	75660	165845	8596	whole-segment occurrences in train S1/S2/S3: 75,660 / 165,845 / 8,596
+US	illinois	illinois	name	0	1	166146	whole-segment occurrences in train S1/S2/S3: 0 / 1 / 166,146
+US	in	indiana	code	49413	108186	5624	whole-segment occurrences in train S1/S2/S3: 49,413 / 108,186 / 5,624
+US	indiana	indiana	name	90	214	108841	whole-segment occurrences in train S1/S2/S3: 90 / 214 / 108,841
+US	ia	iowa	code	22479	48987	2525	whole-segment occurrences in train S1/S2/S3: 22,479 / 48,987 / 2,525
+US	iowa	iowa	name	0	0	49442	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 49,442
+US	ks	kansas	code	15739	34570	1803	whole-segment occurrences in train S1/S2/S3: 15,739 / 34,570 / 1,803
+US	kansas	kansas	name	32	67	34489	whole-segment occurrences in train S1/S2/S3: 32 / 67 / 34,489
+US	ky	kentucky	code	29475	64859	3344	whole-segment occurrences in train S1/S2/S3: 29,475 / 64,859 / 3,344
+US	kentucky	kentucky	name	0	0	64576	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 64,576
+US	la	louisiana	code	4278	9371	495	whole-segment occurrences in train S1/S2/S3: 4,278 / 9,371 / 495
+US	louisiana	louisiana	name	0	0	9390	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 9,390
+US	me	maine	code	12123	26559	1291	whole-segment occurrences in train S1/S2/S3: 12,123 / 26,559 / 1,291
+US	maine	maine	name	51	60	26556	whole-segment occurrences in train S1/S2/S3: 51 / 60 / 26,556
+US	md	maryland	code	40657	88948	4666	whole-segment occurrences in train S1/S2/S3: 40,657 / 88,948 / 4,666
+US	maryland	maryland	name	29	56	89548	whole-segment occurrences in train S1/S2/S3: 29 / 56 / 89,548
+US	ma	massachusetts	code	56804	124727	6440	whole-segment occurrences in train S1/S2/S3: 56,804 / 124,727 / 6,440
+US	massachusetts	massachusetts	name	0	0	124938	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 124,938
+US	mn	minnesota	code	31135	68211	3546	whole-segment occurrences in train S1/S2/S3: 31,135 / 68,211 / 3,546
+US	minnesota	minnesota	name	0	0	68314	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 68,314
+US	mo	missouri	code	25953	57153	3042	whole-segment occurrences in train S1/S2/S3: 25,953 / 57,153 / 3,042
+US	missouri	missouri	name	0	1	56527	whole-segment occurrences in train S1/S2/S3: 0 / 1 / 56,527
+US	mt	montana	code	10012	21930	1064	whole-segment occurrences in train S1/S2/S3: 10,012 / 21,930 / 1,064
+US	montana	montana	name	0	0	22199	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 22,199
+US	ne	nebraska	code	5732	12463	655	whole-segment occurrences in train S1/S2/S3: 5,732 / 12,463 / 655
+US	nebraska	nebraska	name	0	0	12551	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 12,551
+US	nevada	nevada	name	175	303	317	whole-segment occurrences in train S1/S2/S3: 175 / 303 / 317
+US	nm	new mexico	code	11635	25587	1317	whole-segment occurrences in train S1/S2/S3: 11,635 / 25,587 / 1,317
+US	new mexico	new mexico	name	0	0	25757	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 25,757
+US	ny	new york	code	102340	225303	11611	whole-segment occurrences in train S1/S2/S3: 102,340 / 225,303 / 11,611
+US	new york	new york	name	1013	1774	225134	whole-segment occurrences in train S1/S2/S3: 1,013 / 1,774 / 225,134
+US	nc	north carolina	code	94673	207446	10920	whole-segment occurrences in train S1/S2/S3: 94,673 / 207,446 / 10,920
+US	north carolina	north carolina	name	0	0	207870	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 207,870
+US	nd	north dakota	code	6704	14793	732	whole-segment occurrences in train S1/S2/S3: 6,704 / 14,793 / 732
+US	north dakota	north dakota	name	0	0	14770	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 14,770
+US	oh	ohio	code	85246	187346	9777	whole-segment occurrences in train S1/S2/S3: 85,246 / 187,346 / 9,777
+US	ohio	ohio	name	37	53	187260	whole-segment occurrences in train S1/S2/S3: 37 / 53 / 187,260
+US	ok	oklahoma	code	22719	49808	2630	whole-segment occurrences in train S1/S2/S3: 22,719 / 49,808 / 2,630
+US	oklahoma	oklahoma	name	0	0	49767	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 49,767
+US	or	oregon	code	29826	65669	3447	whole-segment occurrences in train S1/S2/S3: 29,826 / 65,669 / 3,447
+US	oregon	oregon	name	200	477	66060	whole-segment occurrences in train S1/S2/S3: 200 / 477 / 66,060
+US	pa	pennsylvania	code	11827	25859	1338	whole-segment occurrences in train S1/S2/S3: 11,827 / 25,859 / 1,338
+US	pennsylvania	pennsylvania	name	0	0	25991	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 25,991
+US	ri	rhode island	code	753	1659	78	whole-segment occurrences in train S1/S2/S3: 753 / 1,659 / 78
+US	rhode island	rhode island	name	0	0	1641	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 1,641
+US	sc	south carolina	code	3310	7190	383	whole-segment occurrences in train S1/S2/S3: 3,310 / 7,190 / 383
+US	south carolina	south carolina	name	0	0	7380	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 7,380
+US	sd	south dakota	code	1381	3067	154	whole-segment occurrences in train S1/S2/S3: 1,381 / 3,067 / 154
+US	south dakota	south dakota	name	0	0	3119	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 3,119
+US	tn	tennessee	code	59648	130908	6835	whole-segment occurrences in train S1/S2/S3: 59,648 / 130,908 / 6,835
+US	tennessee	tennessee	name	3	8	130965	whole-segment occurrences in train S1/S2/S3: 3 / 8 / 130,965
+US	tx	texas	code	133202	292287	15236	whole-segment occurrences in train S1/S2/S3: 133,202 / 292,287 / 15,236
+US	texas	texas	name	0	0	292783	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 292,783
+US	ut	utah	code	23122	50540	2668	whole-segment occurrences in train S1/S2/S3: 23,122 / 50,540 / 2,668
+US	utah	utah	name	0	0	50673	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 50,673
+US	vt	vermont	code	5253	11561	619	whole-segment occurrences in train S1/S2/S3: 5,253 / 11,561 / 619
+US	vermont	vermont	name	6	11	11552	whole-segment occurrences in train S1/S2/S3: 6 / 11 / 11,552
+US	va	virginia	code	59579	131102	6755	whole-segment occurrences in train S1/S2/S3: 59,579 / 131,102 / 6,755
+US	virginia	virginia	name	91	174	131198	whole-segment occurrences in train S1/S2/S3: 91 / 174 / 131,198
+US	wa	washington	code	42179	92674	4779	whole-segment occurrences in train S1/S2/S3: 42,179 / 92,674 / 4,779
+US	washington	washington	name	7567	15496	109166	whole-segment occurrences in train S1/S2/S3: 7,567 / 15,496 / 109,166
+US	wv	west virginia	code	15907	35072	1800	whole-segment occurrences in train S1/S2/S3: 15,907 / 35,072 / 1,800
+US	west virginia	west virginia	name	0	0	34823	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 34,823
+US	wi	wisconsin	code	31434	69015	3525	whole-segment occurrences in train S1/S2/S3: 31,434 / 69,015 / 3,525
+US	wisconsin	wisconsin	name	0	0	69238	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 69,238
+US	wy	wyoming	code	2868	6322	329	whole-segment occurrences in train S1/S2/S3: 2,868 / 6,322 / 329
+US	wyoming	wyoming	name	83	165	6459	whole-segment occurrences in train S1/S2/S3: 83 / 165 / 6,459
+India	mh	maharashtra	code	26	53	317187	whole-segment occurrences in train S1/S2/S3: 26 / 53 / 317,187
+India	maharashtra	maharashtra	name	191982	319186	22724	whole-segment occurrences in train S1/S2/S3: 191,982 / 319,186 / 22,724
+India	महाराष्ट्र	maharashtra	native	0	107011	105802	whole-segment occurrences in train S1/S2/S3: 0 / 107,011 / 105,802
+India	dl	delhi	code	4	8	201276	whole-segment occurrences in train S1/S2/S3: 4 / 8 / 201,276
+India	delhi	delhi	name	155292	276145	99997	whole-segment occurrences in train S1/S2/S3: 155,292 / 276,145 / 99,997
+India	दिल्ली	delhi	native	0	66916	66954	whole-segment occurrences in train S1/S2/S3: 0 / 66,916 / 66,954
+India	up	uttar pradesh	code	156	317	122074	whole-segment occurrences in train S1/S2/S3: 156 / 317 / 122,074
+India	uttar pradesh	uttar pradesh	name	75177	125428	11837	whole-segment occurrences in train S1/S2/S3: 75,177 / 125,428 / 11,837
+India	उत्तर प्रदेश	uttar pradesh	native	0	40926	40803	whole-segment occurrences in train S1/S2/S3: 0 / 40,926 / 40,803
+India	ka	karnataka	code	136	266	115869	whole-segment occurrences in train S1/S2/S3: 136 / 266 / 115,869
+India	karnataka	karnataka	name	70329	117795	8713	whole-segment occurrences in train S1/S2/S3: 70,329 / 117,795 / 8,713
+India	ಕರ್ನಾಟಕ	karnataka	native	0	38560	38974	whole-segment occurrences in train S1/S2/S3: 0 / 38,560 / 38,974
+India	tn	tamil nadu	code	16	32	104350	whole-segment occurrences in train S1/S2/S3: 16 / 32 / 104,350
+India	tamil nadu	tamil nadu	name	63490	105807	7717	whole-segment occurrences in train S1/S2/S3: 63,490 / 105,807 / 7,717
+India	தமிழ்நாடு	tamil nadu	native	0	34777	34978	whole-segment occurrences in train S1/S2/S3: 0 / 34,777 / 34,978
+India	wb	west bengal	code	2	5	94843	whole-segment occurrences in train S1/S2/S3: 2 / 5 / 94,843
+India	west bengal	west bengal	name	57008	95307	6812	whole-segment occurrences in train S1/S2/S3: 57,008 / 95,307 / 6,812
+India	পশ্চিমবঙ্গ	west bengal	native	0	31770	31448	whole-segment occurrences in train S1/S2/S3: 0 / 31,770 / 31,448
+India	gj	gujarat	code	0	0	95134	whole-segment occurrences in train S1/S2/S3: 0 / 0 / 95,134
+India	gujarat	gujarat	name	57658	95911	7080	whole-segment occurrences in train S1/S2/S3: 57,658 / 95,911 / 7,080
+India	ગુજરાત	gujarat	native	0	31543	31517	whole-segment occurrences in train S1/S2/S3: 0 / 31,543 / 31,517
+India	tg	telangana	code	2	5	73977	whole-segment occurrences in train S1/S2/S3: 2 / 5 / 73,977
+India	telangana	telangana	name	56192	75418	6808	whole-segment occurrences in train S1/S2/S3: 56,192 / 75,418 / 6,808
+India	తెలంగాణ	telangana	native	0	24938	24898	whole-segment occurrences in train S1/S2/S3: 0 / 24,938 / 24,898
+India	hr	haryana	code	73	137	59535	whole-segment occurrences in train S1/S2/S3: 73 / 137 / 59,535
+India	haryana	haryana	name	36726	61413	6266	whole-segment occurrences in train S1/S2/S3: 36,726 / 61,413 / 6,266
+India	हरियाणा	haryana	native	0	19734	19600	whole-segment occurrences in train S1/S2/S3: 0 / 19,734 / 19,600
+India	rj	rajasthan	code	1	1	53167	whole-segment occurrences in train S1/S2/S3: 1 / 1 / 53,167
+India	rajasthan	rajasthan	name	32374	54135	4140	whole-segment occurrences in train S1/S2/S3: 32,374 / 54,135 / 4,140
+India	राजस्थान	rajasthan	native	0	17862	17786	whole-segment occurrences in train S1/S2/S3: 0 / 17,862 / 17,786
+India	kl	kerala	code	12	19	46932	whole-segment occurrences in train S1/S2/S3: 12 / 19 / 46,932
+India	kerala	kerala	name	35665	47824	4567	whole-segment occurrences in train S1/S2/S3: 35,665 / 47,824 / 4,567
+India	കേരളം	kerala	native	0	15680	15379	whole-segment occurrences in train S1/S2/S3: 0 / 15,680 / 15,379
+India	br	bihar	code	6	13	37522	whole-segment occurrences in train S1/S2/S3: 6 / 13 / 37,522
+India	bihar	bihar	name	23079	38745	2997	whole-segment occurrences in train S1/S2/S3: 23,079 / 38,745 / 2,997
+India	बिहार	bihar	native	0	12619	12568	whole-segment occurrences in train S1/S2/S3: 0 / 12,619 / 12,568
+India	mp	madhya pradesh	code	29	57	37472	whole-segment occurrences in train S1/S2/S3: 29 / 57 / 37,472
+India	madhya pradesh	madhya pradesh	name	22574	37527	2758	whole-segment occurrences in train S1/S2/S3: 22,574 / 37,527 / 2,758
+India	मध्य प्रदेश	madhya pradesh	native	0	12455	12348	whole-segment occurrences in train S1/S2/S3: 0 / 12,455 / 12,348
+India	ap	andhra pradesh	code	64	84	28992	whole-segment occurrences in train S1/S2/S3: 64 / 84 / 28,992
+India	andhra pradesh	andhra pradesh	name	18078	54327	28811	whole-segment occurrences in train S1/S2/S3: 18,078 / 54,327 / 28,811
+India	ఆంధ్రప్రదేశ్	andhra pradesh	native	0	9444	9426	whole-segment occurrences in train S1/S2/S3: 0 / 9,444 / 9,426
+India	pb	punjab	code	2	3	21579	whole-segment occurrences in train S1/S2/S3: 2 / 3 / 21,579
+India	punjab	punjab	name	13603	22824	3096	whole-segment occurrences in train S1/S2/S3: 13,603 / 22,824 / 3,096
+India	ਪੰਜਾਬ	punjab	native	0	7129	7195	whole-segment occurrences in train S1/S2/S3: 0 / 7,129 / 7,195
+India	od	odisha	code	9	21	18353	whole-segment occurrences in train S1/S2/S3: 9 / 21 / 18,353
+India	odisha	odisha	name	75	18728	128	whole-segment occurrences in train S1/S2/S3: 75 / 18,728 / 128
+India	ଓଡ଼ିଶା	odisha	native	0	6157	6102	whole-segment occurrences in train S1/S2/S3: 0 / 6,157 / 6,102
+India	orissa	odisha	alias	13940	6324	7837	whole-segment occurrences in train S1/S2/S3: 13,940 / 6,324 / 7,837
+India	keralam	kerala	alias	0	15795	15899	whole-segment occurrences in train S1/S2/S3: 0 / 15,795 / 15,899
+France	hauts de france	hauts de france	name	101521	88036	98929	whole-segment occurrences in test (unlabeled) S1/S2/S3: 101,521 / 88,036 / 98,929
+France	nouvelle aquitaine	nouvelle aquitaine	name	85197	74122	82825	whole-segment occurrences in test (unlabeled) S1/S2/S3: 85,197 / 74,122 / 82,825
+France	pays de la loire	pays de la loire	name	72734	62900	71312	whole-segment occurrences in test (unlabeled) S1/S2/S3: 72,734 / 62,900 / 71,312
+France	nord	hauts de france	department	0	74891	75969	whole-segment occurrences in test (unlabeled) S1/S2/S3: 0 / 74,891 / 75,969
+France	pas de calais	hauts de france	department	0	13840	13998	whole-segment occurrences in test (unlabeled) S1/S2/S3: 0 / 13,840 / 13,998
+France	gironde	nouvelle aquitaine	department	0	74953	75467	whole-segment occurrences in test (unlabeled) S1/S2/S3: 0 / 74,953 / 75,467
+France	loire atlantique	pays de la loire	department	0	63087	63797	whole-segment occurrences in test (unlabeled) S1/S2/S3: 0 / 63,087 / 63,797

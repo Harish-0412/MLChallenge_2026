@@ -1,0 +1,69 @@
+{
+  "input_checksums_unchanged": true,
+  "parquet_checks": [
+    {
+      "file": "train_source1",
+      "rows": 2206821,
+      "count_and_row_hash_sum_agree": true
+    },
+    {
+      "file": "train_source2",
+      "rows": 5034616,
+      "count_and_row_hash_sum_agree": true
+    },
+    {
+      "file": "train_source3",
+      "rows": 5285603,
+      "count_and_row_hash_sum_agree": true
+    },
+    {
+      "file": "test_source1",
+      "rows": 1732544,
+      "count_and_row_hash_sum_agree": true
+    },
+    {
+      "file": "test_source2",
+      "rows": 4887273,
+      "count_and_row_hash_sum_agree": true
+    },
+    {
+      "file": "test_source3",
+      "rows": 5082316,
+      "count_and_row_hash_sum_agree": true
+    }
+  ],
+  "normalization_sample_checks": [
+    {
+      "file": "train_source1",
+      "records_checked": 2211,
+      "python_sql_agree": true
+    },
+    {
+      "file": "train_source2",
+      "records_checked": 5000,
+      "python_sql_agree": true
+    },
+    {
+      "file": "train_source3",
+      "records_checked": 5000,
+      "python_sql_agree": true
+    },
+    {
+      "file": "test_source1",
+      "records_checked": 1636,
+      "python_sql_agree": true
+    },
+    {
+      "file": "test_source2",
+      "records_checked": 4890,
+      "python_sql_agree": true
+    },
+    {
+      "file": "test_source3",
+      "records_checked": 5000,
+      "python_sql_agree": true
+    }
+  ],
+  "complete": true,
+  "notes": "Parquet checks compare row counts and aggregate hashes against the audit database; they are not a formal collision-free equality proof. Raw-file SHA-256 was rechecked against pre-import values."
+}

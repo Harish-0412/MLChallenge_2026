@@ -1,0 +1,10 @@
+kind	token	scope	evidence
+placeholder_segment	null	all	whole-segment occurrences in train US+India S1/S2/S3: 14 / 131,731 / 130,786
+placeholder_segment	n a	all	whole-segment occurrences in train US+India S1/S2/S3: 4 / 43,744 / 43,838
+placeholder_segment	divreportingcircle	India	whole-segment occurrences in train India S1/S2/S3: 0 / 2,056 / 6,178
+noise_token	cdp	US	v1 token occurrences US: S1 0 / S2+S3 116,500; lift 2030519.4x
+noise_token	pmb	US	v1 token occurrences US: S1 0 / S2+S3 162,985; lift 2840722.8x
+noise_pattern	po box	US	v1 token occurrences US: po S1 23 / S2+S3 162,774; box S1 220 / S2+S3 163,713 (an injected PO BOX n component)
+noise_token_number	hn	India	v1 token occurrences India: S1 948 / S2+S3 145,062; lift 33.7x
+noise_token	b3	India	v1 token occurrences India: S1 908 / S2+S3 104,681; lift 25.4x
+noise_segment_word	region	India	v1 token occurrences India: S1 5 / S2+S3 70,887; lift 3123.2x

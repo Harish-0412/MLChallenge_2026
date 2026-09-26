@@ -1,0 +1,59 @@
+tier	token	code	rank	observed_count	evidence
+generic	llc	LLC	10	2293323	names of all countries containing the token: S1 534,102 / S2 846,457 / S3 912,764 (v1 tokens, all splits)
+generic	llp	LLP	11	401422	names of all countries containing the token: S1 75,765 / S2 148,709 / S3 176,948 (v1 tokens, all splits)
+generic	lp	LP	12	173998	names of all countries containing the token: S1 25,022 / S2 76,487 / S3 72,489 (v1 tokens, all splits)
+generic	limited	LTD	20	3632182	names of all countries containing the token: S1 1,001,004 / S2 1,160,602 / S3 1,470,576 (v1 tokens, all splits)
+generic	ltd	LTD	20	1995958	names of all countries containing the token: S1 283,242 / S2 824,240 / S3 888,476 (v1 tokens, all splits)
+generic	inc	INC	30	1686638	names of all countries containing the token: S1 357,508 / S2 649,489 / S3 679,641 (v1 tokens, all splits)
+generic	incorporated	INC	30	74786	names of all countries containing the token: S1 12 / S2 40,884 / S3 33,890 (v1 tokens, all splits)
+generic	corp	CORP	40	566747	names of all countries containing the token: S1 55,003 / S2 257,571 / S3 254,173 (v1 tokens, all splits)
+generic	corporation	CORP	40	239278	names of all countries containing the token: S1 24,826 / S2 111,057 / S3 103,395 (v1 tokens, all splits)
+generic	co	CO	50	591319	names of all countries containing the token: S1 49,472 / S2 266,568 / S3 275,279 (v1 tokens, all splits)
+generic	company	CO	50	146190	names of all countries containing the token: S1 23,548 / S2 61,058 / S3 61,584 (v1 tokens, all splits)
+US	pllc	PLLC	13	108982	names of US containing the token: S1 30,751 / S2 36,716 / S3 41,515 (v1 tokens, all splits)
+US	pc	PC	14	161785	names of US containing the token: S1 40,468 / S2 57,135 / S3 64,182 (v1 tokens, all splits)
+US	pa	PA	15	1136	names of US containing the token: S1 44 / S2 536 / S3 556 (v1 tokens, all splits)
+IN	private	PVT	1	3324409	names of India containing the token: S1 828,276 / S2 1,127,928 / S3 1,368,205 (v1 tokens, all splits)
+IN	pvt	PVT	1	1111491	names of India containing the token: S1 232,319 / S2 406,742 / S3 472,430 (v1 tokens, all splits)
+FR	sarl	SARL	10	358676	names of France containing the token: S1 73,486 / S2 140,707 / S3 144,483 (v1 tokens, all splits)
+FR	sas	SAS	11	252882	names of France containing the token: S1 52,278 / S2 98,854 / S3 101,750 (v1 tokens, all splits)
+FR	sasu	SASU	12	73614	names of France containing the token: S1 10,721 / S2 31,209 / S3 31,684 (v1 tokens, all splits)
+FR	eurl	EURL	13	100795	names of France containing the token: S1 16,980 / S2 41,520 / S3 42,295 (v1 tokens, all splits)
+FR	sa	SA	14	82272	names of France containing the token: S1 12,766 / S2 34,398 / S3 35,108 (v1 tokens, all splits)
+FR	sci	SCI	15	63630	names of France containing the token: S1 8,360 / S2 27,373 / S3 27,897 (v1 tokens, all splits)
+FR	ei	EI	16	18496	names of France containing the token: S1 4,201 / S2 7,118 / S3 7,177 (v1 tokens, all splits)
+FR	snc	SNC	17	14764	names of France containing the token: S1 1 / S2 7,436 / S3 7,327 (v1 tokens, all splits)
+FR	cie	CIE	51	39162	names of France containing the token: S1 5,680 / S2 16,750 / S3 16,732 (v1 tokens, all splits)
+native	लिमिटेड	LTD	20	296635	Devanagari names in train S2+S3 India containing the token: 296,635 of 427,427 (69.4%); curated from native_legal_candidates.md
+native	लि	LTD	20	55393	Devanagari names in train S2+S3 India containing the token: 55,393 of 427,427 (13.0%); curated from native_legal_candidates.md
+native	प्राइवेट	PVT	1	246472	Devanagari names in train S2+S3 India containing the token: 246,472 of 427,427 (57.7%); curated from native_legal_candidates.md
+native	प्रा	PVT	1	55393	Devanagari names in train S2+S3 India containing the token: 55,393 of 427,427 (13.0%); curated from native_legal_candidates.md
+native	एलएलपी	LLP	11	24298	Devanagari names in train S2+S3 India containing the token: 24,298 of 427,427 (5.7%); curated from native_legal_candidates.md
+native	লিমিটেড	LTD	20	40348	Bengali names in train S2+S3 India containing the token: 40,348 of 48,867 (82.6%); curated from native_legal_candidates.md
+native	প্রাইভেট	PVT	1	34548	Bengali names in train S2+S3 India containing the token: 34,548 of 48,867 (70.7%); curated from native_legal_candidates.md
+native	এলএলপি	LLP	11	2696	Bengali names in train S2+S3 India containing the token: 2,696 of 48,867 (5.5%); curated from native_legal_candidates.md
+native	ਲਿਮਟਿਡ	LTD	20	7373	Gurmukhi names in train S2+S3 India containing the token: 7,373 of 10,794 (68.3%); curated from native_legal_candidates.md
+native	ਲਿ	LTD	20	1444	Gurmukhi names in train S2+S3 India containing the token: 1,444 of 10,794 (13.4%); curated from native_legal_candidates.md
+native	ਪ੍ਰਾਈਵੇਟ	PVT	1	6091	Gurmukhi names in train S2+S3 India containing the token: 6,091 of 10,794 (56.4%); curated from native_legal_candidates.md
+native	ਪ੍ਰਾ	PVT	1	1444	Gurmukhi names in train S2+S3 India containing the token: 1,444 of 10,794 (13.4%); curated from native_legal_candidates.md
+native	ਐਲਐਲਪੀ	LLP	11	588	Gurmukhi names in train S2+S3 India containing the token: 588 of 10,794 (5.4%); curated from native_legal_candidates.md
+native	લિમિટેડ	LTD	20	33910	Gujarati names in train S2+S3 India containing the token: 33,910 of 48,949 (69.3%); curated from native_legal_candidates.md
+native	લિ	LTD	20	6267	Gujarati names in train S2+S3 India containing the token: 6,267 of 48,949 (12.8%); curated from native_legal_candidates.md
+native	પ્રાઇવેટ	PVT	1	28199	Gujarati names in train S2+S3 India containing the token: 28,199 of 48,949 (57.6%); curated from native_legal_candidates.md
+native	પ્રા	PVT	1	6267	Gujarati names in train S2+S3 India containing the token: 6,267 of 48,949 (12.8%); curated from native_legal_candidates.md
+native	એલએલપી	LLP	11	2697	Gujarati names in train S2+S3 India containing the token: 2,697 of 48,949 (5.5%); curated from native_legal_candidates.md
+native	ଲିମିଟେଡ୍	LTD	20	9658	Oriya names in train S2+S3 India containing the token: 9,658 of 11,810 (81.8%); curated from native_legal_candidates.md
+native	ପ୍ରାଇଭେଟ୍	PVT	1	8353	Oriya names in train S2+S3 India containing the token: 8,353 of 11,810 (70.7%); curated from native_legal_candidates.md
+native	ଏଲ୍ଏଲ୍ପି	LLP	11	659	Oriya names in train S2+S3 India containing the token: 659 of 11,810 (5.6%); curated from native_legal_candidates.md
+native	லிமிடெட்	LTD	20	44199	Tamil names in train S2+S3 India containing the token: 44,199 of 53,571 (82.5%); curated from native_legal_candidates.md
+native	பிரைவேட்	PVT	1	38080	Tamil names in train S2+S3 India containing the token: 38,080 of 53,571 (71.1%); curated from native_legal_candidates.md
+native	எல்எல்பி	LLP	11	2913	Tamil names in train S2+S3 India containing the token: 2,913 of 53,571 (5.4%); curated from native_legal_candidates.md
+native	లిమిటెడ్	LTD	20	51485	Telugu names in train S2+S3 India containing the token: 51,485 of 62,356 (82.6%); curated from native_legal_candidates.md
+native	ప్రైవేట్	PVT	1	44401	Telugu names in train S2+S3 India containing the token: 44,401 of 62,356 (71.2%); curated from native_legal_candidates.md
+native	ఎల్ఎల్పీ	LLP	11	3495	Telugu names in train S2+S3 India containing the token: 3,495 of 62,356 (5.6%); curated from native_legal_candidates.md
+native	ಲಿಮಿಟೆಡ್	LTD	20	48968	Kannada names in train S2+S3 India containing the token: 48,968 of 59,206 (82.7%); curated from native_legal_candidates.md
+native	ಪ್ರೈವೇಟ್	PVT	1	41905	Kannada names in train S2+S3 India containing the token: 41,905 of 59,206 (70.8%); curated from native_legal_candidates.md
+native	ಎಲ್ಎಲ್ಪಿ	LLP	11	3282	Kannada names in train S2+S3 India containing the token: 3,282 of 59,206 (5.5%); curated from native_legal_candidates.md
+native	ലിമിറ്റഡ്	LTD	20	24811	Malayalam names in train S2+S3 India containing the token: 24,811 of 29,889 (83.0%); curated from native_legal_candidates.md
+native	പ്രൈവറ്റ്	PVT	1	21511	Malayalam names in train S2+S3 India containing the token: 21,511 of 29,889 (72.0%); curated from native_legal_candidates.md
+native	എൽഎൽപി	LLP	11	1631	Malayalam names in train S2+S3 India containing the token: 1,631 of 29,889 (5.5%); curated from native_legal_candidates.md

@@ -1,0 +1,2355 @@
+source,split,country,segment,n
+S1,test,France,Hauts-de-France,101521
+S1,test,France,Nouvelle-Aquitaine,85197
+S1,test,France,Pays de la Loire,72734
+S1,test,France,Bordeaux,42931
+S1,test,France,Nantes,37331
+S1,test,France,Lille,34176
+S1,test,France,Tourcoing,18153
+S1,test,France,Dunkerque,17067
+S1,test,France,Roubaix,16300
+S1,test,France,Calais,15826
+S1,test,France,Saint-Nazaire,13679
+S1,test,France,Pessac,12611
+S1,test,France,La Teste-de-Buch,11294
+S1,test,France,Mérignac,10287
+S1,test,France,Lège-Cap-Ferret,8072
+S1,test,France,Pornic,7831
+S1,test,France,La Baule-Escoublac,6957
+S1,test,France,Saint-Herblain,6935
+S2,test,France,BORDEAUX,100369
+S2,test,France,Hauts-de-France,88036
+S2,test,France,NANTES,86919
+S2,test,France,LILLE,79885
+S2,test,France,Gironde,74953
+S2,test,France,Nord,74891
+S2,test,France,Nouvelle-Aquitaine,74122
+S2,test,France,Loire-Atlantique,63087
+S2,test,France,Pays de la Loire,62900
+S2,test,France,TOURCOING,42283
+S2,test,France,DUNKERQUE,39749
+S2,test,France,ROUBAIX,38210
+S2,test,France,CALAIS,36533
+S2,test,France,PESSAC,29398
+S2,test,France,SAINT-NAZAIRE,23813
+S2,test,France,LA TESTE-DE-BUCH,22959
+S2,test,France,PORNIC,18332
+S2,test,France,MÉRIGNAC,16424
+S2,test,France,LA BAULE-ESCOUBLAC,14070
+S2,test,France,Pas-de-Calais,13840
+S2,test,France,Bordeaux,12723
+S2,test,France,SAINT-HERBLAIN,12271
+S2,test,France,LÈGE-CAP-FERRET,11508
+S2,test,France,Nantes,10970
+S2,test,France,Lille,10134
+S2,test,France,MERIGNAC,7095
+S2,test,France,Tourcoing,5356
+S2,test,France,Dunkerque,5058
+S2,test,France,LEGE-CAP-FERRET,4929
+S2,test,France,Roubaix,4916
+S2,test,France,Calais,4602
+S2,test,France,Saint-Nazaire,4112
+S2,test,France,ST-NAZAIRE,3967
+S2,test,France,ST.-NAZAIRE,3957
+S2,test,France,Pessac,3821
+S2,test,France,La Teste-de-Buch,3493
+S2,test,France,LA TESTE DE BUCH,3390
+S2,test,France,Mérignac,3243
+S2,test,France,Lège-Cap-Ferret,2522
+S2,test,France,Pornic,2318
+S2,test,France,La Baule-Escoublac,2147
+S2,test,France,Saint-Herblain,2077
+S2,test,France,ST.-HERBLAIN,2062
+S2,test,France,LA BAULE ESCOUBLAC,2009
+S3,test,France,Bordeaux,117641
+S3,test,France,Nantes,102067
+S3,test,France,Hauts-de-France,98929
+S3,test,France,Lille,93347
+S3,test,France,Nouvelle-Aquitaine,82825
+S3,test,France,Nord,75969
+S3,test,France,Gironde,75467
+S3,test,France,Pays de la Loire,71312
+S3,test,France,Loire-Atlantique,63797
+S3,test,France,Tourcoing,49441
+S3,test,France,Dunkerque,46760
+S3,test,France,Roubaix,44700
+S3,test,France,Calais,43238
+S3,test,France,Pessac,34739
+S3,test,France,Saint-nazaire,23832
+S3,test,France,La Teste-de-buch,22710
+S3,test,France,Pornic,21548
+S3,test,France,Mérignac,21011
+S3,test,France,La Baule-escoublac,14020
+S3,test,France,Pas-de-Calais,13998
+S3,test,France,Saint-herblain,12226
+S3,test,France,Lège-cap-ferret,11365
+S3,test,France,Merignac,7185
+S3,test,France,Saint-Nazaire,5710
+S3,test,France,Lege-cap-ferret,4887
+S3,test,France,La Teste-de-Buch,4863
+S3,test,France,St-nazaire,3998
+S3,test,France,St.-nazaire,3910
+S3,test,France,Lège-Cap-Ferret,3451
+S3,test,France,La Teste De Buch,3417
+S3,test,France,La Baule-Escoublac,3013
+S3,test,France,Saint-Herblain,2847
+S3,test,France,St-herblain,2021
+S1,train,India,Maharashtra,191972
+S1,test,India,Maharashtra,175984
+S1,train,India,Delhi,155269
+S1,test,India,Delhi,141718
+S1,train,India,Mumbai,81293
+S1,train,India,New Delhi,76725
+S1,train,India,Uttar Pradesh,75174
+S1,test,India,Mumbai,74699
+S1,train,India,Karnataka,70307
+S1,test,India,New Delhi,69818
+S1,test,India,Uttar Pradesh,68749
+S1,test,India,Karnataka,65132
+S1,train,India,Tamil Nadu,63482
+S1,train,India,Bangalore,60749
+S1,test,India,Tamil Nadu,58641
+S1,train,India,Gujarat,57654
+S1,train,India,West Bengal,57007
+S1,test,India,Bangalore,56425
+S1,train,India,Telangana,56189
+S1,train,India,Kolkata,54271
+S1,test,India,Gujarat,52961
+S1,test,India,West Bengal,52592
+S1,test,India,Telangana,51474
+S1,test,India,Kolkata,50179
+S1,train,India,Hyderabad,47645
+S1,train,India,Pune,44892
+S1,test,India,Hyderabad,43508
+S1,test,India,Pune,41329
+S1,train,India,Mumbai City,37843
+S1,train,India,Haryana,36714
+S1,train,India,Kerala,35662
+S1,test,India,Mumbai City,34748
+S1,test,India,Haryana,33703
+S1,test,India,Kerala,32575
+S1,train,India,Chennai,32535
+S1,train,India,Rajasthan,32358
+S1,test,India,Chennai,30292
+S1,train,India,Howrah,29632
+S1,test,India,Rajasthan,29321
+S1,train,India,Thane,27876
+S1,test,India,Howrah,27439
+S1,train,India,Ahmedabad,25987
+S1,test,India,Thane,25548
+S1,train,India,South Delhi,24198
+S1,test,India,Ahmedabad,23798
+S1,train,India,Bihar,23077
+S1,train,India,Madhya Pradesh,22574
+S1,test,India,South Delhi,22002
+S1,test,India,Bihar,21481
+S1,test,India,Madhya Pradesh,20684
+S1,train,India,Gurgaon,19154
+S1,train,India,Jaipur,18831
+S1,train,India,Andhra Pradesh,18072
+S1,test,India,Gurgaon,17548
+S1,test,India,Jaipur,17080
+S1,test,India,Andhra Pradesh,16352
+S1,train,India,2Nd Floor,15240
+S1,train,India,Lucknow,14883
+S1,train,India,1St Floor,14477
+S1,train,India,East Delhi,14462
+S1,train,India,Gautam Buddha Nagar,14420
+S1,test,India,2Nd Floor,13953
+S1,train,India,Orissa,13936
+S1,train,India,West Delhi,13839
+S1,test,India,Lucknow,13626
+S1,train,India,Punjab,13600
+S1,test,India,1St Floor,13195
+S1,test,India,Gautam Buddha Nagar,13161
+S1,test,India,East Delhi,13128
+S1,train,India,Ground Floor,13082
+S1,test,India,Orissa,12942
+S1,test,India,West Delhi,12722
+S1,test,India,Punjab,12271
+S1,test,India,Ground Floor,11935
+S1,train,India,Noida,11796
+S1,train,India,Patna,11187
+S1,train,India,Ernakulam,11091
+S1,train,India,Ghaziabad,11030
+S1,test,India,Noida,10896
+S1,train,India,South West Delhi,10786
+S1,train,India,3Rd Floor,10708
+S1,test,India,Patna,10311
+S1,train,India,Bangalore North,10263
+S1,test,India,Ernakulam,10142
+S1,test,India,Ghaziabad,10041
+S1,train,India,Surat,9980
+S1,test,India,South West Delhi,9944
+S1,test,India,3Rd Floor,9729
+S1,train,India,Indore,9609
+S1,train,India,Pune City,9607
+S1,train,India,Coimbatore,9521
+S1,test,India,Bangalore North,9496
+S1,train,India,First Floor,9258
+S1,test,India,Surat,9230
+S1,test,India,Coimbatore,8848
+S1,test,India,Pune City,8809
+S1,test,India,Indore,8767
+S1,train,India,Bangalore South,8718
+S1,test,India,First Floor,8590
+S1,train,India,Calcutta,8561
+S1,train,India,Central Delhi,8489
+S1,train,India,Nagpur,8248
+S1,test,India,Bangalore South,8173
+S1,test,India,Calcutta,8061
+S1,test,India,Central Delhi,7764
+S1,test,India,Nagpur,7499
+S1,train,India,North Delhi,7011
+S1,train,India,Khordha,6947
+S1,train,India,Bhubaneswar,6683
+S1,train,India,Rangareddy,6575
+S1,train,India,Faridabad,6548
+S1,test,India,North Delhi,6470
+S1,test,India,Khordha,6372
+S1,train,India,4Th Floor,6367
+S1,test,India,Faridabad,6174
+S1,test,India,Bhubaneswar,6151
+S1,train,India,Rajkot,6079
+S1,test,India,Rangareddy,6071
+S1,train,India,Thiruvananthapuram,6050
+S1,train,India,Vadodara,5979
+S1,train,India,Nashik,5957
+S1,test,India,4Th Floor,5893
+S1,train,India,North West,5782
+S1,train,India,Navi Mumbai,5750
+S1,train,India,Ahmadabad City,5615
+S1,train,India,North West Delhi,5598
+S1,test,India,Rajkot,5573
+S1,test,India,Vadodara,5514
+S1,test,India,Thiruvananthapuram,5483
+S1,test,India,Nashik,5415
+S1,test,India,North West,5378
+S1,test,India,Navi Mumbai,5341
+S1,test,India,North West Delhi,5138
+S1,test,India,Ahmadabad City,5098
+S1,train,India,Aurangabad,4965
+S1,train,India,Bhopal,4900
+S1,train,India,Kozhikode,4686
+S1,train,India,Trivandrum,4477
+S1,test,India,Aurangabad,4447
+S1,test,India,Bhopal,4405
+S1,test,India,Kozhikode,4337
+S1,train,India,K.V.Rangareddy,4318
+S1,train,India,Bengaluru,4265
+S1,train,India,Second Floor,4196
+S1,train,India,Thrissur,4174
+S1,train,India,Secunderabad,4041
+S1,test,India,Trivandrum,4029
+S1,train,India,Haveli,3996
+S1,test,India,Bengaluru,3946
+S1,test,India,K.V.Rangareddy,3937
+S1,train,India,Malappuram,3906
+S1,train,India,Vishakhapatnam,3826
+S1,test,India,Second Floor,3794
+S1,train,India,Kanchipuram,3785
+S1,test,India,Thrissur,3716
+S1,test,India,Haveli,3680
+S1,test,India,Malappuram,3667
+S1,train,India,Agra,3623
+S1,train,India,Visakhapatnam,3604
+S1,train,India,5Th Floor,3601
+S1,test,India,Kanchipuram,3586
+S1,test,India,Secunderabad,3488
+S1,train,India,Gandhi Nagar,3468
+S1,train,India,Varanasi,3433
+S1,test,India,Vishakhapatnam,3427
+S1,test,India,5Th Floor,3419
+S1,test,India,Agra,3396
+S1,train,India,Kanpur,3388
+S1,train,India,Gurugram,3306
+S1,train,India,North 24 Parganas,3292
+S1,test,India,Visakhapatnam,3243
+S1,train,India,Kolhapur,3230
+S1,train,India,Ludhiana,3210
+S1,train,India,Gandhinagar,3206
+S1,train,India,Malapuram,3155
+S1,test,India,Kanpur,3102
+S1,test,India,Varanasi,3062
+S1,test,India,North 24 Parganas,3060
+S1,test,India,Gandhi Nagar,3032
+S1,train,India,Krishna,2987
+S1,test,India,Malapuram,2974
+S1,test,India,Gurugram,2957
+S1,test,India,Gandhinagar,2844
+S1,train,India,Tirumalagiri,2844
+S1,train,India,Mohali,2829
+S1,test,India,Kolhapur,2811
+S1,test,India,Ludhiana,2811
+S1,test,India,Krishna,2744
+S1,train,India,Shaikpet,2729
+S1,train,India,Rohini,2687
+S1,test,India,Mohali,2609
+S1,train,India,Guntur,2574
+S1,test,India,Shaikpet,2528
+S1,test,India,Tirumalagiri,2513
+S1,train,India,Udaipur,2444
+S1,train,India,Allahabad,2420
+S1,test,India,Rohini,2420
+S1,train,India,Tiruvallur,2406
+S1,train,India,Meerut,2391
+S1,test,India,Guntur,2351
+S1,train,India,6Th Floor,2305
+S1,train,India,Kalyan,2300
+S1,train,India,Dwarka,2275
+S1,test,India,Meerut,2259
+S1,train,India,Jodhpur,2246
+S1,test,India,Dwarka,2200
+S1,test,India,Udaipur,2182
+S1,train,India,Parganas North,2176
+S1,test,India,Allahabad,2159
+S1,train,India,Raigarh,2133
+S1,test,India,Raigarh,2129
+S1,train,India,Daskroi,2121
+S1,test,India,Tiruvallur,2116
+S1,test,India,Kalyan,2116
+S1,train,India,Mysore,2109
+S1,train,India,Bardhaman,2095
+S1,test,India,6Th Floor,2070
+S1,train,India,Panvel,2045
+S1,train,India,Chennai City Corporation,2026
+S1,train,India,Third Floor,2020
+S2,test,India,Maharashtra,367024
+S2,train,India,Maharashtra,318453
+S2,test,India,Delhi,223870
+S2,train,India,Delhi,195478
+S2,test,India,MUMBAI,164624
+S2,test,India,NEW DELHI,158352
+S2,train,India,MUMBAI,142981
+S2,test,India,Uttar Pradesh,140931
+S2,train,India,NEW DELHI,138489
+S2,test,India,Karnataka,136055
+S2,test,India,KOLKATA,131240
+S2,test,India,Tamil Nadu,122327
+S2,train,India,Uttar Pradesh,121955
+S2,test,India,महाराष्ट्र,121948
+S2,train,India,Karnataka,117047
+S2,train,India,KOLKATA,113126
+S2,test,India,Gujarat,109758
+S2,test,India,West Bengal,109682
+S2,train,India,महाराष्ट्र,107011
+S2,train,India,Tamil Nadu,105377
+S2,train,India,Gujarat,95390
+S2,train,India,West Bengal,94992
+S2,test,India,BANGALORE,92789
+S2,test,India,DELHI,92612
+S2,test,India,Telangana,86096
+S2,train,India,DELHI,80618
+S2,train,India,BANGALORE,80008
+S2,test,India,HYDERABAD,77195
+S2,test,India,दिल्ली,76943
+S2,train,India,Telangana,74979
+S2,test,India,PUNE,74805
+S2,test,India,Haryana,68636
+S2,train,India,HYDERABAD,67760
+S2,train,India,दिल्ली,66916
+S2,train,India,PUNE,64115
+S2,test,India,Andhra Pradesh,61437
+S2,test,India,Rajasthan,61350
+S2,test,India,CHENNAI,60112
+S2,train,India,Haryana,59276
+S2,test,India,Kerala,54368
+S2,train,India,Rajasthan,53731
+S2,train,India,Andhra Pradesh,53277
+S2,train,India,CHENNAI,51442
+S2,train,India,Kerala,47180
+S2,test,India,उत्तर प्रदेश,47018
+S2,test,India,ಕರ್ನಾಟಕ,45006
+S2,test,India,Bihar,44760
+S2,test,India,THANE,43654
+S2,test,India,Madhya Pradesh,43094
+S2,test,India,AHMEDABAD,41571
+S2,train,India,उत्तर प्रदेश,40926
+S2,test,India,தமிழ்நாடு,40621
+S2,test,India,JAIPUR,39337
+S2,train,India,THANE,38666
+S2,train,India,ಕರ್ನಾಟಕ,38560
+S2,train,India,Bihar,38235
+S2,train,India,Madhya Pradesh,37346
+S2,test,India,পশ্চিমবঙ্গ,36832
+S2,test,India,ગુજરાત,36709
+S2,train,India,AHMEDABAD,36292
+S2,train,India,தமிழ்நாடு,34777
+S2,train,India,JAIPUR,34406
+S2,test,India,LUCKNOW,32425
+S2,train,India,পশ্চিমবঙ্গ,31770
+S2,train,India,ગુજરાત,31543
+S2,test,India,2ND FLOOR,29632
+S2,test,India,తెలంగాణ,28650
+S2,train,India,LUCKNOW,28356
+S2,test,India,NOIDA,28128
+S2,test,India,GURGAON,28100
+S2,test,India,1ST FLOOR,27591
+S2,test,India,MUMBAI CITY,27264
+S2,test,India,GROUND FLOOR,26426
+S2,train,India,2ND FLOOR,26044
+S2,test,India,HOWRAH,24947
+S2,train,India,తెలంగాణ,24938
+S2,test,India,BANGALORE NORTH,24744
+S2,test,India,Punjab,24602
+S2,train,India,NOIDA,24479
+S2,train,India,GURGAON,24404
+S2,train,India,1ST FLOOR,24201
+S2,train,India,GROUND FLOOR,23767
+S2,train,India,MUMBAI CITY,23717
+S2,test,India,हरियाणा,22963
+S2,test,India,PUNE CITY,22948
+S2,test,India,GHAZIABAD,22725
+S2,test,India,Odisha,21754
+S2,train,India,HOWRAH,21705
+S2,train,India,Punjab,21388
+S2,train,India,BANGALORE NORTH,21318
+S2,test,India,BANGALORE SOUTH,21282
+S2,test,India,3RD FLOOR,20988
+S2,test,India,राजस्थान,20385
+S2,test,India,INDORE,20213
+S2,train,India,PUNE CITY,20050
+S2,train,India,GHAZIABAD,20003
+S2,train,India,हरियाणा,19734
+S2,test,India,SOUTH DELHI,19322
+S2,test,India,FIRST FLOOR,19052
+S2,test,India,PATNA,18799
+S2,train,India,Odisha,18581
+S2,train,India,3RD FLOOR,18241
+S2,test,India,കേരളം,18129
+S2,train,India,BANGALORE SOUTH,18115
+S2,train,India,राजस्थान,17862
+S2,test,India,ERNAKULAM,17854
+S2,test,India,Keralam,17804
+S2,test,India,NAGPUR,17386
+S2,train,India,INDORE,17380
+S2,train,India,SOUTH DELHI,17210
+S2,test,India,NULL,17193
+S2,test,India,<NULL>,17012
+S2,train,India,FIRST FLOOR,16802
+S2,test,India,N/A,16786
+S2,test,India,SURAT,16719
+S2,test,India,null,16545
+S2,train,India,PATNA,16180
+S2,test,India,BHUBANESWAR,16166
+S2,test,India,EAST DELHI,15931
+S2,train,India,Keralam,15795
+S2,train,India,കേരളം,15680
+S2,train,India,ERNAKULAM,15498
+S2,train,India,NAGPUR,15304
+S2,test,India,COIMBATORE,14860
+S2,train,India,<NULL>,14820
+S2,train,India,N/A,14808
+S2,train,India,null,14751
+S2,test,India,बिहार,14748
+S2,train,India,NULL,14742
+S2,test,India,BENGALURU,14654
+S2,test,India,मध्य प्रदेश,14364
+S2,train,India,SURAT,14279
+S2,train,India,EAST DELHI,14121
+S2,train,India,BHUBANESWAR,14046
+S2,test,India,THIRUVANANTHAPURAM,13992
+S2,test,India,FARIDABAD,13565
+S2,test,India,AHMADABAD CITY,13298
+S2,test,India,NAVI MUMBAI,13020
+S2,train,India,BENGALURU,12637
+S2,train,India,बिहार,12619
+S2,train,India,मध्य प्रदेश,12455
+S2,test,India,VADODARA,12368
+S2,train,India,COIMBATORE,12360
+S2,train,India,THIRUVANANTHAPURAM,12269
+S2,test,India,4TH FLOOR,12227
+S2,test,India,GAUTAM BUDDHA NAGAR,12027
+S2,test,India,NASHIK,11428
+S2,train,India,AHMADABAD CITY,11399
+S2,train,India,FARIDABAD,11339
+S2,test,India,ఆంధ్రప్రదేశ్,10974
+S2,train,India,NAVI MUMBAI,10955
+S2,train,India,VADODARA,10787
+S2,test,India,WEST DELHI,10766
+S2,train,India,GAUTAM BUDDHA NAGAR,10695
+S2,test,India,RAJKOT,10653
+S2,train,India,4TH FLOOR,10479
+S2,test,India,CALCUTTA,10121
+S2,train,India,NASHIK,9949
+S2,test,India,AURANGABAD,9882
+S2,test,India,HAVELI,9733
+S2,test,India,MALAPPURAM,9724
+S2,train,India,WEST DELHI,9450
+S2,train,India,ఆంధ్రప్రదేశ్,9444
+S2,test,India,SOUTH WEST DELHI,9317
+S2,test,India,SECUNDERABAD,9160
+S2,train,India,RAJKOT,9093
+S2,train,India,AURANGABAD,8944
+S2,test,India,RANGAREDDY,8809
+S2,test,India,KOZHIKODE,8727
+S2,test,India,GURUGRAM,8669
+S2,test,India,SECOND FLOOR,8659
+S2,train,India,CALCUTTA,8596
+S2,train,India,SECUNDERABAD,8499
+S2,train,India,HAVELI,8279
+S2,train,India,MALAPPURAM,8240
+S2,test,India,BHOPAL,8222
+S2,test,India,ਪੰਜਾਬ,8195
+S2,train,India,SOUTH WEST DELHI,8169
+S2,test,India,VISAKHAPATNAM,8160
+S2,test,India,GANDHINAGAR,7800
+S2,train,India,SECOND FLOOR,7692
+S2,test,India,AGRA,7606
+S2,train,India,GURUGRAM,7590
+S2,train,India,BHOPAL,7514
+S2,train,India,RANGAREDDY,7436
+S2,train,India,KOZHIKODE,7338
+S2,test,India,VARANASI,7334
+S2,train,India,VISAKHAPATNAM,7260
+S2,test,India,Orissa,7168
+S2,train,India,ਪੰਜਾਬ,7129
+S2,test,India,ଓଡ଼ିଶା,7088
+S2,test,India,5TH FLOOR,7083
+S2,test,India,KANPUR,7001
+S2,test,India,THRISSUR,6919
+S2,train,India,GANDHINAGAR,6858
+S2,test,India,BOMBAY,6711
+S2,test,India,SHAIKPET,6701
+S2,test,India,CENTRAL DELHI,6623
+S2,train,India,VARANASI,6560
+S2,test,India,TIRUMALAGIRI,6535
+S2,train,India,AGRA,6332
+S2,train,India,THRISSUR,6237
+S2,train,India,Orissa,6218
+S2,train,India,ଓଡ଼ିଶା,6157
+S2,train,India,5TH FLOOR,6120
+S2,test,India,LUDHIANA,6099
+S2,train,India,BOMBAY,6014
+S2,train,India,KANPUR,5989
+S2,test,India,ROHINI,5941
+S2,train,India,TIRUMALAGIRI,5839
+S2,train,India,CENTRAL DELHI,5802
+S2,train,India,SHAIKPET,5691
+S2,test,India,KALYAN,5609
+S2,train,India,LUDHIANA,5602
+S2,test,India,NORTH DELHI,5519
+S2,test,India,DWARKA,5362
+S2,test,India,MEERUT,5291
+S2,train,India,ROHINI,5289
+S2,test,India,NORTH WEST DELHI,5110
+S2,test,India,PANVEL,5071
+S2,test,India,KHORDHA,5047
+S2,test,India,DASKROI,4954
+S2,train,India,KALYAN,4753
+S2,test,India,KOLHAPUR,4706
+S2,test,India,ALLAHABAD,4705
+S2,test,India,CHENNAI CITY CORPORATION,4703
+S2,train,India,NORTH DELHI,4689
+S2,train,India,KHORDHA,4660
+S2,test,India,VASAI,4626
+S2,test,India,JODHPUR,4599
+S2,test,India,GUNTUR,4549
+S2,train,India,NORTH WEST DELHI,4538
+S2,test,India,SHAHDARA,4508
+S2,train,India,DWARKA,4495
+S2,test,India,NORTH WEST,4480
+S2,test,India,6TH FLOOR,4469
+S2,test,India,MOHALI,4450
+S2,train,India,MEERUT,4400
+S2,test,India,SURAT CITY,4388
+S2,train,India,KOLHAPUR,4364
+S2,train,India,PANVEL,4336
+S2,train,India,DASKROI,4333
+S2,train,India,JODHPUR,4284
+S2,train,India,CHENNAI CITY CORPORATION,4226
+S2,train,India,ALLAHABAD,4172
+S2,test,India,THIRD FLOOR,4169
+S2,test,India,HUZUR,4165
+S2,test,India,MYSORE,4151
+S2,train,India,VASAI,4151
+S2,test,India,MADRAS,4069
+S2,train,India,NORTH WEST,4050
+S2,test,India,KANCHIPURAM,4024
+S2,test,India,GANDHI NAGAR,3994
+S2,train,India,6TH FLOOR,3963
+S2,test,India,UTTAR PRADESH,3953
+S2,test,India,UDAIPUR,3938
+S2,test,India,GREATER NOIDA,3936
+S2,train,India,GANDHI NAGAR,3923
+S2,train,India,MOHALI,3870
+S2,train,India,GUNTUR,3864
+S2,test,India,PITAMPURA,3846
+S2,test,India,VIJAYAWADA,3840
+S2,test,India,GORAKHPUR,3821
+S2,train,India,SURAT CITY,3792
+S2,train,India,SHAHDARA,3777
+S2,test,India,KOCHI,3734
+S2,test,India,TRIVANDRUM,3684
+S2,test,India,SERILINGAMPALLY,3671
+S2,test,India,KHAIRATABAD,3664
+S2,test,India,SADAR BAZAR,3657
+S2,test,India,7TH FLOOR,3634
+S2,test,India,SILIGURI,3632
+S2,train,India,THIRD FLOOR,3631
+S2,train,India,HUZUR,3625
+S2,test,India,NORTH 24 PARGANAS,3568
+S2,test,India,GWALIOR,3546
+S2,train,India,KANCHIPURAM,3530
+S2,train,India,MYSORE,3524
+S2,train,India,GREATER NOIDA,3482
+S2,test,India,MALAD WEST,3480
+S2,train,India,UTTAR PRADESH,3461
+S2,train,India,UDAIPUR,3414
+S2,train,India,PITAMPURA,3365
+S2,train,India,MADRAS,3357
+S2,test,India,K.V.RANGAREDDY,3344
+S2,test,India,PHULWARI,3338
+S2,test,India,SALEM,3335
+S2,train,India,TRIVANDRUM,3333
+S2,test,India,BAREILLY,3288
+S2,test,India,AHMEDNAGAR,3262
+S2,train,India,SERILINGAMPALLY,3257
+S2,test,India,LAXMI NAGAR,3247
+S2,train,India,GORAKHPUR,3215
+S2,train,India,SILIGURI,3207
+S2,test,India,KUKATPALLY,3201
+S2,train,India,KOCHI,3182
+S2,train,India,VIJAYAWADA,3153
+S2,train,India,7TH FLOOR,3125
+S2,train,India,SADAR BAZAR,3098
+S2,test,India,AMBATTUR,3096
+S2,test,India,MADURAI,3089
+S2,test,India,PANCHKULA,3068
+S2,test,India,JABALPUR,3062
+S2,test,India,MADHAPUR,3050
+S2,train,India,MALAD WEST,3042
+S2,train,India,K.V.RANGAREDDY,3006
+S2,test,India,KRISHNA,3001
+S2,test,India,MAIN ROAD,2987
+S2,test,India,COIMBATORE SOUTH,2985
+S2,test,India,ANDHERI EAST,2971
+S2,train,India,KHAIRATABAD,2969
+S2,test,India,ROAD,2942
+S2,train,India,NORTH 24 PARGANAS,2924
+S2,test,India,CUTTACK,2921
+S2,train,India,GWALIOR,2918
+S2,train,India,PHULWARI,2918
+S2,train,India,BAREILLY,2908
+S2,test,India,VISHAKHAPATNAM,2894
+S2,train,India,LAXMI NAGAR,2890
+S2,test,India,VASHI,2886
+S2,test,India,DLF QE,2881
+S2,train,India,SALEM,2874
+S2,test,India,UTTAM NAGAR,2872
+S2,test,India,1,2852
+S2,train,India,1,2829
+S2,train,India,COIMBATORE SOUTH,2822
+S2,test,India,BHIWANDI,2817
+S2,train,India,MAIN ROAD,2812
+S2,test,India,KOTA,2811
+S2,test,India,GOREGAON EAST,2792
+S2,test,India,2,2783
+S2,train,India,MADURAI,2774
+S2,test,India,SATARA,2769
+S2,test,India,DADRI,2727
+S2,test,India,BHILWARA,2723
+S2,test,India,KANNUR,2721
+S2,train,India,AMBATTUR,2715
+S2,test,India,AMEERPET,2707
+S2,train,India,AHMEDNAGAR,2699
+S2,test,India,ERODE,2691
+S2,test,India,ANDHERI WEST,2678
+S2,train,India,MADHAPUR,2668
+S2,test,India,KARNAL,2648
+S2,test,India,KOTTAYAM,2647
+S2,test,India,FORT,2642
+S2,test,India,ALIGARH,2640
+S2,train,India,PANCHKULA,2639
+S2,test,India,BANJARA HILLS,2635
+S2,test,India,PALAKKAD,2633
+S2,train,India,ANDHERI EAST,2632
+S2,train,India,VISHAKHAPATNAM,2628
+S2,test,India,BORIVALI WEST,2626
+S2,train,India,PALAKKAD,2625
+S2,train,India,VASHI,2619
+S2,train,India,ROAD,2619
+S2,test,India,INDUSTRIAL AREA,2615
+S2,test,India,SANGLI,2611
+S2,train,India,KRISHNA,2611
+S2,test,India,SAIDAPET,2610
+S2,train,India,BHIWANDI,2604
+S2,test,India,HISAR,2599
+S2,train,India,KUKATPALLY,2595
+S2,test,India,DHARWAD,2595
+S2,train,India,DLF QE,2581
+S2,train,India,GOREGAON EAST,2570
+S2,train,India,JABALPUR,2567
+S2,test,India,G/F,2557
+S2,test,India,LATUR,2534
+S2,test,India,PANIPAT,2534
+S2,test,India,JALGAON,2523
+S2,test,India,HARYANA,2516
+S2,test,India,3,2505
+S2,test,India,BASEMENT,2504
+S2,test,India,POONA,2480
+S2,test,India,A WING,2467
+S2,train,India,CUTTACK,2456
+S2,train,India,UTTAM NAGAR,2452
+S2,train,India,SATARA,2441
+S2,test,India,2ND CROSS,2436
+S2,train,India,ALIGARH,2427
+S2,test,India,JALNA,2423
+S2,test,India,MIDC,2423
+S2,train,India,2,2419
+S2,train,India,FORT,2412
+S2,test,India,8TH FLOOR,2404
+S2,test,India,DIVREPORTINGCIRCLE,2403
+S2,test,India,MANGALORE,2391
+S2,test,India,6,2379
+S2,train,India,DADRI,2376
+S2,train,India,KOTTAYAM,2374
+S2,train,India,HISAR,2374
+S2,test,India,MUZAFFARPUR,2372
+S2,test,India,NAGAR,2366
+S2,train,India,INDUSTRIAL AREA,2360
+S2,test,India,TIRUVALLUR,2353
+S2,test,India,JHANSI,2351
+S2,test,India,SERI LINGAMPALLY,2349
+S2,test,India,ALWAR,2347
+S2,train,India,BANJARA HILLS,2345
+S2,train,India,AMEERPET,2345
+S2,test,India,5,2335
+S2,train,India,3,2329
+S2,test,India,HOOGHLY,2328
+S2,train,India,ERODE,2321
+S2,test,India,AMRITSAR,2310
+S2,test,India,JALANDHAR,2305
+S2,test,India,MATHURA,2305
+S2,test,India,SOLAPUR,2302
+S2,test,India,4,2302
+S2,test,India,KANCHEEPURAM,2302
+S2,test,India,B WING,2287
+S2,train,India,ANDHERI WEST,2283
+S2,train,India,KARNAL,2277
+S2,train,India,BORIVALI WEST,2277
+S2,test,India,MALAPURAM,2261
+S2,train,India,MIDC,2261
+S2,train,India,BASEMENT,2260
+S2,test,India,10,2246
+S2,test,India,SAMPATCHAK,2237
+S2,test,India,AJMER,2236
+S2,train,India,4,2236
+S2,test,India,A,2232
+S2,train,India,JALNA,2227
+S2,test,India,MORADABAD,2218
+S2,train,India,KOTA,2217
+S2,train,India,SANGLI,2214
+S2,train,India,G/F,2209
+S2,test,India,ROHTAK,2208
+S2,train,India,LATUR,2206
+S2,train,India,A WING,2189
+S2,train,India,KANNUR,2188
+S2,train,India,TIRUVALLUR,2185
+S2,test,India,TAMBARAM,2185
+S2,test,India,BELGAUM,2184
+S2,test,India,NANDED,2178
+S2,test,India,1ST CROSS,2168
+S2,train,India,NAGAR,2164
+S2,train,India,BHILWARA,2161
+S2,train,India,PANIPAT,2159
+S2,test,India,KRISHNAGIRI,2157
+S2,test,India,3RD CROSS,2152
+S2,test,India,SANGANER,2149
+S2,train,India,SAIDAPET,2146
+S2,train,India,POONA,2135
+S2,train,India,AJMER,2116
+S2,test,India,SONIPAT,2111
+S2,test,India,JUBILEE HILLS,2111
+S2,train,India,MUZAFFARPUR,2105
+S2,train,India,HARYANA,2103
+S2,test,India,ASHOK NAGAR,2102
+S2,test,India,BALLABGARH,2093
+S2,train,India,B WING,2086
+S2,test,India,RING ROAD,2079
+S2,test,India,KOLLAM,2070
+S2,test,India,S.A.S.NAGAR (MOHALI),2066
+S2,train,India,MANGALORE,2061
+S2,train,India,DIVREPORTINGCIRCLE,2056
+S2,train,India,8TH FLOOR,2054
+S2,train,India,DHARWAD,2052
+S2,train,India,ALWAR,2044
+S2,train,India,5,2038
+S2,train,India,JALGAON,2036
+S2,test,India,RAIGARH,2032
+S2,train,India,AMRITSAR,2023
+S2,test,India,KAROL BAGH,2015
+S2,train,India,SOLAPUR,2014
+S2,train,India,MALAPURAM,2013
+S2,train,India,KANCHEEPURAM,2002
+S2,train,India,SERI LINGAMPALLY,2001
+S3,test,India,MH,366657
+S3,train,India,MH,317138
+S3,test,India,DL,230792
+S3,train,India,DL,201267
+S3,test,India,Mumbai,186497
+S3,test,India,New Delhi,177991
+S3,train,India,Mumbai,162162
+S3,train,India,New Delhi,156535
+S3,test,India,Bangalore,145357
+S3,test,India,UP,140753
+S3,test,India,KA,135220
+S3,train,India,Bangalore,125799
+S3,test,India,महाराष्ट्र,122346
+S3,train,India,UP,121806
+S3,test,India,TN,121745
+S3,train,India,KA,115664
+S3,test,India,Hyderabad,115008
+S3,test,India,Delhi,109845
+S3,test,India,GJ,109835
+S3,test,India,WB,109778
+S3,test,India,Pune,108632
+S3,test,India,Kolkata,105952
+S3,train,India,महाराष्ट्र,105802
+S3,train,India,TN,104329
+S3,train,India,Hyderabad,101067
+S3,train,India,Delhi,99967
+S3,train,India,GJ,95134
+S3,train,India,Pune,95128
+S3,train,India,WB,94828
+S3,train,India,Kolkata,92311
+S3,test,India,TG,85926
+S3,test,India,Mumbai City,85533
+S3,test,India,Chennai,79437
+S3,test,India,दिल्ली,77115
+S3,train,India,Mumbai City,74841
+S3,train,India,TG,73974
+S3,test,India,Thane,68904
+S3,train,India,Chennai,68454
+S3,test,India,HR,68100
+S3,test,India,Howrah,67620
+S3,train,India,दिल्ली,66954
+S3,test,India,Ahmedabad,63050
+S3,test,India,RJ,60838
+S3,train,India,Thane,59809
+S3,train,India,HR,59435
+S3,train,India,Howrah,58753
+S3,test,India,South Delhi,56729
+S3,train,India,Ahmedabad,55223
+S3,test,India,KL,53964
+S3,train,India,RJ,53167
+S3,train,India,South Delhi,50131
+S3,test,India,उत्तर प्रदेश,46923
+S3,train,India,KL,46916
+S3,test,India,Jaipur,46810
+S3,test,India,Gurgaon,45926
+S3,test,India,ಕರ್ನಾಟಕ,45164
+S3,test,India,BR,44179
+S3,test,India,MP,43283
+S3,train,India,Jaipur,41473
+S3,train,India,उत्तर प्रदेश,40803
+S3,test,India,தமிழ்நாடு,40544
+S3,train,India,Gurgaon,40500
+S3,train,India,ಕರ್ನಾಟಕ,38974
+S3,train,India,BR,37513
+S3,test,India,Lucknow,37432
+S3,train,India,MP,37429
+S3,test,India,ગુજરાત,36732
+S3,test,India,পশ্চিমবঙ্গ,36427
+S3,train,India,தமிழ்நாடு,34978
+S3,test,India,East Delhi,33997
+S3,test,India,West Delhi,33080
+S3,test,India,Gautam Buddha Nagar,32929
+S3,test,India,AP,32918
+S3,train,India,Lucknow,32723
+S3,test,India,Andhra Pradesh,32218
+S3,train,India,ગુજરાત,31517
+S3,train,India,পশ্চিমবঙ্গ,31448
+S3,train,India,East Delhi,30487
+S3,test,India,Calcutta,30449
+S3,train,India,Gautam Buddha Nagar,29296
+S3,train,India,AP,28842
+S3,train,India,West Delhi,28842
+S3,train,India,Andhra Pradesh,28799
+S3,test,India,తెలంగాణ,28603
+S3,test,India,Ghaziabad,28380
+S3,test,India,Patna,27431
+S3,test,India,Ernakulam,27267
+S3,test,India,Noida,26221
+S3,test,India,South West Delhi,26177
+S3,train,India,Calcutta,26034
+S3,train,India,Ghaziabad,24973
+S3,train,India,తెలంగాణ,24898
+S3,test,India,Surat,24776
+S3,test,India,PB,24580
+S3,test,India,Indore,24263
+S3,train,India,Ernakulam,23977
+S3,test,India,Coimbatore,23840
+S3,train,India,Patna,23722
+S3,train,India,Noida,23317
+S3,train,India,South West Delhi,22973
+S3,test,India,हरियाणा,22953
+S3,test,India,Bangalore North,22938
+S3,train,India,Maharashtra,22679
+S3,test,India,Bengaluru,22626
+S3,test,India,2Nd Floor,22294
+S3,test,India,OD,21603
+S3,train,India,PB,21575
+S3,train,India,Surat,21530
+S3,train,India,Indore,21184
+S3,test,India,Pune City,21163
+S3,test,India,Maharashtra,20938
+S3,test,India,1St Floor,20750
+S3,test,India,Nagpur,20746
+S3,train,India,Coimbatore,20727
+S3,test,India,राजस्थान,20392
+S3,test,India,Ground Floor,20369
+S3,test,India,Central Delhi,20336
+S3,train,India,Bengaluru,20110
+S3,train,India,2Nd Floor,20030
+S3,test,India,Bangalore South,19846
+S3,test,India,Bombay,19609
+S3,train,India,हरियाणा,19600
+S3,train,India,Bangalore North,19514
+S3,train,India,Pune City,18629
+S3,train,India,Ground Floor,18588
+S3,train,India,Nagpur,18377
+S3,train,India,OD,18344
+S3,train,India,1St Floor,18203
+S3,test,India,Keralam,18175
+S3,train,India,Central Delhi,17947
+S3,test,India,കേരളം,17933
+S3,train,India,राजस्थान,17786
+S3,train,India,Bombay,17275
+S3,test,India,North Delhi,17271
+S3,test,India,null,17183
+S3,test,India,NULL,17007
+S3,train,India,Bangalore South,16993
+S3,test,India,<NULL>,16974
+S3,test,India,Faridabad,16930
+S3,test,India,N/A,16867
+S3,test,India,Rangareddy,16751
+S3,train,India,Keralam,15899
+S3,test,India,Khordha,15771
+S3,test,India,3Rd Floor,15438
+S3,train,India,കേരളം,15379
+S3,test,India,Rajkot,15169
+S3,test,India,Vadodara,14985
+S3,test,India,Bhubaneswar,14947
+S3,test,India,बिहार,14902
+S3,train,India,North Delhi,14742
+S3,train,India,N/A,14706
+S3,test,India,Nashik,14655
+S3,train,India,Rangareddy,14640
+S3,train,India,<NULL>,14622
+S3,test,India,First Floor,14476
+S3,test,India,मध्य प्रदेश,14442
+S3,train,India,Faridabad,14430
+S3,train,India,null,14394
+S3,train,India,NULL,14366
+S3,test,India,North West Delhi,14157
+S3,test,India,North West,13964
+S3,train,India,3Rd Floor,13942
+S3,train,India,Khordha,13880
+S3,train,India,Rajkot,13193
+S3,test,India,Navi Mumbai,13162
+S3,train,India,Vadodara,13159
+S3,train,India,First Floor,13102
+S3,train,India,Bhubaneswar,13040
+S3,train,India,Nashik,12874
+S3,train,India,बिहार,12568
+S3,train,India,North West Delhi,12419
+S3,train,India,मध्य प्रदेश,12348
+S3,train,India,North West,12273
+S3,test,India,Ahmadabad City,12189
+S3,test,India,Bhopal,12115
+S3,test,India,Aurangabad,11850
+S3,train,India,Uttar Pradesh,11834
+S3,test,India,Thiruvananthapuram,11521
+S3,test,India,Kozhikode,11432
+S3,train,India,Navi Mumbai,11389
+S3,test,India,Uttar Pradesh,11265
+S3,train,India,Bhopal,10873
+S3,test,India,ఆంధ్రప్రదేశ్,10827
+S3,train,India,Ahmadabad City,10716
+S3,train,India,Aurangabad,10550
+S3,test,India,Trivandrum,10370
+S3,train,India,Thiruvananthapuram,10164
+S3,test,India,Thrissur,10072
+S3,test,India,Gurugram,9946
+S3,train,India,Kozhikode,9826
+S3,test,India,K.v.rangareddy,9753
+S3,test,India,Kanchipuram,9752
+S3,train,India,ఆంధ్రప్రదేశ్,9426
+S3,test,India,Agra,9426
+S3,train,India,Trivandrum,9401
+S3,test,India,4Th Floor,9283
+S3,train,India,Thrissur,9069
+S3,test,India,Malappuram,8939
+S3,test,India,Varanasi,8899
+S3,train,India,K.v.rangareddy,8679
+S3,train,India,Karnataka,8672
+S3,test,India,Orissa,8656
+S3,test,India,Secunderabad,8614
+S3,train,India,Gurugram,8581
+S3,test,India,Vishakhapatnam,8573
+S3,test,India,Haveli,8549
+S3,test,India,Kanpur,8531
+S3,test,India,North 24 Parganas,8394
+S3,train,India,Kanchipuram,8300
+S3,test,India,Karnataka,8247
+S3,train,India,4Th Floor,8049
+S3,test,India,ਪੰਜਾਬ,7992
+S3,test,India,Madras,7945
+S3,train,India,Agra,7939
+S3,train,India,Orissa,7811
+S3,train,India,Secunderabad,7755
+S3,train,India,Haveli,7751
+S3,train,India,Tamil Nadu,7704
+S3,test,India,Ludhiana,7700
+S3,train,India,Malappuram,7607
+S3,test,India,Kolhapur,7598
+S3,train,India,Vishakhapatnam,7594
+S3,train,India,Varanasi,7594
+S3,train,India,Kanpur,7569
+S3,train,India,North 24 Parganas,7473
+S3,test,India,Malapuram,7280
+S3,test,India,Gandhinagar,7263
+S3,test,India,Gandhi Nagar,7261
+S3,test,India,Divreportingcircle,7258
+S3,test,India,Tamil Nadu,7247
+S3,test,India,Poona,7212
+S3,train,India,ਪੰਜਾਬ,7195
+S3,test,India,ଓଡ଼ିଶା,7188
+S3,test,India,Visakhapatnam,7091
+S3,train,India,Gujarat,7074
+S3,train,India,Ludhiana,7059
+S3,test,India,Krishna,7054
+S3,train,India,Kolhapur,7000
+S3,train,India,West Bengal,6805
+S3,train,India,Telangana,6805
+S3,train,India,Gandhinagar,6707
+S3,test,India,Mohali,6699
+S3,test,India,Gujarat,6671
+S3,train,India,Gandhi Nagar,6609
+S3,train,India,Madras,6562
+S3,test,India,Guntur,6557
+S3,test,India,Meerut,6432
+S3,test,India,West Bengal,6342
+S3,train,India,Krishna,6331
+S3,test,India,Second Floor,6324
+S3,test,India,Telangana,6302
+S3,test,India,Haryana,6268
+S3,train,India,Visakhapatnam,6262
+S3,train,India,Poona,6247
+S3,train,India,Haryana,6238
+S3,train,India,Malapuram,6216
+S3,train,India,Divreportingcircle,6178
+S3,train,India,ଓଡ଼ିଶା,6102
+S3,train,India,Mohali,6077
+S3,test,India,Tiruvallur,6025
+S3,train,India,Second Floor,5927
+S3,test,India,Udaipur,5920
+S3,test,India,Tirumalagiri,5898
+S3,train,India,Guntur,5861
+S3,test,India,Allahabad,5819
+S3,test,India,Shaikpet,5750
+S3,train,India,Meerut,5551
+S3,test,India,Jodhpur,5477
+S3,train,India,Tirumalagiri,5444
+S3,train,India,Tiruvallur,5430
+S3,test,India,5Th Floor,5366
+S3,test,India,Raigarh,5350
+S3,test,India,Kalyan,5337
+S3,train,India,Udaipur,5288
+S3,train,India,Allahabad,5279
+S3,test,India,Mysore,5082
+S3,test,India,Panvel,5025
+S3,train,India,Jodhpur,5021
+S3,train,India,Shaikpet,5001
+S3,test,India,Kancheepuram,5000
+S3,test,India,Gorakhpur,4908
+S3,test,India,Rohini,4853
+S3,test,India,Gwalior,4849
+S3,test,India,Shahdara,4837
+S3,test,India,Madurai,4778
+S3,test,India,Bardhaman,4767
+S3,test,India,Bangalore Rural,4687
+S3,train,India,Kalyan,4644
+S3,test,India,Parganas North,4632
+S3,train,India,5Th Floor,4565
+S3,train,India,Kerala,4558
+S3,train,India,Madurai,4491
+S3,test,India,Daskroi,4466
+S3,test,India,Vasai,4447
+S3,train,India,Mysore,4437
+S3,train,India,Kancheepuram,4395
+S3,train,India,Parganas North,4393
+S3,test,India,Chennai City Corporation,4388
+S3,train,India,Raigarh,4355
+S3,test,India,Palakkad,4355
+S3,test,India,Dwarka,4313
+S3,test,India,Sangli,4294
+S3,train,India,Panvel,4284
+S3,train,India,Gwalior,4275
+S3,test,India,Cuttack,4256
+S3,train,India,Rohini,4254
+S3,train,India,Bardhaman,4246
+S3,train,India,Gorakhpur,4228
+S3,test,India,Hooghly,4225
+S3,test,India,Ahmednagar,4203
+S3,test,India,Satara,4158
+S3,test,India,Kerala,4156
+S3,test,India,North East,4151
+S3,train,India,Daskroi,4137
+S3,test,India,Raigarh(mh),4130
+S3,test,India,Mumbai (SUBURBAN),4108
+S3,train,India,Rajasthan,4103
+S3,test,India,Kottayam,4101
+S3,test,India,Salem,4089
+S3,test,India,Kannur,4083
+S3,train,India,Shahdara,4079
+S3,train,India,Palakkad,4078
+S3,test,India,Surat City,4066
+S3,train,India,Bangalore Rural,4051
+S3,test,India,Solapur,4044
+S3,train,India,Vasai,4019
+S3,test,India,Bareilly,3966
+S3,test,India,South 24 Parganas,3959
+S3,test,India,Mumbai Ii,3952
+S3,test,India,Alwar,3932
+S3,train,India,Chennai City Corporation,3876
+S3,test,India,Huzur,3827
+S3,test,India,Kanpur Nagar,3729
+S3,test,India,Rajasthan,3718
+S3,train,India,Sangli,3679
+S3,test,India,Erode,3664
+S3,test,India,Jabalpur,3658
+S3,test,India,Darjeeling,3654
+S3,test,India,Kachchh,3648
+S3,train,India,Satara,3637
+S3,test,India,Panchkula,3623
+S3,train,India,Dwarka,3607
+S3,train,India,Surat City,3596
+S3,train,India,Raigarh(mh),3594
+S3,train,India,South 24 Parganas,3594
+S3,test,India,Greater Noida,3569
+S3,train,India,North East,3568
+S3,train,India,Ahmednagar,3560
+S3,train,India,Hooghly,3557
+S3,test,India,Jalgaon,3551
+S3,train,India,Kanpur Nagar,3550
+S3,train,India,Kottayam,3540
+S3,train,India,Salem,3519
+S3,test,India,Jalandhar,3517
+S3,train,India,Alwar,3500
+S3,test,India,Vijayawada,3480
+S3,train,India,Bareilly,3474
+S3,test,India,Kochi,3470
+S3,train,India,Mumbai (SUBURBAN),3453
+S3,train,India,Kannur,3438
+S3,train,India,Cuttack,3438
+S3,test,India,Muzaffarpur,3428
+S3,train,India,Solapur,3393
+S3,test,India,Sadar Bazar,3390
+S3,train,India,Mumbai Ii,3390
+S3,test,India,Rupnagar,3383
+S3,test,India,Greater Bombay,3382
+S3,test,India,Siliguri,3374
+S3,train,India,Darjeeling,3340
+S3,test,India,Serilingampally,3338
+S3,test,India,Karnal,3328
+S3,test,India,6Th Floor,3317
+S3,train,India,Erode,3302
+S3,test,India,Ajmer,3275
+S3,train,India,Huzur,3270
+S3,train,India,Greater Noida,3267
+S3,test,India,Chittoor,3246
+S3,test,India,Belgaum,3237
+S3,test,India,Punjab,3235
+S3,test,India,Kota,3216
+S3,test,India,Khairatabad,3213
+S3,train,India,Panchkula,3210
+S3,test,India,Bhilwara,3200
+S3,test,India,Latur,3190
+S3,test,India,Medak,3183
+S3,test,India,Jalna,3157
+S3,train,India,Kochi,3134
+S3,train,India,Jabalpur,3119
+S3,test,India,Kollam,3116
+S3,test,India,Tiruchirappalli,3103
+S3,test,India,Phulwari,3091
+S3,train,India,Jalgaon,3086
+S3,train,India,Punjab,3083
+S3,train,India,Karnal,3075
+S3,train,India,6Th Floor,3075
+S3,test,India,East Godavari,3064
+S3,train,India,Muzaffarpur,3062
+S3,test,India,Third Floor,3040
+S3,test,India,Aligarh,3039
+S3,test,India,Pitampura,3036
+S3,test,India,Bengaluru Urban,3028
+S3,test,India,Bihar,3025
+S3,test,India,Malad West,3024
+S3,test,India,Valsad,3018
+S3,train,India,Siliguri,3017
+S3,train,India,Jalandhar,3009
+S3,test,India,Greater Mumbai,3001
+S3,test,India,Amritsar,2997
+S3,train,India,Bihar,2990
+S3,train,India,Serilingampally,2984
+S3,test,India,Nanded,2974
+S3,train,India,Kachchh,2973
+S3,test,India,Moradabad,2972
+S3,train,India,Tiruchirappalli,2961
+S3,train,India,Sadar Bazar,2948
+S3,train,India,Greater Bombay,2940
+S3,train,India,Vijayawada,2923
+S3,train,India,Kollam,2922
+S3,train,India,Ajmer,2914
+S3,train,India,Jalna,2911
+S3,test,India,Mathura,2902
+S3,test,India,Ambattur,2898
+S3,test,India,Hisar,2882
+S3,train,India,Rupnagar,2878
+S3,test,India,Panipat,2867
+S3,train,India,Belgaum,2863
+S3,test,India,Mumbai Suburban,2848
+S3,test,India,Ambala,2838
+S3,train,India,Pitampura,2798
+S3,train,India,Latur,2798
+S3,test,India,1,2773
+S3,train,India,Madhya Pradesh,2758
+S3,test,India,Jhansi,2744
+S3,train,India,Third Floor,2739
+S3,test,India,Dakshina Kannada,2737
+S3,train,India,Bengaluru Urban,2736
+S3,test,India,Alappuzha,2733
+S3,test,India,Bhiwandi,2723
+S3,train,India,Aligarh,2721
+S3,train,India,Valsad,2710
+S3,train,India,Kota,2710
+S3,train,India,Chittoor,2706
+S3,test,India,Rohtak,2696
+S3,train,India,Phulwari,2684
+S3,test,India,Coimbatore South,2682
+S3,train,India,Medak,2676
+S3,train,India,1,2665
+S3,train,India,Bhilwara,2662
+S3,test,India,Kukatpally,2659
+S3,train,India,Coimbatore South,2657
+S3,test,India,Sonipat,2643
+S3,train,India,Amritsar,2640
+S3,test,India,Pune Region,2637
+S3,train,India,East Godavari,2632
+S3,train,India,Mathura,2628
+S3,test,India,Laxmi Nagar,2627
+S3,test,India,7Th Floor,2623
+S3,train,India,Khairatabad,2621
+S3,train,India,Greater Mumbai,2616
+S3,test,India,Amravati,2613
+S3,test,India,Vaishali,2613
+S3,test,India,Dadri,2600
+S3,test,India,Madhya Pradesh,2600
+S3,train,India,Malad West,2588
+S3,test,India,Dlf Qe,2552
+S3,test,India,Thiruvallur,2546
+S3,train,India,Mumbai Suburban,2545
+S3,train,India,Ambattur,2530
+S3,train,India,Moradabad,2530
+S3,train,India,Bhiwandi,2526
+S3,test,India,Idukki,2515
+S3,test,India,Madhapur,2495
+S3,test,India,Goregaon East,2482
+S3,train,India,Hisar,2478
+S3,test,India,Patiala,2469
+S3,train,India,Alappuzha,2466
+S3,train,India,Dlf Qe,2458
+S3,test,India,2,2456
+S3,train,India,Panipat,2445
+S3,test,India,Nellore,2443
+S3,train,India,Amravati,2428
+S3,test,India,Baroda,2427
+S3,test,India,Gaya,2425
+S3,test,India,Dharmapuri,2424
+S3,test,India,Muzaffarnagar,2424
+S3,test,India,Saidapet,2420
+S3,test,India,Andheri East,2413
+S3,test,India,Mahesana,2412
+S3,test,India,Uttam Nagar,2390
+S3,test,India,Anand,2383
+S3,train,India,Dadri,2382
+S3,train,India,Nanded,2380
+S3,train,India,Thiruvallur,2372
+S3,train,India,Idukki,2368
+S3,train,India,Sonipat,2364
+S3,train,India,Laxmi Nagar,2360
+S3,train,India,7Th Floor,2356
+S3,train,India,Nellore,2341
+S3,train,India,Rohtak,2326
+S3,train,India,Kukatpally,2318
+S3,test,India,3,2306
+S3,train,India,Goregaon East,2303
+S3,train,India,2,2301
+S3,test,India,West Godavari,2299
+S3,test,India,Borivali West,2298
+S3,train,India,Patiala,2289
+S3,test,India,Dharwad,2282
+S3,test,India,Bangalore Urban,2279
+S3,train,India,Dakshina Kannada,2276
+S3,train,India,Pune Region,2271
+S3,test,India,Calicut,2270
+S3,test,India,Vashi,2266
+S3,test,India,Nadia,2249
+S3,test,India,Tirunelveli,2247
+S3,train,India,Vaishali,2247
+S3,test,India,Jamnagar,2243
+S3,test,India,Palghar,2239
+S3,test,India,Saharanpur,2230
+S3,test,India,Bhavnagar,2221
+S3,train,India,Baroda,2197
+S3,train,India,Andheri East,2191
+S3,test,India,Bikaner,2190
+S3,test,India,Midnapore,2189
+S3,train,India,3,2188
+S3,train,India,Jamnagar,2188
+S3,train,India,Main Road,2187
+S3,test,India,Road,2183
+S3,test,India,Andheri West,2182
+S3,test,India,Seri Lingampally,2182
+S3,test,India,Vellore,2182
+S3,test,India,Cochin,2176
+S3,test,India,Main Road,2176
+S3,train,India,Dharmapuri,2171
+S3,test,India,10,2167
+S3,test,India,5,2163
+S3,test,India,Kanyakumari,2159
+S3,test,India,Dharwar,2159
+S3,test,India,4,2152
+S3,train,India,Mahesana,2151
+S3,train,India,4,2145
+S3,test,India,Ameerpet,2143
+S3,train,India,Vashi,2131
+S3,train,India,Madhapur,2131
+S3,train,India,Jhansi,2127
+S3,test,India,Fort,2126
+S3,test,India,6,2124
+S3,test,India,Banjara Hills,2111
+S3,train,India,Ambala,2109
+S3,test,India,Ahmadabad,2103
+S3,test,India,Murshidabad,2095
+S3,test,India,Kolkata Region,2093
+S3,train,India,Nadia,2092
+S3,test,India,Tambaram,2092
+S3,test,India,Bharuch,2089
+S3,train,India,Borivali West,2063
+S3,train,India,Muzaffarnagar,2060
+S3,test,India,Kurnool,2048
+S3,train,India,Tirunelveli,2045
+S3,train,India,5,2042
+S3,train,India,Bhavnagar,2033
+S3,test,India,Mangalore,2027
+S3,test,India,Chennai City Region,2019
+S3,test,India,Sampatchak,2016
+S3,train,India,Seri Lingampally,2015
+S3,train,India,Road,2010
+S3,test,India,Akola,2008
+S3,test,India,Parganas South,2006
+S3,test,India,Industrial Area,2002
+S3,train,India,Vellore,2000
+S1,train,US,TX,133202
+S1,train,US,NY,102340
+S1,train,US,NC,94673
+S1,train,US,OH,85246
+S1,train,US,IL,75660
+S1,test,US,TX,66508
+S1,train,US,TN,59647
+S1,train,US,VA,59579
+S1,train,US,MA,56804
+S1,train,US,AZ,56535
+S1,test,US,NY,50775
+S1,train,US,IN,49413
+S1,test,US,NC,47752
+S1,test,US,OH,42332
+S1,train,US,WA,42179
+S1,train,US,MD,40657
+S1,test,US,IL,37858
+S1,train,US,CA,37396
+S1,train,US,AL,32583
+S1,train,US,WI,31434
+S1,train,US,MN,31135
+S1,test,US,TN,30144
+S1,train,US,OR,29826
+S1,test,US,VA,29820
+S1,train,US,KY,29475
+S1,test,US,AZ,28846
+S1,test,US,MA,28263
+S1,train,US,AR,27099
+S1,train,US,MO,25953
+S1,test,US,IN,24784
+S1,train,US,UT,23122
+S1,train,US,OK,22719
+S1,train,US,IA,22479
+S1,test,US,WA,21370
+S1,test,US,MD,20136
+S1,test,US,CA,18943
+S1,train,US,CT,18427
+S1,test,US,AL,16456
+S1,train,US,WV,15907
+S1,test,US,WI,15823
+S1,train,US,KS,15739
+S1,test,US,MN,15691
+S1,test,US,OR,15035
+S1,test,US,KY,14703
+S1,train,US,Houston,14021
+S1,test,US,AR,13724
+S1,test,US,MO,12789
+S1,train,US,ME,12123
+S1,train,US,PA,11827
+S1,train,US,Fl 0,11798
+S1,train,US,NM,11635
+S1,test,US,UT,11506
+S1,test,US,OK,11361
+S1,test,US,IA,11168
+S1,train,US,Phoenix,11023
+S1,train,US,MT,10012
+S1,train,US,Chicago,9430
+S1,test,US,CT,9387
+S1,train,US,Fl 1,9341
+S1,train,US,Charlotte,8816
+S1,train,US,DE,8726
+S1,train,US,Columbus,8328
+S1,test,US,WV,7989
+S1,test,US,KS,7754
+S1,train,US,Washington,7567
+S1,train,US,Nashville,7182
+S1,test,US,Houston,6934
+S1,train,US,Indianapolis,6878
+S1,train,US,DC,6764
+S1,train,US,ND,6704
+S1,train,US,Boston,6216
+S1,train,US,Sacramento,6081
+S1,test,US,ME,6057
+S1,test,US,PA,6030
+S1,train,US,Louisville,6007
+S1,train,US,Unit 1,5973
+S1,test,US,NM,5897
+S1,test,US,Fl 0,5734
+S1,train,US,NE,5732
+S1,train,US,Springfield,5717
+S1,test,US,Phoenix,5704
+S1,train,US,Dallas,5601
+S1,train,US,Austin,5582
+S1,train,US,Fairfax County,5537
+S1,train,US,Cincinnati,5302
+S1,train,US,VT,5253
+S1,train,US,Saint Louis,5231
+S1,train,US,Fort Worth,5204
+S1,train,US,Raleigh,5189
+S1,train,US,Unit 2,5187
+S1,train,US,Brooklyn,5094
+S1,train,US,Portland,5077
+S1,test,US,MT,4986
+S1,train,US,Tucson,4752
+S1,test,US,Chicago,4667
+S1,train,US,Kansas City,4642
+S1,test,US,Fl 1,4503
+S1,test,US,Charlotte,4496
+S1,test,US,DE,4423
+S1,train,US,Cleveland,4320
+S1,train,US,Baltimore,4318
+S1,train,US,Mesa,4316
+S1,train,US,LA,4278
+S1,train,US,CO,4254
+S1,test,US,Columbus,4160
+S1,train,US,Memphis,4109
+S1,train,US,Unit A,3921
+S1,train,US,Tulsa,3851
+S1,train,US,Unit B,3796
+S1,test,US,Washington,3783
+S1,train,US,Knoxville,3778
+S1,test,US,Nashville,3699
+S1,train,US,AK,3680
+S1,train,US,Wilmington,3531
+S1,train,US,Albuquerque,3524
+S1,test,US,Indianapolis,3443
+S1,test,US,DC,3392
+S1,test,US,ND,3376
+S1,train,US,Atlanta,3370
+S1,train,US,Virginia Beach City,3317
+S1,train,US,SC,3310
+S1,train,US,Seattle,3285
+S1,train,US,GA,3255
+S1,train,US,Hempstead,3189
+S1,test,US,Boston,3086
+S1,train,US,Wichita,3075
+S1,train,US,Greensboro,3051
+S1,train,US,Fayetteville,3049
+S1,train,US,Unit 3,3049
+S1,test,US,Sacramento,3019
+S1,test,US,Unit 1,2998
+S1,train,US,Prince William County,2973
+S1,test,US,Louisville,2956
+S1,train,US,Chesterfield County,2941
+S1,train,US,City Of El Paso,2919
+S1,test,US,NE,2903
+S1,train,US,Buffalo,2894
+S1,train,US,WY,2868
+S1,test,US,Dallas,2842
+S1,test,US,Fairfax County,2825
+S1,test,US,Springfield,2808
+S1,test,US,Austin,2797
+S1,train,US,Scottsdale,2728
+S1,train,US,Omaha,2718
+S1,train,US,Arlington,2707
+S1,train,US,Montgomery,2695
+S1,test,US,Cincinnati,2688
+S1,train,US,Salem,2645
+S1,test,US,Raleigh,2638
+S1,train,US,Columbia,2628
+S1,test,US,Saint Louis,2587
+S1,test,US,Fort Worth,2584
+S1,test,US,VT,2580
+S1,train,US,Dayton,2565
+S1,test,US,Brooklyn,2540
+S1,test,US,Portland,2537
+S1,test,US,Unit 2,2514
+S1,train,US,Brookhaven,2513
+S1,train,US,Rochester,2432
+S1,train,US,Durham,2410
+S1,test,US,Tucson,2332
+S1,train,US,Bloomington,2311
+S1,train,US,Tacoma,2288
+S1,test,US,Kansas City,2282
+S1,train,US,Peoria,2281
+S1,train,US,Winston-salem,2279
+S1,train,US,Fort Wayne,2273
+S1,train,US,Mobile,2272
+S1,train,US,Richmond,2240
+S1,test,US,Mesa,2221
+S1,train,US,Huntsville,2213
+S1,train,US,Katy,2194
+S1,train,US,Toledo,2191
+S1,test,US,Baltimore,2188
+S1,test,US,CO,2180
+S1,train,US,Chandler,2179
+S1,train,US,Spring,2158
+S1,test,US,LA,2154
+S1,train,US,Staten Island,2117
+S1,train,US,Canton,2112
+S1,test,US,Cleveland,2109
+S1,train,US,Lubbock,2098
+S1,train,US,Unit Apartment 1,2086
+S1,train,US,Saint Paul,2079
+S1,train,US,Lincoln,2078
+S1,train,US,Henrico County,2074
+S1,train,US,Auburn,2059
+S1,train,US,Akron,2034
+S1,train,US,Unit Apartment 2,2032
+S1,train,US,Franklin,2026
+S1,train,US,Clarksville,2020
+S1,test,US,Memphis,2006
+S2,train,US,TX,292287
+S2,train,US,NY,225303
+S2,train,US,NC,207446
+S2,train,US,OH,187346
+S2,test,US,TX,181981
+S2,train,US,IL,165845
+S2,test,US,NY,139340
+S2,train,US,VA,131102
+S2,test,US,NC,131076
+S2,train,US,TN,130908
+S2,train,US,MA,124727
+S2,train,US,AZ,124397
+S2,test,US,OH,115700
+S2,train,US,IN,108186
+S2,test,US,IL,103306
+S2,train,US,WA,92674
+S2,train,US,MD,88948
+S2,test,US,TN,82497
+S2,train,US,CA,82063
+S2,test,US,VA,81999
+S2,test,US,AZ,78629
+S2,test,US,MA,77649
+S2,train,US,AL,71647
+S2,train,US,WI,69015
+S2,train,US,MN,68211
+S2,test,US,IN,67904
+S2,train,US,OR,65669
+S2,train,US,KY,64859
+S2,train,US,AR,59458
+S2,test,US,WA,58541
+S2,train,US,MO,57153
+S2,test,US,MD,55045
+S2,test,US,CA,51806
+S2,train,US,UT,50540
+S2,train,US,OK,49808
+S2,train,US,IA,48987
+S2,test,US,AL,45029
+S2,test,US,WI,43484
+S2,test,US,MN,42932
+S2,test,US,OR,41337
+S2,train,US,CT,40691
+S2,test,US,KY,40398
+S2,test,US,AR,37708
+S2,test,US,MO,35078
+S2,train,US,WV,35072
+S2,train,US,KS,34570
+S2,test,US,UT,31452
+S2,test,US,OK,31073
+S2,test,US,IA,30283
+S2,train,US,NULL,29319
+S2,train,US,null,29120
+S2,train,US,<NULL>,28979
+S2,train,US,N/A,28932
+S2,train,US,ME,26559
+S2,train,US,HOUSTON,26512
+S2,train,US,PA,25859
+S2,test,US,CT,25720
+S2,train,US,NM,25587
+S2,train,US,MT,21930
+S2,test,US,WV,21859
+S2,test,US,KS,21298
+S2,train,US,DE,18890
+S2,test,US,N/A,18336
+S2,test,US,NULL,18334
+S2,test,US,null,18201
+S2,test,US,<NULL>,18012
+S2,train,US,CHICAGO,17727
+S2,test,US,ME,16587
+S2,train,US,CHARLOTTE,16522
+S2,test,US,HOUSTON,16465
+S2,test,US,PA,16437
+S2,test,US,NM,16166
+S2,train,US,COLUMBUS,15742
+S2,train,US,WASHINGTON,15496
+S2,train,US,DC,14857
+S2,train,US,ND,14793
+S2,train,US,PHOENIX,13826
+S2,test,US,MT,13719
+S2,train,US,INDIANAPOLIS,12944
+S2,train,US,NE,12463
+S2,train,US,NASHVILLE,12284
+S2,train,US,DALLAS,12172
+S2,test,US,DE,12134
+S2,train,US,VT,11561
+S2,train,US,LOUISVILLE,11433
+S2,train,US,SPRINGFIELD,11183
+S2,test,US,CHICAGO,10836
+S2,test,US,CHARLOTTE,10629
+S2,train,US,AUSTIN,10561
+S2,train,US,SACRAMENTO,10169
+S2,train,US,CLEVELAND,10095
+S2,train,US,CINCINNATI,10060
+S2,train,US,PORTLAND,10017
+S2,train,US,RALEIGH,9871
+S2,test,US,WASHINGTON,9865
+S2,test,US,COLUMBUS,9840
+S2,train,US,TUCSON,9715
+S2,train,US,BROOKLYN,9624
+S2,test,US,ND,9384
+S2,train,US,LA,9371
+S2,test,US,DC,9367
+S2,train,US,CO,9345
+S2,test,US,PHOENIX,8862
+S2,train,US,KANSAS CITY,8783
+S2,train,US,BALTIMORE,8594
+S2,train,US,FORT WORTH,8439
+S2,train,US,BOSTON,8297
+S2,test,US,INDIANAPOLIS,8183
+S2,train,US,AK,8093
+S2,train,US,SAINT LOUIS,8047
+S2,test,US,NE,8041
+S2,test,US,NASHVILLE,7854
+S2,train,US,BUFFALO,7688
+S2,test,US,DALLAS,7677
+S2,train,US,MEMPHIS,7637
+S2,train,US,TULSA,7425
+S2,train,US,KNOXVILLE,7328
+S2,train,US,SC,7190
+S2,train,US,GA,7176
+S2,test,US,LOUISVILLE,7086
+S2,test,US,VT,7066
+S2,test,US,SPRINGFIELD,6987
+S2,test,US,AUSTIN,6542
+S2,train,US,WILMINGTON,6485
+S2,train,US,ALBUQUERQUE,6408
+S2,test,US,SACRAMENTO,6384
+S2,train,US,RICHMOND,6375
+S2,train,US,WY,6322
+S2,test,US,CINCINNATI,6320
+S2,test,US,RALEIGH,6272
+S2,train,US,FAIRFAX COUNTY,6217
+S2,train,US,SEATTLE,6187
+S2,train,US,ROCHESTER,6168
+S2,test,US,PORTLAND,6112
+S2,test,US,CLEVELAND,6078
+S2,test,US,BROOKLYN,5954
+S2,test,US,TUCSON,5918
+S2,test,US,LA,5902
+S2,test,US,CO,5864
+S2,train,US,WICHITA,5846
+S2,train,US,FAYETTEVILLE,5813
+S2,train,US,MESA,5731
+S2,train,US,GREENSBORO,5693
+S2,train,US,ARLINGTON,5549
+S2,test,US,FORT WORTH,5436
+S2,test,US,KANSAS CITY,5357
+S2,train,US,CITY OF EL PASO,5340
+S2,train,US,SALEM,5293
+S2,test,US,BALTIMORE,5280
+S2,train,US,DAYTON,5173
+S2,test,US,BOSTON,5164
+S2,train,US,SALT LAKE CITY,5139
+S2,test,US,AK,5106
+S2,train,US,MONTGOMERY,5098
+S2,train,US,OMAHA,5091
+S2,train,US,COLUMBIA,4986
+S2,test,US,SAINT LOUIS,4864
+S2,test,US,MEMPHIS,4707
+S2,test,US,TULSA,4577
+S2,test,US,BUFFALO,4548
+S2,train,US,SAINT PAUL,4507
+S2,train,US,WINSTON-SALEM,4469
+S2,train,US,DURHAM,4465
+S2,train,US,PEORIA,4401
+S2,train,US,TACOMA,4393
+S2,train,US,BLOOMINGTON,4387
+S2,test,US,KNOXVILLE,4378
+S2,train,US,MOBILE,4334
+S2,test,US,SC,4319
+S2,test,US,ALBUQUERQUE,4266
+S2,train,US,ATLANTA,4257
+S2,train,US,KATY,4248
+S2,train,US,HUNTSVILLE,4198
+S2,test,US,GA,4166
+S2,test,US,WILMINGTON,4137
+S2,test,US,RICHMOND,4079
+S2,train,US,TOLEDO,4070
+S2,train,US,SPRING,4064
+S2,test,US,SEATTLE,4037
+S2,train,US,MINNEAPOLIS,4006
+S2,train,US,SCOTTSDALE,3994
+S2,train,US,VIRGINIA BEACH CITY,3993
+S2,test,US,FAIRFAX COUNTY,3987
+S2,train,US,AUBURN,3978
+S2,train,US,STATEN ISLAND,3946
+S2,test,US,ROCHESTER,3936
+S2,train,US,LINCOLN,3910
+S2,train,US,LUBBOCK,3904
+S2,train,US,HEMPSTEAD,3884
+S2,train,US,IRVING,3847
+S2,train,US,FRANKLIN,3846
+S2,train,US,CLARKSVILLE,3809
+S2,test,US,FAYETTEVILLE,3790
+S2,train,US,GREENVILLE,3735
+S2,test,US,MESA,3672
+S2,train,US,INCORPORATED,3665
+S2,test,US,WY,3659
+S2,train,US,CHATTANOOGA,3635
+S2,train,US,SPOKANE,3617
+S2,train,US,AKRON,3573
+S2,train,US,ALBANY,3562
+S2,train,US,JACKSONVILLE,3556
+S2,train,US,GILBERT,3548
+S2,train,US,LITTLE ROCK,3543
+S2,train,US,MADISON,3527
+S2,test,US,WICHITA,3526
+S2,train,US,CANTON,3498
+S2,test,US,GREENSBORO,3494
+S2,train,US,GEORGETOWN,3476
+S2,train,US,MIDDLETOWN,3467
+S2,train,US,GLENDALE,3462
+S2,test,US,ARLINGTON,3450
+S2,train,US,BIRMINGHAM,3450
+S2,test,US,SALEM,3404
+S2,train,US,BURLINGTON,3393
+S2,train,US,PRINCE WILLIAM COUNTY,3365
+S2,train,US,VANCOUVER,3359
+S2,train,US,AMARILLO,3337
+S2,test,US,SALT LAKE CITY,3335
+S2,train,US,BRONX,3315
+S2,train,US,MURFREESBORO,3313
+S2,test,US,CITY OF EL PASO,3297
+S2,train,US,CAMBRIDGE,3252
+S2,train,US,CHESTERFIELD COUNTY,3248
+S2,train,US,ANCHORAGE,3230
+S2,train,US,SYRACUSE,3210
+S2,test,US,OMAHA,3185
+S2,train,US,EVANSVILLE,3161
+S2,train,US,CLINTON,3152
+S2,train,US,CHANDLER,3135
+S2,test,US,COLUMBIA,3121
+S2,train,US,EUGENE,3114
+S2,test,US,MONTGOMERY,3108
+S2,test,US,DAYTON,3102
+S2,train,US,MARION,3080
+S2,train,US,CONCORD,3068
+S2,train,US,SD,3067
+S2,train,US,WORCESTER,3053
+S2,train,US,LEBANON,3021
+S2,test,US,DURHAM,2974
+S2,train,US,CARY,2956
+S2,train,US,NEWARK,2954
+S2,train,US,DECATUR,2909
+S2,train,US,INDEPENDENCE,2896
+S2,train,US,HUNTINGTON,2894
+S2,train,US,BROOKHAVEN,2893
+S2,test,US,SAINT PAUL,2834
+S2,train,US,AURORA,2833
+S2,test,US,WINSTON-SALEM,2808
+S2,train,US,FAIRFIELD,2803
+S2,train,US,ASHEVILLE,2800
+S2,train,US,DES MOINES,2770
+S2,train,US,BEAVERTON,2767
+S2,test,US,TACOMA,2738
+S2,train,US,MCKINNEY,2731
+S2,train,US,SURPRISE,2720
+S2,train,US,CONROE,2718
+S2,test,US,KATY,2711
+S2,train,US,HILLSBORO,2705
+S2,test,US,PEORIA,2684
+S2,test,US,MOBILE,2652
+S2,train,US,TEMPE,2650
+S2,train,US,LEXINGTON,2645
+S2,test,US,BLOOMINGTON,2643
+S2,train,US,VIRGINIA BEACH,2634
+S2,train,US,MEDFORD,2627
+S2,train,US,BOWLING GREEN,2626
+S2,train,US,TROY,2605
+S2,train,US,ID,2588
+S2,test,US,HUNTSVILLE,2564
+S2,test,US,SPRING,2552
+S2,test,US,LINCOLN,2546
+S2,train,US,ONTARIO,2542
+S2,test,US,TOLEDO,2539
+S2,train,US,SALISBURY,2520
+S2,test,US,ATLANTA,2505
+S2,train,US,ROCKFORD,2498
+S2,train,US,PLYMOUTH,2497
+S2,train,US,YUMA,2491
+S2,train,US,FARMINGTON,2482
+S2,train,US,BEND,2479
+S2,train,US,BROWNSVILLE,2477
+S2,train,US,SIOUX FALLS,2471
+S2,train,US,NEWTON,2464
+S2,test,US,LUBBOCK,2453
+S2,train,US,RIO RANCHO,2449
+S2,test,US,AUBURN,2447
+S2,test,US,CLARKSVILLE,2433
+S2,train,US,SAN BERNARDINO,2421
+S2,train,US,OLYMPIA,2410
+S2,train,US,ROUND ROCK,2399
+S2,test,US,SCOTTSDALE,2392
+S2,train,US,BATON ROUGE,2392
+S2,train,US,CYPRESS,2372
+S2,test,US,MINNEAPOLIS,2371
+S2,train,US,FORT WAYNE,2371
+S2,test,US,CHATTANOOGA,2371
+S2,train,US,YONKERS,2368
+S2,train,US,HAMILTON,2363
+S2,train,US,QUINCY,2362
+S2,train,US,LOWELL,2360
+S2,test,US,VIRGINIA BEACH CITY,2354
+S2,train,US,HENRICO COUNTY,2352
+S2,train,US,FARGO,2351
+S2,test,US,HEMPSTEAD,2347
+S2,test,US,STATEN ISLAND,2347
+S2,train,US,MOUNT VERNON,2335
+S2,train,US,MONROE,2310
+S2,test,US,FRANKLIN,2306
+S2,test,US,ALBANY,2295
+S2,train,US,HENDERSONVILLE,2284
+S2,test,US,BIRMINGHAM,2261
+S2,test,US,INCORPORATED,2257
+S2,train,US,KILLEEN,2237
+S2,test,US,AKRON,2226
+S2,train,US,MANSFIELD,2225
+S2,test,US,GREENVILLE,2225
+S2,test,US,SPOKANE,2224
+S2,train,US,SILVER SPRING,2203
+S2,test,US,GLENDALE,2193
+S2,test,US,PRINCE WILLIAM COUNTY,2191
+S2,train,US,ATHENS,2190
+S2,test,US,GILBERT,2189
+S2,test,US,LITTLE ROCK,2183
+S2,train,US,CHARLESTON,2181
+S2,test,US,IRVING,2170
+S2,train,US,GARLAND,2166
+S2,train,US,BILLINGS,2157
+S2,test,US,MIDDLETOWN,2155
+S2,test,US,JACKSONVILLE,2146
+S2,test,US,MADISON,2130
+S2,test,US,BURLINGTON,2125
+S2,train,US,NAPERVILLE,2117
+S2,test,US,MURFREESBORO,2115
+S2,train,US,FONTANA,2114
+S2,train,US,BROKEN ARROW,2113
+S2,train,US,YOUNGSTOWN,2107
+S2,test,US,ANCHORAGE,2106
+S2,train,US,TYLER,2094
+S2,train,US,CEDAR RAPIDS,2093
+S2,train,US,ASHLAND,2087
+S2,train,US,JACKSON,2085
+S2,train,US,MILFORD,2078
+S2,train,US,ALEXANDRIA,2075
+S2,train,US,HIGH POINT,2070
+S2,train,US,ATL,2066
+S2,test,US,VANCOUVER,2064
+S2,test,US,CANTON,2064
+S2,train,US,TOPEKA,2061
+S2,train,US,HYATTSVILLE,2059
+S2,train,US,LOUDOUN COUNTY,2058
+S2,train,US,FRISCO,2052
+S2,test,US,GEORGETOWN,2050
+S2,train,US,LEANDER,2050
+S2,train,US,CHESAPEAKE CITY,2049
+S2,test,US,EUGENE,2041
+S2,test,US,CAMBRIDGE,2039
+S2,test,US,MARION,2037
+S2,train,US,EVERETT,2036
+S2,train,US,SOUTH BEND,2028
+S2,test,US,CHESTERFIELD COUNTY,2018
+S2,train,US,ELGIN,2008
+S2,train,US,FALL RIVER,2008
+S2,test,US,CHANDLER,2007
+S3,train,US,Texas,292783
+S3,train,US,New York,225082
+S3,train,US,North Carolina,207870
+S3,train,US,Ohio,187259
+S3,test,US,Texas,182189
+S3,train,US,Illinois,166146
+S3,test,US,New York,138965
+S3,train,US,Virginia,131198
+S3,train,US,Tennessee,130965
+S3,test,US,North Carolina,130316
+S3,train,US,Massachusetts,124938
+S3,train,US,Arizona,124371
+S3,test,US,Ohio,115682
+S3,train,US,Washington,109166
+S3,train,US,Indiana,108841
+S3,test,US,Illinois,103572
+S3,train,US,Maryland,89548
+S3,test,US,Tennessee,82742
+S3,train,US,California,82539
+S3,test,US,Virginia,81739
+S3,test,US,Arizona,78660
+S3,test,US,Massachusetts,77512
+S3,train,US,Alabama,71631
+S3,train,US,Wisconsin,69238
+S3,train,US,Minnesota,68314
+S3,test,US,Washington,68235
+S3,test,US,Indiana,68080
+S3,train,US,Oregon,66060
+S3,train,US,Kentucky,64576
+S3,train,US,Arkansas,59650
+S3,train,US,Missouri,56527
+S3,test,US,Maryland,55451
+S3,test,US,California,52450
+S3,train,US,Utah,50673
+S3,train,US,Oklahoma,49767
+S3,train,US,Iowa,49442
+S3,test,US,Alabama,45234
+S3,test,US,Wisconsin,43328
+S3,test,US,Minnesota,43060
+S3,test,US,Oregon,41290
+S3,train,US,Connecticut,40292
+S3,test,US,Kentucky,40111
+S3,test,US,Arkansas,37260
+S3,test,US,Missouri,34879
+S3,train,US,West Virginia,34823
+S3,train,US,Kansas,34489
+S3,test,US,Utah,31468
+S3,test,US,Oklahoma,31094
+S3,test,US,Iowa,30770
+S3,train,US,null,29258
+S3,train,US,NULL,29176
+S3,train,US,N/A,29126
+S3,train,US,<NULL>,28950
+S3,train,US,Houston,28188
+S3,train,US,Maine,26556
+S3,train,US,Pennsylvania,25991
+S3,train,US,New Mexico,25757
+S3,test,US,Connecticut,25671
+S3,train,US,Montana,22199
+S3,test,US,West Virginia,21873
+S3,test,US,Kansas,21306
+S3,train,US,Delaware,20348
+S3,train,US,Chicago,18891
+S3,test,US,NULL,18303
+S3,test,US,<NULL>,18179
+S3,test,US,N/A,18082
+S3,test,US,null,18075
+S3,train,US,Charlotte,17835
+S3,test,US,Houston,17222
+S3,train,US,Columbus,16586
+S3,test,US,Pennsylvania,16581
+S3,test,US,Maine,16518
+S3,test,US,New Mexico,16238
+S3,train,US,TX,15236
+S3,train,US,Phoenix,14959
+S3,train,US,District of Columbia,14894
+S3,train,US,North Dakota,14770
+S3,train,US,Indianapolis,13760
+S3,test,US,Montana,13577
+S3,train,US,Nashville,13094
+S3,test,US,Delaware,12714
+S3,train,US,Dallas,12685
+S3,train,US,Nebraska,12551
+S3,train,US,Louisville,12353
+S3,train,US,Springfield,11943
+S3,train,US,NY,11611
+S3,test,US,Chicago,11584
+S3,train,US,Vermont,11552
+S3,train,US,Austin,11342
+S3,train,US,Sacramento,10987
+S3,test,US,Charlotte,10954
+S3,train,US,NC,10919
+S3,train,US,Cincinnati,10669
+S3,train,US,Fl 0,10634
+S3,train,US,Raleigh,10511
+S3,train,US,Cleveland,10415
+S3,train,US,Portland,10413
+S3,train,US,Brooklyn,10265
+S3,test,US,Columbus,10097
+S3,train,US,Tucson,9985
+S3,train,US,OH,9777
+S3,test,US,Phoenix,9411
+S3,train,US,Louisiana,9390
+S3,train,US,Colorado,9375
+S3,test,US,North Dakota,9361
+S3,test,US,District of Columbia,9302
+S3,train,US,Fort Worth,9300
+S3,train,US,Kansas City,9125
+S3,train,US,Baltimore,9000
+S3,train,US,Boston,8879
+S3,train,US,Saint Louis,8612
+S3,train,US,IL,8596
+S3,test,US,Indianapolis,8583
+S3,train,US,Fl 1,8212
+S3,train,US,Memphis,8195
+S3,test,US,Nashville,8193
+S3,train,US,Alaska,8185
+S3,train,US,Buffalo,8056
+S3,test,US,Dallas,7973
+S3,test,US,Nebraska,7863
+S3,train,US,Tulsa,7825
+S3,train,US,Knoxville,7633
+S3,test,US,TX,7605
+S3,test,US,Springfield,7418
+S3,test,US,Louisville,7396
+S3,train,US,South Carolina,7380
+S3,train,US,Georgia,7170
+S3,test,US,Vermont,7111
+S3,train,US,Albuquerque,7004
+S3,train,US,Wilmington,6936
+S3,train,US,Fairfax County,6894
+S3,test,US,Austin,6872
+S3,train,US,TN,6833
+S3,train,US,VA,6755
+S3,test,US,Cincinnati,6688
+S3,test,US,Sacramento,6662
+S3,train,US,Seattle,6654
+S3,test,US,Raleigh,6528
+S3,test,US,Portland,6502
+S3,train,US,Richmond,6474
+S3,train,US,Wyoming,6459
+S3,train,US,Rochester,6450
+S3,train,US,MA,6439
+S3,train,US,AZ,6431
+S3,test,US,Brooklyn,6376
+S3,test,US,Cleveland,6360
+S3,train,US,Wichita,6158
+S3,train,US,Fayetteville,6150
+S3,test,US,Tucson,6135
+S3,test,US,Fl 0,6026
+S3,test,US,Colorado,6014
+S3,train,US,Greensboro,6008
+S3,train,US,Arlington,6008
+S3,train,US,Mesa,5994
+S3,test,US,Louisiana,5850
+S3,train,US,"# 1",5745
+S3,test,US,NY,5725
+S3,train,US,Floor 0,5670
+S3,test,US,Fort Worth,5649
+S3,train,US,IN,5624
+S3,test,US,Boston,5611
+S3,test,US,Kansas City,5587
+S3,test,US,Baltimore,5566
+S3,train,US,Salem,5525
+S3,train,US,City Of El Paso,5525
+S3,train,US,Dayton,5432
+S3,train,US,Fl. 0,5421
+S3,train,US,Omaha,5402
+S3,train,US,Montgomery,5383
+S3,test,US,NC,5269
+S3,train,US,Columbia,5265
+S3,train,US,Unit 1,5214
+S3,test,US,Saint Louis,5197
+S3,train,US,Salt Lake City,5156
+S3,test,US,Alaska,4984
+S3,test,US,OH,4888
+S3,test,US,Buffalo,4887
+S3,test,US,Fl 1,4857
+S3,test,US,Memphis,4838
+S3,train,US,"# 2",4832
+S3,train,US,WA,4779
+S3,train,US,Durham,4764
+S3,test,US,Tulsa,4724
+S3,test,US,Knoxville,4703
+S3,train,US,MD,4666
+S3,train,US,Tacoma,4646
+S3,train,US,Saint Paul,4629
+S3,train,US,Atlanta,4615
+S3,train,US,Bloomington,4609
+S3,train,US,Unit 2,4606
+S3,train,US,Peoria,4552
+S3,test,US,Wilmington,4502
+S3,train,US,Mobile,4497
+S3,train,US,Huntsville,4496
+S3,train,US,Winston-Salem,4470
+S3,train,US,Floor 1,4454
+S3,train,US,Fl. 1,4410
+S3,train,US,Toledo,4382
+S3,train,US,Spring,4376
+S3,train,US,Staten Island,4375
+S3,test,US,South Carolina,4366
+S3,test,US,IL,4348
+S3,train,US,Katy,4342
+S3,test,US,Albuquerque,4336
+S3,train,US,Hempstead,4310
+S3,test,US,Georgia,4272
+S3,train,US,Lubbock,4263
+S3,test,US,Fairfax County,4228
+S3,test,US,Seattle,4221
+S3,train,US,Scottsdale,4220
+S3,train,US,Auburn,4207
+S3,train,US,Lincoln,4199
+S3,train,US,Greenville,4197
+S3,train,US,CA,4173
+S3,train,US,Franklin,4104
+S3,train,US,Virginia Beach City,4078
+S3,test,US,Richmond,4067
+S3,train,US,Minneapolis,4060
+S3,train,US,Clarksville,4000
+S3,train,US,Irving,3993
+S3,test,US,Rochester,3974
+S3,train,US,Chattanooga,3970
+S3,train,US,Spokane,3938
+S3,train,US,Gilbert,3919
+S3,test,US,Fayetteville,3888
+S3,train,US,Albany,3835
+S3,test,US,Wyoming,3792
+S3,train,US,AL,3779
+S3,train,US,Birmingham,3759
+S3,train,US,Little Rock,3753
+S3,train,US,Canton,3742
+S3,train,US,"# A",3742
+S3,train,US,Middletown,3722
+S3,test,US,Wichita,3720
+S3,train,US,Georgetown,3713
+S3,test,US,Mesa,3706
+S3,train,US,Jacksonville,3703
+S3,train,US,Akron,3689
+S3,train,US,Prince William County,3665
+S3,train,US,Murfreesboro,3636
+S3,train,US,Chesterfield County,3628
+S3,train,US,Madison,3615
+S3,train,US,Glendale,3601
+S3,train,US,Incorporated,3596
+S3,train,US,Burlington,3584
+S3,test,US,Greensboro,3580
+S3,test,US,"# 1",3579
+S3,test,US,Arlington,3573
+S3,test,US,City Of El Paso,3564
+S3,train,US,Vancouver,3562
+S3,train,US,"# B",3550
+S3,train,US,MN,3546
+S3,train,US,WI,3525
+S3,train,US,Amarillo,3523
+S3,test,US,Salem,3495
+S3,train,US,Marion,3492
+S3,test,US,TN,3468
+S3,test,US,Montgomery,3467
+S3,train,US,Clinton,3454
+S3,train,US,OR,3447
+S3,train,US,Chandler,3423
+S3,train,US,Cambridge,3420
+S3,train,US,Bronx,3407
+S3,train,US,Anchorage,3405
+S3,test,US,Floor 0,3392
+S3,train,US,Worcester,3382
+S3,train,US,Unit B,3380
+S3,test,US,Fl. 0,3380
+S3,train,US,Unit A,3373
+S3,test,US,VA,3358
+S3,train,US,KY,3344
+S3,train,US,Evansville,3320
+S3,test,US,Omaha,3316
+S3,test,US,AZ,3304
+S3,test,US,Unit 1,3270
+S3,train,US,Eugene,3267
+S3,train,US,Syracuse,3252
+S3,train,US,Newark,3251
+S3,test,US,Columbia,3251
+S3,test,US,MA,3232
+S3,test,US,Salt Lake City,3210
+S3,train,US,AR,3190
+S3,test,US,Dayton,3157
+S3,train,US,Concord,3154
+S3,train,US,Lebanon,3140
+S3,train,US,Independence,3132
+S3,train,US,South Dakota,3119
+S3,train,US,Brookhaven,3108
+S3,train,US,Huntington,3087
+S3,test,US,Durham,3069
+S3,train,US,Decatur,3063
+S3,train,US,Aurora,3063
+S3,train,US,MO,3042
+S3,train,US,Cary,3028
+S3,train,US,Des Moines,3021
+S3,test,US,"# 2",3018
+S3,train,US,Asheville,2978
+S3,train,US,Beaverton,2946
+S3,train,US,Fairfield,2943
+S3,train,US,Surprise,2939
+S3,test,US,Saint Paul,2925
+S3,test,US,Peoria,2911
+S3,train,US,Lexington,2876
+S3,train,US,"# 3",2874
+S3,test,US,Winston-Salem,2873
+S3,test,US,Mobile,2870
+S3,train,US,Mckinney,2857
+S3,train,US,Hillsboro,2852
+S3,test,US,Tacoma,2833
+S3,train,US,Conroe,2831
+S3,train,US,Tempe,2829
+S3,test,US,Bloomington,2821
+S3,test,US,IN,2819
+S3,train,US,Bowling Green,2814
+S3,test,US,Atlanta,2797
+S3,train,US,Medford,2761
+S3,test,US,Unit 2,2752
+S3,test,US,Toledo,2697
+S3,test,US,Lincoln,2691
+S3,test,US,Spring,2688
+S3,test,US,Huntsville,2688
+S3,test,US,Fl. 1,2677
+S3,train,US,Unit 3,2671
+S3,train,US,UT,2667
+S3,train,US,Virginia Beach,2659
+S3,train,US,Sioux Falls,2659
+S3,train,US,Yuma,2649
+S3,train,US,Troy,2649
+S3,train,US,Salisbury,2644
+S3,train,US,Fort Wayne,2640
+S3,train,US,Plymouth,2630
+S3,train,US,OK,2630
+S3,train,US,Ontario,2611
+S3,train,US,Brownsville,2606
+S3,train,US,Hamilton,2602
+S3,train,US,Baton Rouge,2599
+S3,train,US,Bend,2593
+S3,test,US,Floor 1,2582
+S3,test,US,Auburn,2579
+S3,test,US,Katy,2577
+S3,test,US,Minneapolis,2576
+S3,train,US,Idaho,2575
+S3,train,US,Yonkers,2573
+S3,train,US,San Bernardino,2563
+S3,train,US,Quincy,2548
+S3,train,US,Rockford,2546
+S3,train,US,Newton,2544
+S3,train,US,Cypress,2535
+S3,train,US,Mount Vernon,2533
+S3,test,US,Lubbock,2529
+S3,train,US,Monroe,2525
+S3,train,US,IA,2525
+S3,train,US,Olympia,2523
+S3,test,US,Staten Island,2516
+S3,train,US,Farmington,2514
+S3,train,US,Henrico County,2511
+S3,train,US,Fargo,2510
+S3,test,US,Clarksville,2502
+S3,train,US,Rio Rancho,2485
+S3,test,US,Franklin,2484
+S3,test,US,WA,2470
+S3,test,US,Hempstead,2439
+S3,test,US,Spokane,2433
+S3,train,US,Round Rock,2430
+S3,test,US,Virginia Beach City,2429
+S3,test,US,Chattanooga,2427
+S3,test,US,Albany,2416
+S3,test,US,Gilbert,2414
+S3,train,US,Lowell,2411
+S3,test,US,Scottsdale,2402
+S3,train,US,Mansfield,2399
+S3,train,US,Killeen,2392
+S3,train,US,Hendersonville,2329
+S3,test,US,Jacksonville,2324
+S3,test,US,Akron,2314
+S3,train,US,Garland,2313
+S3,train,US,Naperville,2290
+S3,train,US,Fontana,2288
+S3,train,US,Athens,2288
+S3,test,US,MD,2287
+S3,test,US,Glendale,2287
+S3,train,US,Charleston,2286
+S3,train,US,Billings,2282
+S3,test,US,"# B",2277
+S3,test,US,Middletown,2273
+S3,test,US,Irving,2271
+S3,test,US,Birmingham,2261
+S3,train,US,Tyler,2256
+S3,test,US,Anchorage,2253
+S3,test,US,Greenville,2251
+S3,test,US,"# A",2250
+S3,train,US,Youngstown,2248
+S3,train,US,Silver Spring,2245
+S3,test,US,Incorporated,2238
+S3,train,US,Milford,2238
+S3,train,US,Ashland,2229
+S3,train,US,Leander,2229
+S3,train,US,South Bend,2228
+S3,test,US,Vancouver,2225
+S3,test,US,Murfreesboro,2225
+S3,train,US,Everett,2223
+S3,train,US,"# Apartment 1",2206
+S3,test,US,Canton,2205
+S3,test,US,Burlington,2203
+S3,train,US,Jackson,2200
+S3,train,US,Loudoun County,2197
+S3,test,US,Prince William County,2189
+S3,train,US,Broken Arrow,2188
+S3,train,US,Topeka,2185
+S3,test,US,Little Rock,2183
+S3,train,US,Hyattsville,2167
+S3,test,US,Georgetown,2166
+S3,test,US,Chandler,2160
+S3,train,US,Chesapeake City,2150
+S3,test,US,CA,2146
+S3,test,US,Marion,2137
+S3,train,US,Alexandria,2135
+S3,train,US,Elgin,2124
+S3,test,US,Eugene,2122
+S3,test,US,Madison,2121
+S3,test,US,Chesterfield County,2118
+S3,test,US,Cambridge,2110
+S3,train,US,Frederick,2103
+S3,train,US,High Point,2101
+S3,test,US,Unit B,2098
+S3,train,US,CT,2095
+S3,train,US,Islip,2093
+S3,train,US,Cedar Rapids,2092
+S3,train,US,Laurel,2092
+S3,train,US,Rock Hill,2089
+S3,train,US,Mesquite,2088
+S3,train,US,Frisco,2084
+S3,train,US,Davenport,2058
+S3,train,US,Princeton,2057
+S3,test,US,Brookhaven,2055
+S3,train,US,Puyallup,2055
+S3,train,US,"# Apartment 2",2053
+S3,train,US,Unit Apartment 1,2048
+S3,test,US,Clinton,2046
+S3,train,US,Mooresville,2035
+S3,test,US,Amarillo,2023
+S3,train,US,Florence,2019
+S3,train,US,Pasadena,2019
+S3,train,US,Elk Grove,2009
+S3,train,US,Bristol,2003

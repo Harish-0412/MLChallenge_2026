@@ -1,0 +1,24 @@
+200 row-group tasks, 6 workers
+  40/200 row groups, 4,911,214 rows, 227s
+  80/200 row groups, 9,821,917 rows, 474s
+  120/200 row groups, 14,505,344 rows, 687s
+  160/200 row groups, 19,392,617 rows, 980s
+  200/200 row groups, 24,229,173 rows, 1217s
+{
+  "rows_scanned": 24229173,
+  "wall_seconds": 1216.9,
+  "us_per_row_cpu": 299.7,
+  "peak_worker_memory_mb": 263,
+  "violations": {},
+  "checks": {
+    "no_structural_violations": true,
+    "every_row_scanned": true,
+    "python_counts_equal_independent_sql": true,
+    "placeholder_counts_equal_audit_sql": true,
+    "script_bitmask_equals_eda_census_exactly": true,
+    "no_other_scripts_as_in_eda": true
+  },
+  "passed": true
+}
+wrote name_scan_counts.csv, name_view_collisions.csv, name_verification.json, name_examples.md
+exit=0

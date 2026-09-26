@@ -1,0 +1,2 @@
+duckdb==1.4.3
+rapidfuzz==3.14.3

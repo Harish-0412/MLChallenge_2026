@@ -1,0 +1,1199 @@
+{
+  "created_utc": "2026-09-25T15:44:41.733383+00:00",
+  "python": "3.12.14",
+  "duckdb": "1.4.3",
+  "rapidfuzz": "3.14.3",
+  "normalization_version": "nfc_lower_lmn_v1",
+  "scope": "All six source TSVs and all ground-truth rows",
+  "files": [
+    {
+      "file": "student_resource\\dataset\\train\\train_source1.tsv",
+      "bytes": 210069713,
+      "sha256": "591af0e1dfeb65cab71ea6ee8cb69df00f92d6ba6fa79e05746c938775d14973"
+    },
+    {
+      "file": "student_resource\\dataset\\train\\train_source2.tsv",
+      "bytes": 489301488,
+      "sha256": "6336c1a055eec79cf8a6d99fdc8d32a2e4d9dc2662e00963cb35d66b89ed09ed"
+    },
+    {
+      "file": "student_resource\\dataset\\train\\train_source3.tsv",
+      "bytes": 503705637,
+      "sha256": "67da22f5151898ff3006febd836c1a159e97ae95efa7257a5aff4fda685e58e9"
+    },
+    {
+      "file": "student_resource\\dataset\\test\\test_source1.tsv",
+      "bytes": 175022086,
+      "sha256": "3d4a32c54c2ca9c53fd7c2be105bf26f708f94c4d2f88eb370972a195665c2f5"
+    },
+    {
+      "file": "student_resource\\dataset\\test\\test_source2.tsv",
+      "bytes": 509456422,
+      "sha256": "79d906c7497af2ace70aa277f6e334a652094909de99bd6c57b53420b6a7b2dd"
+    },
+    {
+      "file": "student_resource\\dataset\\test\\test_source3.tsv",
+      "bytes": 506002772,
+      "sha256": "850942b11d2a4343486ed0834e28bce9f3b385f3fd497fd60ccf4ea3b8bda035"
+    },
+    {
+      "file": "student_resource\\dataset\\train\\train_ground_truth.tsv",
+      "bytes": 127015583,
+      "sha256": "70bc1d8a16c667e0155c2105d0ab2ebe41d7e7a85d8a529e3ca81c6c3a5af037"
+    }
+  ],
+  "profiles": {
+    "train_source1": [
+      {
+        "country": "India",
+        "rows": 883188,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 0,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 0,
+        "address_repeated_whitespace": 0,
+        "non_ascii_name": 0,
+        "non_ascii_address": 554,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 604,
+        "format_character_rows": 0,
+        "name_placeholder_like": 0,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 0,
+        "address_without_ascii_digit": 77036,
+        "name_length_p50_p95_p99": [
+          27,
+          38,
+          43
+        ],
+        "name_max_length": 105,
+        "address_length_p50_p95_p99": [
+          76,
+          116,
+          134
+        ],
+        "address_max_length": 256
+      },
+      {
+        "country": "US",
+        "rows": 1323633,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 0,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 0,
+        "address_repeated_whitespace": 968,
+        "non_ascii_name": 0,
+        "non_ascii_address": 0,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 1,
+        "format_character_rows": 0,
+        "name_placeholder_like": 0,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 0,
+        "address_without_ascii_digit": 1,
+        "name_length_p50_p95_p99": [
+          22,
+          35,
+          41
+        ],
+        "name_max_length": 68,
+        "address_length_p50_p95_p99": [
+          34,
+          48,
+          55
+        ],
+        "address_max_length": 93
+      }
+    ],
+    "train_source2": [
+      {
+        "country": "India",
+        "rows": 2017799,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 57846,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 202528,
+        "address_repeated_whitespace": 24620,
+        "non_ascii_name": 562437,
+        "non_ascii_address": 478396,
+        "devanagari_name": 269424,
+        "name_contains_combining_marks": 474128,
+        "address_contains_combining_marks": 477521,
+        "replacement_character_rows": 0,
+        "control_character_rows": 1232,
+        "format_character_rows": 25643,
+        "name_placeholder_like": 0,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 57846,
+        "address_without_ascii_digit": 175215,
+        "name_length_p50_p95_p99": [
+          27,
+          42,
+          49
+        ],
+        "name_max_length": 104,
+        "address_length_p50_p95_p99": [
+          68,
+          110,
+          128
+        ],
+        "address_max_length": 249
+      },
+      {
+        "country": "US",
+        "rows": 3016817,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 111121,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 351864,
+        "address_repeated_whitespace": 82954,
+        "non_ascii_name": 202171,
+        "non_ascii_address": 57,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 0,
+        "format_character_rows": 0,
+        "name_placeholder_like": 6,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 111121,
+        "address_without_ascii_digit": 295726,
+        "name_length_p50_p95_p99": [
+          23,
+          39,
+          46
+        ],
+        "name_max_length": 87,
+        "address_length_p50_p95_p99": [
+          32,
+          43,
+          49
+        ],
+        "address_max_length": 73
+      }
+    ],
+    "train_source3": [
+      {
+        "country": "India",
+        "rows": 2115547,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 64948,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 222899,
+        "address_repeated_whitespace": 0,
+        "non_ascii_name": 391172,
+        "non_ascii_address": 476536,
+        "devanagari_name": 158003,
+        "name_contains_combining_marks": 278095,
+        "address_contains_combining_marks": 475778,
+        "replacement_character_rows": 0,
+        "control_character_rows": 1072,
+        "format_character_rows": 14514,
+        "name_placeholder_like": 7,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 64948,
+        "address_without_ascii_digit": 210381,
+        "name_length_p50_p95_p99": [
+          27,
+          43,
+          51
+        ],
+        "name_max_length": 123,
+        "address_length_p50_p95_p99": [
+          58,
+          106,
+          126
+        ],
+        "address_max_length": 240
+      },
+      {
+        "country": "US",
+        "rows": 3170056,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 110968,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 352717,
+        "address_repeated_whitespace": 4874,
+        "non_ascii_name": 215565,
+        "non_ascii_address": 52,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 0,
+        "format_character_rows": 0,
+        "name_placeholder_like": 11,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 110968,
+        "address_without_ascii_digit": 275925,
+        "name_length_p50_p95_p99": [
+          23,
+          40,
+          49
+        ],
+        "name_max_length": 88,
+        "address_length_p50_p95_p99": [
+          39,
+          53,
+          60
+        ],
+        "address_max_length": 104
+      }
+    ],
+    "test_source1": [
+      {
+        "country": "France",
+        "rows": 259452,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 0,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 0,
+        "address_repeated_whitespace": 281,
+        "non_ascii_name": 40789,
+        "non_ascii_address": 73335,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 2,
+        "format_character_rows": 0,
+        "name_placeholder_like": 0,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 0,
+        "address_without_ascii_digit": 1089,
+        "name_length_p50_p95_p99": [
+          19,
+          29,
+          33
+        ],
+        "name_max_length": 50,
+        "address_length_p50_p95_p99": [
+          48,
+          65,
+          78
+        ],
+        "address_max_length": 147
+      },
+      {
+        "country": "India",
+        "rows": 809986,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 0,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 0,
+        "address_repeated_whitespace": 0,
+        "non_ascii_name": 0,
+        "non_ascii_address": 465,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 527,
+        "format_character_rows": 0,
+        "name_placeholder_like": 0,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 0,
+        "address_without_ascii_digit": 70748,
+        "name_length_p50_p95_p99": [
+          27,
+          38,
+          43
+        ],
+        "name_max_length": 92,
+        "address_length_p50_p95_p99": [
+          76,
+          116,
+          134
+        ],
+        "address_max_length": 268
+      },
+      {
+        "country": "US",
+        "rows": 663106,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 0,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 0,
+        "address_repeated_whitespace": 472,
+        "non_ascii_name": 0,
+        "non_ascii_address": 0,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 0,
+        "format_character_rows": 0,
+        "name_placeholder_like": 0,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 0,
+        "address_without_ascii_digit": 1,
+        "name_length_p50_p95_p99": [
+          22,
+          35,
+          41
+        ],
+        "name_max_length": 66,
+        "address_length_p50_p95_p99": [
+          34,
+          48,
+          55
+        ],
+        "address_max_length": 92
+      }
+    ],
+    "test_source2": [
+      {
+        "country": "France",
+        "rows": 703378,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 21537,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 64090,
+        "address_repeated_whitespace": 568,
+        "non_ascii_name": 172617,
+        "non_ascii_address": 169163,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 2,
+        "format_character_rows": 0,
+        "name_placeholder_like": 45,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 21537,
+        "address_without_ascii_digit": 48193,
+        "name_length_p50_p95_p99": [
+          20,
+          35,
+          41
+        ],
+        "name_max_length": 60,
+        "address_length_p50_p95_p99": [
+          40,
+          59,
+          69
+        ],
+        "address_max_length": 136
+      },
+      {
+        "country": "India",
+        "rows": 2312565,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 52764,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 225009,
+        "address_repeated_whitespace": 29205,
+        "non_ascii_name": 638614,
+        "non_ascii_address": 551461,
+        "devanagari_name": 309103,
+        "name_contains_combining_marks": 546373,
+        "address_contains_combining_marks": 550573,
+        "replacement_character_rows": 0,
+        "control_character_rows": 1363,
+        "format_character_rows": 31104,
+        "name_placeholder_like": 0,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 52764,
+        "address_without_ascii_digit": 161146,
+        "name_length_p50_p95_p99": [
+          28,
+          44,
+          51
+        ],
+        "name_max_length": 102,
+        "address_length_p50_p95_p99": [
+          68,
+          110,
+          128
+        ],
+        "address_max_length": 269
+      },
+      {
+        "country": "US",
+        "rows": 1871330,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 55107,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 211138,
+        "address_repeated_whitespace": 52966,
+        "non_ascii_name": 116927,
+        "non_ascii_address": 41,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 0,
+        "format_character_rows": 0,
+        "name_placeholder_like": 4,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 55107,
+        "address_without_ascii_digit": 148691,
+        "name_length_p50_p95_p99": [
+          24,
+          39,
+          47
+        ],
+        "name_max_length": 85,
+        "address_length_p50_p95_p99": [
+          32,
+          43,
+          49
+        ],
+        "address_max_length": 75
+      }
+    ],
+    "test_source3": [
+      {
+        "country": "France",
+        "rows": 731615,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 21541,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 58135,
+        "address_repeated_whitespace": 42,
+        "non_ascii_name": 175185,
+        "non_ascii_address": 177914,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 5,
+        "format_character_rows": 0,
+        "name_placeholder_like": 48,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 21541,
+        "address_without_ascii_digit": 48398,
+        "name_length_p50_p95_p99": [
+          20,
+          36,
+          43
+        ],
+        "name_max_length": 69,
+        "address_length_p50_p95_p99": [
+          41,
+          60,
+          70
+        ],
+        "address_max_length": 139
+      },
+      {
+        "country": "India",
+        "rows": 2405000,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 59240,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 248382,
+        "address_repeated_whitespace": 0,
+        "non_ascii_name": 437903,
+        "non_ascii_address": 551274,
+        "devanagari_name": 181068,
+        "name_contains_combining_marks": 320182,
+        "address_contains_combining_marks": 550483,
+        "replacement_character_rows": 0,
+        "control_character_rows": 1175,
+        "format_character_rows": 17468,
+        "name_placeholder_like": 11,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 59240,
+        "address_without_ascii_digit": 195311,
+        "name_length_p50_p95_p99": [
+          28,
+          44,
+          52
+        ],
+        "name_max_length": 103,
+        "address_length_p50_p95_p99": [
+          59,
+          106,
+          126
+        ],
+        "address_max_length": 267
+      },
+      {
+        "country": "US",
+        "rows": 1945701,
+        "duplicate_id_rows": 0,
+        "malformed_ids": 0,
+        "wrong_prefix": 0,
+        "missing_name": 0,
+        "missing_address": 55317,
+        "missing_country": 0,
+        "name_edge_whitespace": 0,
+        "address_edge_whitespace": 0,
+        "name_repeated_whitespace": 213079,
+        "address_repeated_whitespace": 3084,
+        "non_ascii_name": 124427,
+        "non_ascii_address": 34,
+        "devanagari_name": 0,
+        "name_contains_combining_marks": 0,
+        "address_contains_combining_marks": 0,
+        "replacement_character_rows": 0,
+        "control_character_rows": 0,
+        "format_character_rows": 0,
+        "name_placeholder_like": 2,
+        "address_placeholder_like": 0,
+        "empty_name_key": 0,
+        "empty_address_key": 55317,
+        "address_without_ascii_digit": 137784,
+        "name_length_p50_p95_p99": [
+          24,
+          41,
+          49
+        ],
+        "name_max_length": 85,
+        "address_length_p50_p95_p99": [
+          39,
+          53,
+          60
+        ],
+        "address_max_length": 107
+      }
+    ]
+  },
+  "collisions": {
+    "train_source1": {
+      "name": [
+        {
+          "country": "India",
+          "key_groups": 559665,
+          "repeated_key_groups": 68593,
+          "repeat_rows_after_first": 323523,
+          "largest_group": 99
+        },
+        {
+          "country": "US",
+          "key_groups": 961759,
+          "repeated_key_groups": 112151,
+          "repeat_rows_after_first": 361874,
+          "largest_group": 253
+        }
+      ],
+      "name_and_address": [
+        {
+          "country": "India",
+          "key_groups": 883188,
+          "repeated_key_groups": 0,
+          "repeat_rows_after_first": 0,
+          "largest_group": 1
+        },
+        {
+          "country": "US",
+          "key_groups": 1323633,
+          "repeated_key_groups": 0,
+          "repeat_rows_after_first": 0,
+          "largest_group": 1
+        }
+      ],
+      "duplicate_ids_global": 0,
+      "raw_payload_duplicate_rows": 0
+    },
+    "train_source2": {
+      "name": [
+        {
+          "country": "India",
+          "key_groups": 1587521,
+          "repeated_key_groups": 164303,
+          "repeat_rows_after_first": 430278,
+          "largest_group": 128
+        },
+        {
+          "country": "US",
+          "key_groups": 2445769,
+          "repeated_key_groups": 231892,
+          "repeat_rows_after_first": 571048,
+          "largest_group": 526
+        }
+      ],
+      "name_and_address": [
+        {
+          "country": "India",
+          "key_groups": 1987867,
+          "repeated_key_groups": 28776,
+          "repeat_rows_after_first": 29932,
+          "largest_group": 5
+        },
+        {
+          "country": "US",
+          "key_groups": 2979041,
+          "repeated_key_groups": 36217,
+          "repeat_rows_after_first": 37776,
+          "largest_group": 5
+        }
+      ],
+      "duplicate_ids_global": 0,
+      "raw_payload_duplicate_rows": 25873
+    },
+    "train_source3": {
+      "name": [
+        {
+          "country": "India",
+          "key_groups": 1713760,
+          "repeated_key_groups": 163526,
+          "repeat_rows_after_first": 401787,
+          "largest_group": 183
+        },
+        {
+          "country": "US",
+          "key_groups": 2576044,
+          "repeated_key_groups": 237707,
+          "repeat_rows_after_first": 594012,
+          "largest_group": 521
+        }
+      ],
+      "name_and_address": [
+        {
+          "country": "India",
+          "key_groups": 2100751,
+          "repeated_key_groups": 14332,
+          "repeat_rows_after_first": 14796,
+          "largest_group": 4
+        },
+        {
+          "country": "US",
+          "key_groups": 3134427,
+          "repeated_key_groups": 34242,
+          "repeat_rows_after_first": 35629,
+          "largest_group": 4
+        }
+      ],
+      "duplicate_ids_global": 0,
+      "raw_payload_duplicate_rows": 18860
+    },
+    "test_source1": {
+      "name": [
+        {
+          "country": "France",
+          "key_groups": 192936,
+          "repeated_key_groups": 21940,
+          "repeat_rows_after_first": 66516,
+          "largest_group": 205
+        },
+        {
+          "country": "India",
+          "key_groups": 518593,
+          "repeated_key_groups": 63025,
+          "repeat_rows_after_first": 291393,
+          "largest_group": 98
+        },
+        {
+          "country": "US",
+          "key_groups": 517095,
+          "repeated_key_groups": 47122,
+          "repeat_rows_after_first": 146011,
+          "largest_group": 123
+        }
+      ],
+      "name_and_address": [
+        {
+          "country": "France",
+          "key_groups": 259451,
+          "repeated_key_groups": 1,
+          "repeat_rows_after_first": 1,
+          "largest_group": 2
+        },
+        {
+          "country": "India",
+          "key_groups": 809986,
+          "repeated_key_groups": 0,
+          "repeat_rows_after_first": 0,
+          "largest_group": 1
+        },
+        {
+          "country": "US",
+          "key_groups": 663106,
+          "repeated_key_groups": 0,
+          "repeat_rows_after_first": 0,
+          "largest_group": 1
+        }
+      ],
+      "duplicate_ids_global": 0,
+      "raw_payload_duplicate_rows": 0
+    },
+    "test_source2": {
+      "name": [
+        {
+          "country": "France",
+          "key_groups": 553713,
+          "repeated_key_groups": 65439,
+          "repeat_rows_after_first": 149665,
+          "largest_group": 300
+        },
+        {
+          "country": "India",
+          "key_groups": 1865383,
+          "repeated_key_groups": 169823,
+          "repeat_rows_after_first": 447182,
+          "largest_group": 142
+        },
+        {
+          "country": "US",
+          "key_groups": 1597247,
+          "repeated_key_groups": 123792,
+          "repeat_rows_after_first": 274083,
+          "largest_group": 265
+        }
+      ],
+      "name_and_address": [
+        {
+          "country": "France",
+          "key_groups": 692728,
+          "repeated_key_groups": 10180,
+          "repeat_rows_after_first": 10650,
+          "largest_group": 4
+        },
+        {
+          "country": "India",
+          "key_groups": 2285171,
+          "repeated_key_groups": 26313,
+          "repeat_rows_after_first": 27394,
+          "largest_group": 5
+        },
+        {
+          "country": "US",
+          "key_groups": 1853262,
+          "repeated_key_groups": 17413,
+          "repeat_rows_after_first": 18068,
+          "largest_group": 4
+        }
+      ],
+      "duplicate_ids_global": 0,
+      "raw_payload_duplicate_rows": 22641
+    },
+    "test_source3": {
+      "name": [
+        {
+          "country": "France",
+          "key_groups": 573634,
+          "repeated_key_groups": 66365,
+          "repeat_rows_after_first": 157981,
+          "largest_group": 352
+        },
+        {
+          "country": "India",
+          "key_groups": 1989933,
+          "repeated_key_groups": 167482,
+          "repeat_rows_after_first": 415067,
+          "largest_group": 166
+        },
+        {
+          "country": "US",
+          "key_groups": 1661415,
+          "repeated_key_groups": 126765,
+          "repeat_rows_after_first": 284286,
+          "largest_group": 269
+        }
+      ],
+      "name_and_address": [
+        {
+          "country": "France",
+          "key_groups": 720969,
+          "repeated_key_groups": 10210,
+          "repeat_rows_after_first": 10646,
+          "largest_group": 4
+        },
+        {
+          "country": "India",
+          "key_groups": 2391230,
+          "repeated_key_groups": 13339,
+          "repeat_rows_after_first": 13770,
+          "largest_group": 4
+        },
+        {
+          "country": "US",
+          "key_groups": 1928327,
+          "repeated_key_groups": 16724,
+          "repeat_rows_after_first": 17374,
+          "largest_group": 4
+        }
+      ],
+      "duplicate_ids_global": 0,
+      "raw_payload_duplicate_rows": 16293
+    }
+  },
+  "cross_split": [
+    {
+      "source": 1,
+      "same_id_overlap": 0,
+      "test_records_with_exact_train_payload": 0,
+      "test_records_with_equal_normalized_train_payload": 0
+    },
+    {
+      "source": 2,
+      "same_id_overlap": 0,
+      "test_records_with_exact_train_payload": 0,
+      "test_records_with_equal_normalized_train_payload": 1751
+    },
+    {
+      "source": 3,
+      "same_id_overlap": 0,
+      "test_records_with_exact_train_payload": 0,
+      "test_records_with_equal_normalized_train_payload": 1356
+    }
+  ],
+  "positive_pairs": [
+    {
+      "target_source": 2,
+      "country": "India",
+      "links": 1480545,
+      "missing_targets": 0,
+      "country_mismatches": 0,
+      "raw_name_equal": 39557,
+      "name_key_equal": 220780,
+      "raw_address_equal": 0,
+      "address_key_equal": 166663,
+      "exact_name_or_address_retrievable": 363428,
+      "missing_target_addresses": 56635,
+      "devanagari_target_names": 195441,
+      "target_contains_combining_marks": 606998,
+      "both_have_numeric_token": 1287801,
+      "disjoint_numeric_tokens": 51568
+    },
+    {
+      "target_source": 2,
+      "country": "US",
+      "links": 2213074,
+      "missing_targets": 0,
+      "country_mismatches": 0,
+      "raw_name_equal": 135060,
+      "name_key_equal": 571229,
+      "raw_address_equal": 5,
+      "address_key_equal": 294265,
+      "exact_name_or_address_retrievable": 789737,
+      "missing_target_addresses": 108549,
+      "devanagari_target_names": 0,
+      "target_contains_combining_marks": 0,
+      "both_have_numeric_token": 1924505,
+      "disjoint_numeric_tokens": 236328
+    },
+    {
+      "target_source": 3,
+      "country": "India",
+      "links": 1579298,
+      "missing_targets": 0,
+      "country_mismatches": 0,
+      "raw_name_equal": 43392,
+      "name_key_equal": 265426,
+      "raw_address_equal": 65377,
+      "address_key_equal": 65749,
+      "exact_name_or_address_retrievable": 330964,
+      "missing_target_addresses": 63452,
+      "devanagari_target_names": 117284,
+      "target_contains_combining_marks": 501392,
+      "both_have_numeric_token": 1352239,
+      "disjoint_numeric_tokens": 61296
+    },
+    {
+      "target_source": 3,
+      "country": "US",
+      "links": 2365448,
+      "missing_targets": 0,
+      "country_mismatches": 0,
+      "raw_name_equal": 136109,
+      "name_key_equal": 611358,
+      "raw_address_equal": 104692,
+      "address_key_equal": 104692,
+      "exact_name_or_address_retrievable": 716050,
+      "missing_target_addresses": 108382,
+      "devanagari_target_names": 0,
+      "target_contains_combining_marks": 0,
+      "both_have_numeric_token": 2096296,
+      "disjoint_numeric_tokens": 210264
+    }
+  ],
+  "pair_sample": {
+    "S2": {
+      "method": "DuckDB hash(s1,target)%200=0; deterministic at pinned version; approximately 0.5% of positive pairs",
+      "summary": [
+        {
+          "country": "India",
+          "sample_pairs": 7361,
+          "name_ratio_p10_p50_p90": [
+            9.523809523809524,
+            80.95238095238095,
+            100.0
+          ],
+          "name_ratio_below_50": 1821
+        },
+        {
+          "country": "US",
+          "sample_pairs": 11015,
+          "name_ratio_p10_p50_p90": [
+            68.08510638297872,
+            90.32258064516128,
+            100.0
+          ],
+          "name_ratio_below_50": 258
+        }
+      ]
+    },
+    "S3": {
+      "method": "DuckDB hash(s1,target)%200=0; deterministic at pinned version; approximately 0.5% of positive pairs",
+      "summary": [
+        {
+          "country": "India",
+          "sample_pairs": 7928,
+          "name_ratio_p10_p50_p90": [
+            11.764705882352944,
+            83.33333333333334,
+            100.0
+          ],
+          "name_ratio_below_50": 1306
+        },
+        {
+          "country": "US",
+          "sample_pairs": 11803,
+          "name_ratio_p10_p50_p90": [
+            64.70588235294117,
+            89.47368421052632,
+            100.0
+          ],
+          "name_ratio_below_50": 414
+        }
+      ]
+    }
+  },
+  "negative_sample_warning": "No hard-negative or retrieval experiment is included in this audit.",
+  "truth_integrity": {
+    "rows": 2206821,
+    "duplicate_s1_rows": 0,
+    "missing_s1_rows": 0,
+    "unknown_s1_rows": 0,
+    "positive_links": 7638365,
+    "duplicate_pairs": 0,
+    "targets_with_multiple_s1_owners": 0,
+    "wrong_target_prefix": 0
+  },
+  "match_counts": [
+    {
+      "country": "India",
+      "matches": 0,
+      "entities": 49351
+    },
+    {
+      "country": "India",
+      "matches": 1,
+      "entities": 47468
+    },
+    {
+      "country": "India",
+      "matches": 2,
+      "entities": 149927
+    },
+    {
+      "country": "India",
+      "matches": 3,
+      "entities": 211965
+    },
+    {
+      "country": "India",
+      "matches": 4,
+      "entities": 193669
+    },
+    {
+      "country": "India",
+      "matches": 5,
+      "entities": 129339
+    },
+    {
+      "country": "India",
+      "matches": 6,
+      "entities": 66462
+    },
+    {
+      "country": "India",
+      "matches": 7,
+      "entities": 25669
+    },
+    {
+      "country": "India",
+      "matches": 8,
+      "entities": 7463
+    },
+    {
+      "country": "India",
+      "matches": 9,
+      "entities": 1671
+    },
+    {
+      "country": "India",
+      "matches": 10,
+      "entities": 187
+    },
+    {
+      "country": "India",
+      "matches": 11,
+      "entities": 17
+    },
+    {
+      "country": "US",
+      "matches": 0,
+      "entities": 73896
+    },
+    {
+      "country": "US",
+      "matches": 1,
+      "entities": 71689
+    },
+    {
+      "country": "US",
+      "matches": 2,
+      "entities": 225285
+    },
+    {
+      "country": "US",
+      "matches": 3,
+      "entities": 318876
+    },
+    {
+      "country": "US",
+      "matches": 4,
+      "entities": 290446
+    },
+    {
+      "country": "US",
+      "matches": 5,
+      "entities": 192618
+    },
+    {
+      "country": "US",
+      "matches": 6,
+      "entities": 98406
+    },
+    {
+      "country": "US",
+      "matches": 7,
+      "entities": 38299
+    },
+    {
+      "country": "US",
+      "matches": 8,
+      "entities": 11217
+    },
+    {
+      "country": "US",
+      "matches": 9,
+      "entities": 2534
+    },
+    {
+      "country": "US",
+      "matches": 10,
+      "entities": 347
+    },
+    {
+      "country": "US",
+      "matches": 11,
+      "entities": 20
+    }
+  ],
+  "ambiguous_s1_examples": [],
+  "exact_key_oracle": [
+    {
+      "country": "India",
+      "s1_entities": 883188,
+      "singletons": 49351,
+      "entities_all_links_retrieved_including_singletons": 72791,
+      "macro_f05_oracle_ceiling": 0.4395474771717413
+    },
+    {
+      "country": "US",
+      "s1_entities": 1323633,
+      "singletons": 73896,
+      "entities_all_links_retrieved_including_singletons": 143047,
+      "macro_f05_oracle_ceiling": 0.571623363983673
+    }
+  ],
+  "exact_key_oracle_note": "Unlimited country+exact normalized name OR nonempty address candidates, with a hypothetical perfect classifier; measured on all training labels, not a validation model score. Ignores practical block caps.",
+  "elapsed_seconds": 232.81,
+  "complete": true
+}

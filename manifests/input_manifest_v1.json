@@ -1,0 +1,570 @@
+{
+  "allowlist": {
+    "test_source1": "test/test_source1.tsv",
+    "test_source2": "test/test_source2.tsv",
+    "test_source3": "test/test_source3.tsv",
+    "train_ground_truth": "train/train_ground_truth.tsv",
+    "train_source1": "train/train_source1.tsv",
+    "train_source2": "train/train_source2.tsv",
+    "train_source3": "train/train_source3.tsv"
+  },
+  "dataset_directory": "student_resource/dataset",
+  "excluded_files_never_read": [
+    ".DS_Store"
+  ],
+  "files": {
+    "test_source1": {
+      "bytes": 175022086,
+      "duckdb_raw_parse": {
+        "address_codepoints": 99124351,
+        "content_hash_sum": "15974372543495197622815090",
+        "distinct_ids": 1732544,
+        "empty_address_after_trim": 0,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 41297657,
+        "per_country": {
+          "France": {
+            "blank_address": 0,
+            "rows": 259452
+          },
+          "India": {
+            "blank_address": 0,
+            "rows": 809986
+          },
+          "US": {
+            "blank_address": 0,
+            "rows": 663106
+          }
+        },
+        "rows": 1732544
+      },
+      "parquet_copy": {
+        "address_codepoints": 99124351,
+        "content_hash_sum": "15974372543495197622815090",
+        "distinct_ids": 1732544,
+        "empty_address_after_trim": 0,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 41297657,
+        "path": "data/interim/test_source1.parquet",
+        "per_country": {
+          "France": {
+            "blank_address": 0,
+            "rows": 259452
+          },
+          "India": {
+            "blank_address": 0,
+            "rows": 809986
+          },
+          "US": {
+            "blank_address": 0,
+            "rows": 663106
+          }
+        },
+        "rows": 1732544
+      },
+      "path": "student_resource/dataset/test/test_source1.tsv",
+      "python_parse": {
+        "address_codepoints": 99124351,
+        "crlf_lines": 0,
+        "distinct_ids": 1732544,
+        "empty_address_after_strip": 0,
+        "empty_country_after_strip": 0,
+        "empty_name_after_strip": 0,
+        "has_bom": false,
+        "id_format_violations": 0,
+        "id_prefix_violations": 0,
+        "lines_with_double_quote": 134,
+        "max_address_length": 268,
+        "max_name_length": 92,
+        "name_codepoints": 41297657,
+        "per_country": {
+          "France": {
+            "blank_address": 0,
+            "rows": 259452
+          },
+          "India": {
+            "blank_address": 0,
+            "rows": 809986
+          },
+          "US": {
+            "blank_address": 0,
+            "rows": 663106
+          }
+        },
+        "physical_lines": 1732545,
+        "rows": 1732544,
+        "rows_with_quote_char_in_value": 134
+      },
+      "sha256": "3d4a32c54c2ca9c53fd7c2be105bf26f708f94c4d2f88eb370972a195665c2f5"
+    },
+    "test_source2": {
+      "bytes": 509456422,
+      "duckdb_raw_parse": {
+        "address_codepoints": 246384076,
+        "content_hash_sum": "45077687799900633237400913",
+        "distinct_ids": 4887273,
+        "empty_address_after_trim": 129408,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 125620736,
+        "per_country": {
+          "France": {
+            "blank_address": 21537,
+            "rows": 703378
+          },
+          "India": {
+            "blank_address": 52764,
+            "rows": 2312565
+          },
+          "US": {
+            "blank_address": 55107,
+            "rows": 1871330
+          }
+        },
+        "rows": 4887273
+      },
+      "parquet_copy": {
+        "address_codepoints": 246384076,
+        "content_hash_sum": "45077687799900633237400913",
+        "distinct_ids": 4887273,
+        "empty_address_after_trim": 129408,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 125620736,
+        "path": "data/interim/test_source2.parquet",
+        "per_country": {
+          "France": {
+            "blank_address": 21537,
+            "rows": 703378
+          },
+          "India": {
+            "blank_address": 52764,
+            "rows": 2312565
+          },
+          "US": {
+            "blank_address": 55107,
+            "rows": 1871330
+          }
+        },
+        "rows": 4887273
+      },
+      "path": "student_resource/dataset/test/test_source2.tsv",
+      "python_parse": {
+        "address_codepoints": 246384076,
+        "crlf_lines": 0,
+        "distinct_ids": 4887273,
+        "empty_address_after_strip": 129408,
+        "empty_country_after_strip": 0,
+        "empty_name_after_strip": 0,
+        "has_bom": false,
+        "id_format_violations": 0,
+        "id_prefix_violations": 0,
+        "lines_with_double_quote": 349,
+        "max_address_length": 269,
+        "max_name_length": 102,
+        "name_codepoints": 125620736,
+        "per_country": {
+          "France": {
+            "blank_address": 21537,
+            "rows": 703378
+          },
+          "India": {
+            "blank_address": 52764,
+            "rows": 2312565
+          },
+          "US": {
+            "blank_address": 55107,
+            "rows": 1871330
+          }
+        },
+        "physical_lines": 4887274,
+        "rows": 4887273,
+        "rows_with_quote_char_in_value": 349
+      },
+      "sha256": "79d906c7497af2ace70aa277f6e334a652094909de99bd6c57b53420b6a7b2dd"
+    },
+    "test_source3": {
+      "bytes": 506002772,
+      "duckdb_raw_parse": {
+        "address_codepoints": 247714475,
+        "content_hash_sum": "46878286440209729965426251",
+        "distinct_ids": 5082316,
+        "empty_address_after_trim": 136098,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 130387805,
+        "per_country": {
+          "France": {
+            "blank_address": 21541,
+            "rows": 731615
+          },
+          "India": {
+            "blank_address": 59240,
+            "rows": 2405000
+          },
+          "US": {
+            "blank_address": 55317,
+            "rows": 1945701
+          }
+        },
+        "rows": 5082316
+      },
+      "parquet_copy": {
+        "address_codepoints": 247714475,
+        "content_hash_sum": "46878286440209729965426251",
+        "distinct_ids": 5082316,
+        "empty_address_after_trim": 136098,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 130387805,
+        "path": "data/interim/test_source3.parquet",
+        "per_country": {
+          "France": {
+            "blank_address": 21541,
+            "rows": 731615
+          },
+          "India": {
+            "blank_address": 59240,
+            "rows": 2405000
+          },
+          "US": {
+            "blank_address": 55317,
+            "rows": 1945701
+          }
+        },
+        "rows": 5082316
+      },
+      "path": "student_resource/dataset/test/test_source3.tsv",
+      "python_parse": {
+        "address_codepoints": 247714475,
+        "crlf_lines": 0,
+        "distinct_ids": 5082316,
+        "empty_address_after_strip": 136098,
+        "empty_country_after_strip": 0,
+        "empty_name_after_strip": 0,
+        "has_bom": false,
+        "id_format_violations": 0,
+        "id_prefix_violations": 0,
+        "lines_with_double_quote": 330,
+        "max_address_length": 267,
+        "max_name_length": 103,
+        "name_codepoints": 130387805,
+        "per_country": {
+          "France": {
+            "blank_address": 21541,
+            "rows": 731615
+          },
+          "India": {
+            "blank_address": 59240,
+            "rows": 2405000
+          },
+          "US": {
+            "blank_address": 55317,
+            "rows": 1945701
+          }
+        },
+        "physical_lines": 5082317,
+        "rows": 5082316,
+        "rows_with_quote_char_in_value": 330
+      },
+      "sha256": "850942b11d2a4343486ed0834e28bce9f3b385f3fd497fd60ccf4ea3b8bda035"
+    },
+    "train_ground_truth": {
+      "bytes": 127015583,
+      "path": "student_resource/dataset/train/train_ground_truth.tsv",
+      "python_parse": {
+        "crlf_lines": 0,
+        "distinct_source1_ids": 2206821,
+        "has_bom": false,
+        "lines_with_double_quote": 0,
+        "match_count_distribution": {
+          "0": 123247,
+          "1": 119157,
+          "10": 534,
+          "11": 37,
+          "2": 375212,
+          "3": 530841,
+          "4": 484115,
+          "5": 321957,
+          "6": 164868,
+          "7": 63968,
+          "8": 18680,
+          "9": 4205
+        },
+        "max_matches_per_row": 11,
+        "physical_lines": 2206822,
+        "positive_links": 7638365,
+        "rows": 2206821,
+        "rows_with_duplicate_ids_in_list": 0,
+        "rows_with_no_matches": 123247,
+        "source1_id_format_violations": 0,
+        "target_id_format_violations": 0
+      },
+      "sha256": "70bc1d8a16c667e0155c2105d0ab2ebe41d7e7a85d8a529e3ca81c6c3a5af037"
+    },
+    "train_source1": {
+      "bytes": 210069713,
+      "duckdb_raw_parse": {
+        "address_codepoints": 114900812,
+        "content_hash_sum": "20358445452400355580156314",
+        "distinct_ids": 2206821,
+        "empty_address_after_trim": 0,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 53039626,
+        "per_country": {
+          "India": {
+            "blank_address": 0,
+            "rows": 883188
+          },
+          "US": {
+            "blank_address": 0,
+            "rows": 1323633
+          }
+        },
+        "rows": 2206821
+      },
+      "parquet_copy": {
+        "address_codepoints": 114900812,
+        "content_hash_sum": "20358445452400355580156314",
+        "distinct_ids": 2206821,
+        "empty_address_after_trim": 0,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 53039626,
+        "path": "data/interim/train_source1.parquet",
+        "per_country": {
+          "India": {
+            "blank_address": 0,
+            "rows": 883188
+          },
+          "US": {
+            "blank_address": 0,
+            "rows": 1323633
+          }
+        },
+        "rows": 2206821
+      },
+      "path": "student_resource/dataset/train/train_source1.tsv",
+      "python_parse": {
+        "address_codepoints": 114900812,
+        "crlf_lines": 0,
+        "distinct_ids": 2206821,
+        "empty_address_after_strip": 0,
+        "empty_country_after_strip": 0,
+        "empty_name_after_strip": 0,
+        "has_bom": false,
+        "id_format_violations": 0,
+        "id_prefix_violations": 0,
+        "lines_with_double_quote": 4,
+        "max_address_length": 256,
+        "max_name_length": 105,
+        "name_codepoints": 53039626,
+        "per_country": {
+          "India": {
+            "blank_address": 0,
+            "rows": 883188
+          },
+          "US": {
+            "blank_address": 0,
+            "rows": 1323633
+          }
+        },
+        "physical_lines": 2206822,
+        "rows": 2206821,
+        "rows_with_quote_char_in_value": 4
+      },
+      "sha256": "591af0e1dfeb65cab71ea6ee8cb69df00f92d6ba6fa79e05746c938775d14973"
+    },
+    "train_source2": {
+      "bytes": 489301488,
+      "duckdb_raw_parse": {
+        "address_codepoints": 232729699,
+        "content_hash_sum": "46425213075049416523100293",
+        "distinct_ids": 5034616,
+        "empty_address_after_trim": 168967,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 126386860,
+        "per_country": {
+          "India": {
+            "blank_address": 57846,
+            "rows": 2017799
+          },
+          "US": {
+            "blank_address": 111121,
+            "rows": 3016817
+          }
+        },
+        "rows": 5034616
+      },
+      "parquet_copy": {
+        "address_codepoints": 232729699,
+        "content_hash_sum": "46425213075049416523100293",
+        "distinct_ids": 5034616,
+        "empty_address_after_trim": 168967,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 126386860,
+        "path": "data/interim/train_source2.parquet",
+        "per_country": {
+          "India": {
+            "blank_address": 57846,
+            "rows": 2017799
+          },
+          "US": {
+            "blank_address": 111121,
+            "rows": 3016817
+          }
+        },
+        "rows": 5034616
+      },
+      "path": "student_resource/dataset/train/train_source2.tsv",
+      "python_parse": {
+        "address_codepoints": 232729699,
+        "crlf_lines": 0,
+        "distinct_ids": 5034616,
+        "empty_address_after_strip": 168967,
+        "empty_country_after_strip": 0,
+        "empty_name_after_strip": 0,
+        "has_bom": false,
+        "id_format_violations": 0,
+        "id_prefix_violations": 0,
+        "lines_with_double_quote": 6,
+        "max_address_length": 249,
+        "max_name_length": 104,
+        "name_codepoints": 126386860,
+        "per_country": {
+          "India": {
+            "blank_address": 57846,
+            "rows": 2017799
+          },
+          "US": {
+            "blank_address": 111121,
+            "rows": 3016817
+          }
+        },
+        "physical_lines": 5034617,
+        "rows": 5034616,
+        "rows_with_quote_char_in_value": 6
+      },
+      "sha256": "6336c1a055eec79cf8a6d99fdc8d32a2e4d9dc2662e00963cb35d66b89ed09ed"
+    },
+    "train_source3": {
+      "bytes": 503705637,
+      "duckdb_raw_parse": {
+        "address_codepoints": 246913970,
+        "content_hash_sum": "48771004148109689755392681",
+        "distinct_ids": 5285603,
+        "empty_address_after_trim": 175916,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 133208527,
+        "per_country": {
+          "India": {
+            "blank_address": 64948,
+            "rows": 2115547
+          },
+          "US": {
+            "blank_address": 110968,
+            "rows": 3170056
+          }
+        },
+        "rows": 5285603
+      },
+      "parquet_copy": {
+        "address_codepoints": 246913970,
+        "content_hash_sum": "48771004148109689755392681",
+        "distinct_ids": 5285603,
+        "empty_address_after_trim": 175916,
+        "empty_country_after_trim": 0,
+        "empty_name_after_trim": 0,
+        "name_codepoints": 133208527,
+        "path": "data/interim/train_source3.parquet",
+        "per_country": {
+          "India": {
+            "blank_address": 64948,
+            "rows": 2115547
+          },
+          "US": {
+            "blank_address": 110968,
+            "rows": 3170056
+          }
+        },
+        "rows": 5285603
+      },
+      "path": "student_resource/dataset/train/train_source3.tsv",
+      "python_parse": {
+        "address_codepoints": 246913970,
+        "crlf_lines": 0,
+        "distinct_ids": 5285603,
+        "empty_address_after_strip": 175916,
+        "empty_country_after_strip": 0,
+        "empty_name_after_strip": 0,
+        "has_bom": false,
+        "id_format_violations": 0,
+        "id_prefix_violations": 0,
+        "lines_with_double_quote": 0,
+        "max_address_length": 240,
+        "max_name_length": 123,
+        "name_codepoints": 133208527,
+        "per_country": {
+          "India": {
+            "blank_address": 64948,
+            "rows": 2115547
+          },
+          "US": {
+            "blank_address": 110968,
+            "rows": 3170056
+          }
+        },
+        "physical_lines": 5285604,
+        "rows": 5285603,
+        "rows_with_quote_char_in_value": 0
+      },
+      "sha256": "67da22f5151898ff3006febd836c1a159e97ae95efa7257a5aff4fda685e58e9"
+    }
+  },
+  "label_integrity": {
+    "distinct_source1_ids": 2206821,
+    "duplicate_pairs": 0,
+    "links_to_source2": 3693619,
+    "links_to_source3": 3944746,
+    "links_with_country_mismatch": 0,
+    "positive_links": 7638365,
+    "rows": 2206821,
+    "source1_ids_missing_from_truth": 0,
+    "targets_missing_from_train_source2_source3": 0,
+    "targets_with_multiple_source1_owners": 0,
+    "truth_ids_unknown_in_train_source1": 0
+  },
+  "manifest_version": "input_manifest_v1",
+  "parser": {
+    "duckdb": "read_csv delim=TAB, quote/escape=\", strict_mode=true, ignore_errors=false, all VARCHAR, no NULL conversion",
+    "python": "csv.reader(delimiter='\\t', quotechar='\"', doublequote=True, strict=True), UTF-8 strict"
+  },
+  "reconciliation": {
+    "duckdb_raw_equals_parquet": true,
+    "no_structural_anomalies": true,
+    "per_country_rows_equal_audit": true,
+    "python_equals_duckdb_raw": true,
+    "sha256_and_bytes_equal_audit": true
+  },
+  "source_columns": [
+    "entity_id",
+    "business_name",
+    "business_address",
+    "country"
+  ],
+  "totals": {
+    "label_rows": 2206821,
+    "positive_links": 7638365,
+    "source_rows": 24229173
+  },
+  "truth_columns": [
+    "source1_entity_id",
+    "matched_entity_ids"
+  ]
+}

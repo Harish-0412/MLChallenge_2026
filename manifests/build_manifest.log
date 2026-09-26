@@ -1,0 +1,33 @@
+hashing inputs
+strict Python parse with 4 workers
+  test_source2: 4,887,273 rows in 17.34s, peak 451 MB
+  test_source3: 5,082,316 rows in 18.22s, peak 716 MB
+  train_source3: 5,285,603 rows in 18.61s, peak 716 MB
+  train_source2: 5,034,616 rows in 17.81s, peak 716 MB
+  train_source1: 2,206,821 rows in 7.3s, peak 451 MB
+  test_source1: 1,732,544 rows in 6.22s, peak 716 MB
+  train_ground_truth: 2,206,821 rows in 11.5s, peak 716 MB
+DuckDB parse of the raw TSVs and of the Parquet copies
+  train_source1: done in 1.56s
+  train_source2: done in 3.58s
+  train_source3: done in 3.74s
+  test_source1: done in 1.33s
+  test_source2: done in 3.99s
+  test_source3: done in 4.24s
+label integrity
+wrote manifests/input_manifest_v1.json  sha256 046b2b1d58a703c9200850da410dc26351c0eeb8e2e916b44becc6c990114ce1
+{
+  "totals": {
+    "source_rows": 24229173,
+    "label_rows": 2206821,
+    "positive_links": 7638365
+  },
+  "reconciliation": {
+    "sha256_and_bytes_equal_audit": true,
+    "python_equals_duckdb_raw": true,
+    "duckdb_raw_equals_parquet": true,
+    "per_country_rows_equal_audit": true,
+    "no_structural_anomalies": true
+  }
+}
+exit=0

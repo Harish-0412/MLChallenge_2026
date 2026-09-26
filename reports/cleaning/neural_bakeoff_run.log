@@ -1,0 +1,47 @@
+device: NVIDIA GeForce RTX 3050 6GB Laptop GPU, torch 2.14.0+cu126, VRAM 6.0 GiB
+10,000 query pairs; 883,188 S1 India names
+479,954 unique S1 cores, 379,330 unique S1 skeletons
+skeleton {'median_rank': 1.0, 'mean_reciprocal_rank': 0.7190665741520015, 'recall@1': 64.4, 'recall@5': 78.0, 'recall@10': 82.8, 'recall@50': 93.2, 'recall@100': 95.9, 'recall@500': 98.4, 'recall@1000': 99.0, 'seconds': 26.2, 'device': 'CPU (RapidFuzz, all cores)'}
+loading sentence-transformers/LaBSE ...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  14%|█▎        | 27/199 [00:00<00:00, 251.37it/s]Loading weights:  27%|██▋       | 53/199 [00:00<00:00, 231.19it/s]Loading weights:  39%|███▊      | 77/199 [00:00<00:00, 165.31it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 458.75it/s]
+labse {'median_rank': 1.0, 'mean_reciprocal_rank': 0.6310620307922363, 'recall@1': 54.1, 'recall@5': 73.7, 'recall@10': 78.8, 'recall@50': 87.1, 'recall@100': 89.7, 'recall@500': 95.2, 'recall@1000': 97.0, 'seconds_to_encode_and_rank': 62.6, 'names_encoded_per_second': 7821, 'peak_vram_gib': 3.79, 'device': 'NVIDIA GeForce RTX 3050 6GB Laptop GPU'}
+loading intfloat/multilingual-e5-small ...
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 56/199 [00:00<00:00, 548.03it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 1806.03it/s]
+e5-small {'median_rank': 11.0, 'mean_reciprocal_rank': 0.3433314859867096, 'recall@1': 25.9, 'recall@5': 43.6, 'recall@10': 49.6, 'recall@50': 62.1, 'recall@100': 67.0, 'recall@500': 76.2, 'recall@1000': 80.1, 'seconds_to_encode_and_rank': 35.3, 'names_encoded_per_second': 13867, 'peak_vram_gib': 2.42, 'device': 'NVIDIA GeForce RTX 3050 6GB Laptop GPU'}
+{
+ "top10": {
+  "skeleton_only": 82.8,
+  "labse_only": 78.8,
+  "skeleton_or_labse": 93.6,
+  "e5-small_only": 49.6,
+  "skeleton_or_e5-small": 89.8,
+  "skeleton_or_any_neural": 94.7
+ },
+ "top50": {
+  "skeleton_only": 93.2,
+  "labse_only": 87.1,
+  "skeleton_or_labse": 98.0,
+  "e5-small_only": 62.1,
+  "skeleton_or_e5-small": 96.1,
+  "skeleton_or_any_neural": 98.3
+ },
+ "top100": {
+  "skeleton_only": 95.9,
+  "labse_only": 89.7,
+  "skeleton_or_labse": 98.7,
+  "e5-small_only": 67.0,
+  "skeleton_or_e5-small": 97.3,
+  "skeleton_or_any_neural": 98.8
+ },
+ "top500": {
+  "skeleton_only": 98.4,
+  "labse_only": 95.2,
+  "skeleton_or_labse": 99.7,
+  "e5-small_only": 76.2,
+  "skeleton_or_e5-small": 99.0,
+  "skeleton_or_any_neural": 99.8
+ }
+}
+wrote neural_bakeoff.md / .json
+exit=0

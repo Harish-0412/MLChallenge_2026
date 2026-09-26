@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+__MACOSX/
+.DS_Store
+._*
+
+student_resource/dataset/
+data/
+tmp/
+*.duckdb
+*.duckdb.wal
+.venv-gpu/
+.claude/
+.freebuff/

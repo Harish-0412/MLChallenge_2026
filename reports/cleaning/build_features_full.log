@@ -1,0 +1,21 @@
+101 tasks, 6 workers -> C:\SideQuest\ML Challenge\data\features\feat_v2_0
+  10/101 tasks, 2,452,581 rows, 110s
+  20/101 tasks, 4,911,214 rows, 233s
+  30/101 tasks, 7,241,437 rows, 306s
+  40/101 tasks, 9,699,037 rows, 426s
+  50/101 tasks, 12,157,581 rows, 550s
+  60/101 tasks, 14,259,584 rows, 622s
+  70/101 tasks, 16,719,049 rows, 750s
+  80/101 tasks, 19,146,857 rows, 853s
+  90/101 tasks, 21,604,457 rows, 968s
+  100/101 tasks, 24,062,386 rows, 1082s
+  101/101 tasks, 24,229,173 rows, 1082s
+{
+  "version": "feat_v2_0",
+  "rows": 24229173,
+  "files": 251,
+  "bytes": 8689710362,
+  "wall_seconds": 1085.1,
+  "rows_per_second": 22328,
+  "peak_worker_memory_mb": 939
+}
