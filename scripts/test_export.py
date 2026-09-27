@@ -56,6 +56,8 @@ def main() -> int:
     parser.add_argument('--margin', type=float, default=0.0)
     parser.add_argument('--model', default='xgb_ranker_v1')
     parser.add_argument('--limit', type=int, default=0, help='debug only: process at most this many candidate pairs')
+    parser.add_argument('--resume', action='store_true', help='reuse _candidates_all/_candidate_v1/_pairs.parquet from data/test_output if already present, '
+                        'instead of rebuilding them (use after a crash past the step you want to keep; each stage still checks its own row counts)')
     args = parser.parse_args()
     started = time.perf_counter()
     con = duckdb.connect()
@@ -63,31 +65,48 @@ def main() -> int:
 
     cand_glob = (TEST_OUT / 'candidates_*.parquet').as_posix()
     cand_all = TEST_OUT / '_candidates_all.parquet'
-    if cand_all.exists():
-        cand_all.unlink()
-    limit_sql = f'LIMIT {args.limit}' if args.limit else ''
-    con.execute(f"COPY (SELECT * FROM read_parquet('{cand_glob}') {limit_sql}) TO '{cand_all.as_posix()}' (FORMAT PARQUET, COMPRESSION ZSTD)")
+    if args.resume and cand_all.exists():
+        print(f'resume: reusing existing {cand_all.name}', flush=True)
+    else:
+        if cand_all.exists():
+            cand_all.unlink()
+        limit_sql = f'LIMIT {args.limit}' if args.limit else ''
+        con.execute(f"COPY (SELECT * FROM read_parquet('{cand_glob}') {limit_sql}) TO '{cand_all.as_posix()}' (FORMAT PARQUET, COMPRESSION ZSTD)")
     n_pairs_raw, n_q_with_cand = con.execute(f"SELECT count(DISTINCT (q, t)), count(DISTINCT q) FROM read_parquet('{cand_all.as_posix()}')").fetchone()
     print(f'raw candidate rows: {n_pairs_raw:,} distinct pairs over {n_q_with_cand:,} queries with at least one candidate ({time.perf_counter() - started:.0f}s)', flush=True)
 
     queries_file = TEST_OUT / '_queries_all.parquet'
-    con.execute(f"""COPY (SELECT entity_id AS id, country FROM read_parquet('{(TEST_SOURCE1 + "/country=*/*.parquet")}', hive_partitioning=false))
-                    TO '{queries_file.as_posix()}' (FORMAT PARQUET)""")
+    if args.resume and queries_file.exists():
+        print(f'resume: reusing existing {queries_file.name}', flush=True)
+    else:
+        con.execute(f"""COPY (SELECT entity_id AS id, country FROM read_parquet('{(TEST_SOURCE1 + "/country=*/*.parquet")}', hive_partitioning=false))
+                        TO '{queries_file.as_posix()}' (FORMAT PARQUET)""")
     n_required = con.execute(f"SELECT count(*) FROM read_parquet('{queries_file.as_posix()}')").fetchone()[0]
     print(f'required Source-1 entities: {n_required:,}', flush=True)
 
     cand_v1 = TEST_OUT / '_candidate_v1.parquet'
-    if cand_v1.exists():
-        cand_v1.unlink()
-    info = rp.aggregate_candidates(cand_all.as_posix(), queries_file.as_posix(), cand_v1.as_posix(), threads=args.workers, memory=args.memory)
-    print(f'candidate_v1: {info} ({time.perf_counter() - started:.0f}s)', flush=True)
+    if args.resume and cand_v1.exists():
+        info = con.execute(f"SELECT count(*), count(DISTINCT s1_entity_id), sum(is_positive = 1) FROM read_parquet('{cand_v1.as_posix()}')").fetchone()
+        info = {'pairs': info[0], 'queries_with_candidates': info[1], 'positives': int(info[2] or 0)}
+        print(f'resume: reusing existing {cand_v1.name}: {info}', flush=True)
+    else:
+        if cand_v1.exists():
+            cand_v1.unlink()
+        info = rp.aggregate_candidates(cand_all.as_posix(), queries_file.as_posix(), cand_v1.as_posix(), threads=args.workers, memory=args.memory)
+        print(f'candidate_v1: {info} ({time.perf_counter() - started:.0f}s)', flush=True)
 
     pairs_file = TEST_OUT / '_pairs.parquet'
-    if pairs_file.exists():
-        pairs_file.unlink()
-    res = rp.build_pairs(cand_all.as_posix(), cand_v1.as_posix(), FEATURE_ROOT.as_posix(), pairs_file.as_posix(), (TEST_OUT / '_work').as_posix(),
-                         threads=args.workers, shards=args.shards, workers=args.workers, memory=args.memory, shard_memory=args.shard_memory, validate=False)
-    print(f'pair features: {res} ({time.perf_counter() - started:.0f}s)', flush=True)
+    if args.resume and pairs_file.exists():
+        n_pairs_built = con.execute(f"SELECT count(*) FROM read_parquet('{pairs_file.as_posix()}')").fetchone()[0]
+        if n_pairs_built != info['pairs']:
+            raise RuntimeError(f'resume: {pairs_file.name} has {n_pairs_built:,} rows but candidate_v1 has {info["pairs"]:,}; rerun without --resume')
+        print(f'resume: reusing existing {pairs_file.name} ({n_pairs_built:,} rows, matches candidate_v1)', flush=True)
+    else:
+        if pairs_file.exists():
+            pairs_file.unlink()
+        res = rp.build_pairs(cand_all.as_posix(), cand_v1.as_posix(), FEATURE_ROOT.as_posix(), pairs_file.as_posix(), (TEST_OUT / '_work').as_posix(),
+                             threads=args.workers, shards=args.shards, workers=args.workers, memory=args.memory, shard_memory=args.shard_memory, validate=False)
+        print(f'pair features: {res} ({time.perf_counter() - started:.0f}s)', flush=True)
 
     from xgboost import XGBClassifier
     model = XGBClassifier()
