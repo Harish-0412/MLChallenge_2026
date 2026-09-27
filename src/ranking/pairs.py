@@ -112,6 +112,7 @@ def aggregate_candidates(cand_parquet: str, queries_parquet: str, out_parquet: s
     """Write the candidate_v1 table. ``truth_parquet`` (columns q, t) labels the pairs (is_positive 1/0); without it is_positive = -1 (inference)."""
     con = duckdb.connect()
     con.execute("SET threads=4; SET memory_limit='12GB'; SET preserve_insertion_order=false")
+    (ROOT / 'data' / 'scratch' / 'duckdb_tmp').mkdir(parents=True, exist_ok=True)
     con.execute(f"SET temp_directory='{(ROOT / 'data' / 'scratch' / 'duckdb_tmp').as_posix()}'")
     label = ("CASE WHEN tr.t IS NULL THEN 0 ELSE 1 END" if truth_parquet else '-1')
     join = f"LEFT JOIN read_parquet('{truth_parquet}') tr ON tr.q = a.q AND tr.t = a.t" if truth_parquet else ''
@@ -172,6 +173,7 @@ def build_pairs(cand_parquet: str, candidate_v1_parquet: str, feature_root: str,
         raise RuntimeError(f'sharded featurisation lost pairs: {sum(rows)} of {total_candidates}')
     con = duckdb.connect()
     con.execute(f"SET threads={threads}; SET memory_limit='{memory}'; SET preserve_insertion_order=false")
+    (ROOT / 'data' / 'scratch' / 'duckdb_tmp').mkdir(parents=True, exist_ok=True)
     con.execute(f"SET temp_directory='{(ROOT / 'data' / 'scratch' / 'duckdb_tmp').as_posix()}'")
     keep = ', '.join(f'p.{c}' for c in ('s1_entity_id', 'candidate_entity_id', 'country', 'evidence_slice', 'is_positive') + tuple(base.FEATURE_COLUMNS))
     ex = ', '.join(f'e.{c}' for c in (MODEL_FEATURES_E[len(base.FEATURE_COLUMNS):] if with_emb else EXTRA_FEATURES))
