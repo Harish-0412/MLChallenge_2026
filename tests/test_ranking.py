@@ -141,6 +141,31 @@ class OneOwnerTests(unittest.TestCase):
         self.assertEqual(owner.apply_one_owner(unsel, t, q, p, among='selected').tolist(), [True, False, True, True])   # the competitor was not selected
         self.assertEqual(owner.apply_one_owner(unsel, t, q, p, among='all').tolist(), [False, False, True, True])
 
+    def test_encode_targets_groups_identically_to_the_slow_sort_based_reference(self):
+        from ranking import owner
+        rng = random.Random(6)
+        values = np.array([f'S2-{rng.randint(0, 40)}' for _ in range(3000)], dtype=object)
+        fast, slow = owner.encode_targets(values), owner.encode_targets_slow_reference(values)
+
+        def partition(codes):
+            groups = {}
+            for i, c in enumerate(codes):
+                groups.setdefault(int(c), set()).add(values[i])
+            return sorted(frozenset(s) for s in groups.values())
+        self.assertEqual(partition(fast), partition(slow))
+
+    def test_encode_targets_is_fast_on_unsorted_input(self):
+        """Regression guard: encode_targets must be near-linear. The earlier sort-based version (still kept as
+        encode_targets_slow_reference) made the real 533M-row test-set export appear to hang."""
+        import time
+        from ranking import owner
+        rng = random.Random(8)
+        n, distinct = 400_000, 80_000
+        values = np.array([f'S2-{rng.randint(0, distinct)}' for _ in range(n)], dtype=object)
+        started = time.perf_counter()
+        owner.encode_targets(values)
+        self.assertLess(time.perf_counter() - started, 5.0, 'encode_targets regressed to super-linear behaviour')
+
 
 if __name__ == '__main__':
     unittest.main()
