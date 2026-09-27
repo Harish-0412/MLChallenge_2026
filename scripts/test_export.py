@@ -26,6 +26,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
 
 from ranking import model as rm  # noqa: E402
+from ranking import owner as ro  # noqa: E402
 from ranking import pairs as rp  # noqa: E402
 
 TEST_OUT = ROOT / 'data' / 'test_output'
@@ -55,6 +56,13 @@ def main() -> int:
     parser.add_argument('--top-k', type=int, default=DEFAULT_TOP_K)
     parser.add_argument('--margin', type=float, default=0.0)
     parser.add_argument('--model', default='xgb_ranker_v1')
+    parser.add_argument('--score-batch', type=int, default=5_000_000, help='rows per scoring batch (streamed from the pair-feature file, so peak memory does not scale with the full row count)')
+    parser.add_argument('--one-owner', dest='one_owner', action='store_true', default=True,
+                        help="(default on) a target selected for two queries is kept only for its most probable owner among the OTHER SELECTED pairs (measured +0.33 macro-F0.5 "
+                             "in a complete-competition benchmark, reports/eda/one_owner_results.md; every target's true owner, if any, is present in the real test set, so that "
+                             "benchmark - not the sparser one - is the relevant estimate here)")
+    parser.add_argument('--no-one-owner', dest='one_owner', action='store_false')
+    parser.add_argument('--one-owner-margin', type=float, default=0.0)
     parser.add_argument('--limit', type=int, default=0, help='debug only: process at most this many candidate pairs')
     parser.add_argument('--resume', action='store_true', help='reuse _candidates_all/_candidate_v1/_pairs.parquet from data/test_output if already present, '
                         'instead of rebuilding them (use after a crash past the step you want to keep; each stage still checks its own row counts)')
@@ -113,22 +121,38 @@ def main() -> int:
     model.load_model(str(MODELS / f'{args.model}.json'))
     iso_name = 'isotonic_v1.pkl' if args.model == 'xgb_ranker_v1' else f'{args.model.replace("xgb_ranker_", "isotonic_")}.pkl'
     iso = pickle.loads((MODELS / iso_name).read_bytes())
-    table = pq.read_table(pairs_file)
-    q_ids = table.column('s1_entity_id').to_numpy(zero_copy_only=False)
-    t_ids = table.column('candidate_entity_id').to_numpy(zero_copy_only=False)
-    X = np.column_stack([table.column(f).to_numpy(zero_copy_only=False) for f in rp.assert_model_features(rp.MODEL_FEATURES)]).astype(np.float32)
-    del table
-    prob = np.empty(len(X), dtype=np.float64)
-    for s in range(0, len(X), 2_000_000):
-        prob[s:s + 2_000_000] = iso.predict(model.predict_proba(X[s:s + 2_000_000])[:, 1])
-    del X
-    print(f'scored {len(prob):,} pairs ({time.perf_counter() - started:.0f}s)', flush=True)
+    features = rp.assert_model_features(rp.MODEL_FEATURES)
+    pf = pq.ParquetFile(pairs_file)
+    n_total = pf.metadata.num_rows
+    q_ids = np.empty(n_total, dtype=object)
+    t_ids = np.empty(n_total, dtype=object)
+    prob = np.empty(n_total, dtype=np.float64)
+    filled = 0
+    for batch in pf.iter_batches(batch_size=args.score_batch, columns=['s1_entity_id', 'candidate_entity_id'] + features):
+        n = batch.num_rows
+        q_ids[filled:filled + n] = batch.column('s1_entity_id').to_numpy(zero_copy_only=False)
+        t_ids[filled:filled + n] = batch.column('candidate_entity_id').to_numpy(zero_copy_only=False)
+        X = np.column_stack([batch.column(f).to_numpy(zero_copy_only=False) for f in features]).astype(np.float32)
+        prob[filled:filled + n] = iso.predict(model.predict_proba(X)[:, 1])
+        filled += n
+        if (filled // args.score_batch) % 10 == 0:
+            print(f'  scored {filled:,}/{n_total:,} ({time.perf_counter() - started:.0f}s)', flush=True)
+    assert filled == n_total
+    print(f'scored {n_total:,} pairs ({time.perf_counter() - started:.0f}s)', flush=True)
 
     order = np.argsort(q_ids, kind='stable')
     q_sorted, t_sorted, p_sorted = q_ids[order], t_ids[order], prob[order]
+    del q_ids, t_ids, prob, order
     uniq_q, qcode = np.unique(q_sorted, return_inverse=True)
     sel = rm.select_threshold(qcode, p_sorted, args.tau, args.top_k, args.margin)
     print(f'policy tau={args.tau} top_k={args.top_k} margin={args.margin}: {int(sel.sum()):,} of {len(sel):,} candidates selected', flush=True)
+    if args.one_owner:
+        tcode = ro.encode_targets(t_sorted)
+        before = int(sel.sum())
+        sel = ro.apply_one_owner(sel, tcode, qcode, p_sorted, margin=args.one_owner_margin, among='selected')
+        print(f'one-owner rule (margin={args.one_owner_margin}, competitors=selected pairs): {before - int(sel.sum()):,} matches dropped '
+              f'(a more probable owner existed among the selected pairs), {int(sel.sum()):,} remain', flush=True)
+        del tcode
 
     candidates_by_q, matches_by_q = {}, {}
     for i in range(len(q_sorted)):
