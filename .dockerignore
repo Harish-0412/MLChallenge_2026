@@ -1,0 +1,10 @@
+.git
+.venv
+.venv-gpu
+__MACOSX
+data
+reports
+tmp
+student_resource/dataset
+**/__pycache__
+**/*.pyc

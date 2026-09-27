@@ -30,10 +30,11 @@ COUNTRIES = ('India', 'US')
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--name', required=True)
-    parser.add_argument('--query-fold', default='dev', choices=['dev', 'val', 'holdout'])
-    parser.add_argument('--corpus-fold', default='dev', choices=['dev', 'val', 'holdout', 'all'])
+    parser.add_argument('--query-fold', default='dev', choices=['dev', 'val', 'holdout', 'mini'])
+    parser.add_argument('--corpus-fold', default='dev', choices=['dev', 'val', 'holdout', 'mini', 'all'])
     parser.add_argument('--queries', type=int, default=10_000)
     parser.add_argument('--threads', type=int, default=8)
+    parser.add_argument('--manifest', default='', help='alternative manifest (experiments such as the mini-world); default = the frozen fold manifest')
     parser.add_argument('--fullcorpus-only', action='store_true', help='sample only the queries flagged fullcorpus_sample in the manifest')
     args = parser.parse_args()
     if args.query_fold == 'holdout':
@@ -43,7 +44,7 @@ def main() -> int:
     BENCH.mkdir(parents=True, exist_ok=True)
     con = duckdb.connect()
     con.execute(f"SET threads={args.threads}; SET memory_limit='10GB'")
-    manifest = MANIFEST
+    manifest = args.manifest or MANIFEST
     if args.fullcorpus_only:
         con.execute(f"CREATE TEMP TABLE _m AS SELECT * FROM read_parquet('{MANIFEST}') WHERE role = 'query' AND fullcorpus_sample")
         manifest = (BENCH / '_fullcorpus_queries.parquet').as_posix()
@@ -56,7 +57,7 @@ def main() -> int:
     for country in COUNTRIES:
         t0 = time.perf_counter()
         glob = (FEATURES / 'split=train' / 'source=*' / f'country={country}' / '*.parquet').as_posix()
-        sizes[country] = engine.load_corpus(con, glob, MANIFEST, country, fold=corpus_fold, queries='qset')
+        sizes[country] = engine.load_corpus(con, glob, manifest, country, fold=corpus_fold, queries='qset')
         print(f'[{country}] {sizes[country]} loaded in {time.perf_counter() - t0:.0f}s', flush=True)
         engine.run_all_channels(con, log=lambda m: print(m, flush=True))
         part = (BENCH / f'_c_{args.name}_{country}.parquet').as_posix()

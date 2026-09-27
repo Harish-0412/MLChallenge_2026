@@ -1,0 +1,56 @@
+{
+  "experiment_id": "sample-v5",
+  "mode": "sample",
+  "pipeline_arn": "arn:aws:sagemaker:us-east-1:351405419703:pipeline/entity-resolution-sample",
+  "pipeline_execution_arn": "arn:aws:sagemaker:us-east-1:351405419703:pipeline/entity-resolution-sample/execution/7l888lezkx08",
+  "pipeline_version": 5,
+  "status": "Succeeded",
+  "region": "us-east-1",
+  "image": {
+    "uri": "351405419703.dkr.ecr.us-east-1.amazonaws.com/entity-resolution-cpu:phase3-e692a97caad9",
+    "digest": "sha256:b63c04d36c9cc725f50da2d65cc2194aab428a44ff6d9cafc711ab90277e8a89"
+  },
+  "artifact_prefix": "s3://modeltrain20-use1/entity-resolution/pipeline-executions/7l888lezkx08/",
+  "metrics": {
+    "candidate_recall": 1.0,
+    "candidate_oracle_f05": 1.0,
+    "model_macro_f05": 1.0,
+    "singleton_false_positive_rate": 0.0,
+    "evaluation_runtime_seconds": 1.2253449609999976,
+    "evaluation_peak_rss_mb": 206.22265625
+  },
+  "jobs": [
+    {
+      "step": "CandidateQuality",
+      "instance_type": "ml.m5.xlarge",
+      "compute_seconds": 38.473,
+      "status": "Completed"
+    },
+    {
+      "step": "BuildPairSets",
+      "instance_type": "ml.m5.xlarge",
+      "compute_seconds": 38.45,
+      "status": "Completed"
+    },
+    {
+      "step": "TrainCalibratedGBDT",
+      "instance_type": "ml.m5.xlarge",
+      "billable_seconds": 43,
+      "status": "Completed"
+    },
+    {
+      "step": "EvaluateLockedHoldout",
+      "instance_type": "ml.m5.xlarge",
+      "compute_seconds": 38.521,
+      "status": "Completed"
+    },
+    {
+      "step": "ExportSubmission",
+      "instance_type": "ml.m5.xlarge",
+      "compute_seconds": 43.562,
+      "status": "Completed"
+    }
+  ],
+  "conservative_run_cost_usd": 0.05,
+  "qualification": "These metrics validate the deterministic sample fixture and execution foundation. They do not estimate performance on Member B's full candidate table or hidden evaluation data."
+}

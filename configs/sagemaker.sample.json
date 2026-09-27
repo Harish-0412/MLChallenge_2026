@@ -1,0 +1,63 @@
+{
+  "region": "us-east-1",
+  "bucket": "REPLACE_WITH_SAGEMAKER_BUCKET",
+  "project": "entity-resolution",
+  "role_arn": "REPLACE_WITH_SAGEMAKER_EXECUTION_ROLE_ARN",
+  "kms_key_arn": "",
+  "images": {
+    "cpu": "REPLACE_WITH_CPU_ECR_IMAGE_URI",
+    "neural": "REPLACE_WITH_NEURAL_ECR_IMAGE_URI"
+  },
+  "tags": {
+    "Project": "MLChallenge-EntityResolution",
+    "Owner": "team",
+    "CostCenter": "ml-challenge",
+    "ManagedBy": "codex"
+  },
+  "resources": {
+    "sample": {
+      "processing_instance": "ml.m5.xlarge",
+      "training_instance": "ml.m5.xlarge",
+      "gpu_instance": "ml.g5.xlarge",
+      "processing_max_seconds": 1800,
+      "training_max_seconds": 1800,
+      "neural_max_seconds": 3600,
+      "volume_gb": 50
+    },
+    "full": {
+      "processing_instance": "ml.r5.4xlarge",
+      "training_instance": "ml.r5.4xlarge",
+      "gpu_instance": "ml.g5.2xlarge",
+      "processing_max_seconds": 10800,
+      "training_max_seconds": 7200,
+      "neural_max_seconds": 14400,
+      "volume_gb": 250
+    },
+    "estimated_hourly_usd": {
+      "ml.m5.xlarge": 0.5,
+      "ml.m5.2xlarge": 1.0,
+      "ml.r5.4xlarge": 3.0,
+      "ml.g5.xlarge": 2.0,
+      "ml.g5.2xlarge": 3.0
+    }
+  },
+  "budget": {
+    "total_usd": 200,
+    "contingency_usd": 40,
+    "max_single_job_usd": 20,
+    "max_tuning_job_usd": 25,
+    "stage_limits_usd": {
+      "infrastructure": 15,
+      "gbdt": 35,
+      "embeddings": 60,
+      "reranker": 50
+    }
+  },
+  "quality_gates": {
+    "minimum_candidate_recall": 0.99,
+    "minimum_candidate_oracle_f05": 0.97,
+    "minimum_model_macro_f05": 0.85,
+    "target_model_macro_f05": 0.95,
+    "maximum_singleton_false_positive_rate": 0.03
+  }
+}

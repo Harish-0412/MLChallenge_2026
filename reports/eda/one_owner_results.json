@@ -1,0 +1,188 @@
+{
+  "mini_world": {
+    "queries": 22050,
+    "pairs": 5853669,
+    "distinct_targets": 102788,
+    "variants": [
+      {
+        "variant": "no rule (baseline)",
+        "val_A": 0.9823789255676509,
+        "val_B": 0.9816914300529471,
+        "policy": {
+          "tau": 0.35,
+          "top_k": 8
+        },
+        "tp": 36852,
+        "fp": 380,
+        "singleton_fp_rate": 0.043010752688172046
+      },
+      {
+        "variant": "one owner, competitors = all candidates, margin 0.0",
+        "val_A": 0.987239872477799,
+        "val_B": 0.9850075736413246,
+        "policy": {
+          "tau": 0.15,
+          "top_k": 8
+        },
+        "tp": 37216,
+        "fp": 364,
+        "singleton_fp_rate": 0.0445468509984639
+      },
+      {
+        "variant": "one owner, competitors = all candidates, margin 0.1",
+        "val_A": 0.986296895076169,
+        "val_B": 0.9840224282766469,
+        "policy": {
+          "tau": 0.25,
+          "top_k": 8
+        },
+        "tp": 37122,
+        "fp": 368,
+        "singleton_fp_rate": 0.047619047619047616
+      },
+      {
+        "variant": "one owner, competitors = all candidates, margin 0.2",
+        "val_A": 0.9853645371001104,
+        "val_B": 0.9833321862614774,
+        "policy": {
+          "tau": 0.25,
+          "top_k": 8
+        },
+        "tp": 37125,
+        "fp": 402,
+        "singleton_fp_rate": 0.05069124423963134
+      },
+      {
+        "variant": "one owner, competitors = all candidates, margin 0.3",
+        "val_A": 0.9848945942737048,
+        "val_B": 0.9828872267493746,
+        "policy": {
+          "tau": 0.25,
+          "top_k": 8
+        },
+        "tp": 37125,
+        "fp": 423,
+        "singleton_fp_rate": 0.05222734254992319
+      },
+      {
+        "variant": "one owner, competitors = selected pairs, margin 0.0",
+        "val_A": 0.9872353595566802,
+        "val_B": 0.9852029807602194,
+        "policy": {
+          "tau": 0.2,
+          "top_k": 12
+        },
+        "tp": 37176,
+        "fp": 345,
+        "singleton_fp_rate": 0.041474654377880185
+      },
+      {
+        "variant": "one owner, competitors = selected pairs, margin 0.1",
+        "val_A": 0.9862771153329403,
+        "val_B": 0.9840329100748315,
+        "policy": {
+          "tau": 0.25,
+          "top_k": 12
+        },
+        "tp": 37140,
+        "fp": 372,
+        "singleton_fp_rate": 0.047619047619047616
+      }
+    ],
+    "share_of_pairs_on_contested_targets": 0.9999859916917065,
+    "best_by_val_A": "one owner, competitors = all candidates, margin 0.0"
+  },
+  "sparse_validation": {
+    "queries": 20000,
+    "pairs": 6340480,
+    "distinct_targets": 956836,
+    "variants": [
+      {
+        "variant": "no rule (baseline)",
+        "val_A": 0.9696927524581102,
+        "val_B": 0.9708349245320304,
+        "policy": {
+          "tau": 0.5,
+          "top_k": 8
+        },
+        "tp": 32833,
+        "fp": 462,
+        "singleton_fp_rate": 0.041742286751361164
+      },
+      {
+        "variant": "one owner, competitors = all candidates, margin 0.0",
+        "val_A": 0.9703470337939555,
+        "val_B": 0.9711213651487163,
+        "policy": {
+          "tau": 0.5,
+          "top_k": 12
+        },
+        "tp": 32837,
+        "fp": 446,
+        "singleton_fp_rate": 0.041742286751361164
+      },
+      {
+        "variant": "one owner, competitors = all candidates, margin 0.1",
+        "val_A": 0.970004741195731,
+        "val_B": 0.9710273241078211,
+        "policy": {
+          "tau": 0.5,
+          "top_k": 8
+        },
+        "tp": 32831,
+        "fp": 451,
+        "singleton_fp_rate": 0.041742286751361164
+      },
+      {
+        "variant": "one owner, competitors = all candidates, margin 0.2",
+        "val_A": 0.9698906753356428,
+        "val_B": 0.9709485384247328,
+        "policy": {
+          "tau": 0.5,
+          "top_k": 8
+        },
+        "tp": 32833,
+        "fp": 456,
+        "singleton_fp_rate": 0.041742286751361164
+      },
+      {
+        "variant": "one owner, competitors = all candidates, margin 0.3",
+        "val_A": 0.9697348872155983,
+        "val_B": 0.9708770003421211,
+        "policy": {
+          "tau": 0.5,
+          "top_k": 8
+        },
+        "tp": 32833,
+        "fp": 460,
+        "singleton_fp_rate": 0.041742286751361164
+      },
+      {
+        "variant": "one owner, competitors = selected pairs, margin 0.0",
+        "val_A": 0.9703470337939555,
+        "val_B": 0.9711213651487163,
+        "policy": {
+          "tau": 0.5,
+          "top_k": 12
+        },
+        "tp": 32837,
+        "fp": 446,
+        "singleton_fp_rate": 0.041742286751361164
+      },
+      {
+        "variant": "one owner, competitors = selected pairs, margin 0.1",
+        "val_A": 0.970004741195731,
+        "val_B": 0.9710273241078211,
+        "policy": {
+          "tau": 0.5,
+          "top_k": 8
+        },
+        "tp": 32831,
+        "fp": 451,
+        "singleton_fp_rate": 0.041742286751361164
+      }
+    ],
+    "share_of_pairs_on_contested_targets": 0.9819777051579691,
+    "best_by_val_A": "one owner, competitors = all candidates, margin 0.0"
+  }
+}

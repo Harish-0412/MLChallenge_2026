@@ -64,3 +64,34 @@ con.execute("SELECT country, count(*) FROM feat WHERE split = 'test' AND source 
 A finished version directory is never overwritten (`build_features.py` refuses); a rule change creates a new version (`feat_v2_1`). `_manifest.json` records the input-manifest hash, the source-tree hash, the lexicon hashes, the schema and every file; `_run.json` records runtime, memory and libraries.
 
 The GPU experiment runs in a separate environment (`.venv-gpu`, PyTorch CUDA build, ignored by Git): `.venv-gpu\Scripts\python.exe scripts\neural_bakeoff.py`. Optional bake-off dependency: `requirements-bakeoff.txt`.
+
+## Modeling foundation (Phases 0-2)
+
+The Member-B-independent model base is in `src/modeling/`; its execution plan and quality gates are in
+[`docs/ML_IMPLEMENTATION_PHASES.md`](docs/ML_IMPLEMENTATION_PHASES.md). It provides strict candidate/pair contracts, the official
+query-macro F0.5 scorer, a streaming DuckDB/Arrow pair-feature join, leakage-safe XGBoost and LightGBM adapters, deterministic
+hard-negative sampling, disjoint calibration, query-level policy search, slice evaluation, inference, and submission export.
+
+```powershell
+uv pip install --python .venv\Scripts\python.exe -r requirements-modeling.txt
+.venv\Scripts\python.exe -m unittest tests.test_modeling_metrics tests.test_modeling_contracts tests.test_pair_features tests.test_modeling_pipeline -v
+.venv\Scripts\python.exe scripts\benchmark_pair_feature_core.py
+```
+
+The real fold and candidate artifacts are intentionally not fabricated by this package. Member B's `fold_manifest_v1` and
+versioned candidate table remain the gate for a valid training/validation score.
+
+## SageMaker batch foundation (Phase 3)
+
+The SageMaker Processing/Training job contracts, container definitions, versioned S3 layout, conditional Pipeline DAG, cost guard and
+deterministic cloud fixture are under `cloud/sagemaker/`. Follow
+[`docs/SAGEMAKER_RUNBOOK.md`](docs/SAGEMAKER_RUNBOOK.md) from the beginning before making any AWS changes. The mutating commands reject
+AWS root credentials, and the current shared profile must be replaced with a least-privilege temporary deployment identity first.
+
+Local, non-billable verification:
+
+```powershell
+uv pip install --python .venv\Scripts\python.exe -r requirements-sagemaker.txt
+.venv\Scripts\python.exe scripts\run_sagemaker_local_smoke.py
+.venv\Scripts\python.exe -W ignore -m unittest discover -s tests -p test_sagemaker_foundation.py -v
+```

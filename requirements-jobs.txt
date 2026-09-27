@@ -1,0 +1,3 @@
+# Minimal AWS runtime used inside SageMaker processing/training containers.
+boto3==1.43.103
+botocore==1.43.103

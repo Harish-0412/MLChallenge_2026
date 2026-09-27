@@ -39,7 +39,7 @@ GROUPS = {
 GROUPS['address'] = ['address_missing_any', 'address_missing_both', 'address_canon_ratio', 'address_token_jaccard', 'address_char3_dice', 'address_segment_jaccard', 'address_state_equal',
                      'address_state_both_present', 'address_state_conflict_any', 'address_city_overlap', 'address_postal_overlap', 'address_number_jaccard', 'address_number_shared',
                      'address_number_conflicts', 'address_number_context_jaccard', 'address_parse_conf_min']
-GROUPS['retrieval'] = ['retrieval_channel_count', 'retrieval_score_max', 'retrieval_rank_best', 'candidate_block_size', 'query_candidate_count'] + rp.EXTRA_FEATURES
+GROUPS['retrieval'] = ['retrieval_channel_count', 'retrieval_score_max', 'retrieval_rank_best', 'candidate_block_size', 'query_candidate_count'] + rp.EXTRA_FEATURES + rp.EMB_FEATURES
 
 
 def ensure_pairs(name: str, rebuild: bool) -> Path:
@@ -52,7 +52,7 @@ def ensure_pairs(name: str, rebuild: bool) -> Path:
     print(f'[{name}] candidate_v1 table: {info}', flush=True)
     if out.exists():
         out.unlink()
-    res = rp.build_pairs((BENCH / f'cand_{name}.parquet').as_posix(), cand_v1.as_posix(), FEATURE_ROOT.as_posix(), out.as_posix(), (BENCH / f'_work_{name}').as_posix())
+    res = rp.build_pairs((BENCH / f'cand_{name}.parquet').as_posix(), cand_v1.as_posix(), FEATURE_ROOT.as_posix(), out.as_posix(), (BENCH / f'_work_{name}').as_posix(), with_emb=name.endswith('E'))
     cand_v1.unlink()
     print(f'[{name}] pair features: {res} in {time.perf_counter() - t0:.0f}s', flush=True)
     return out
@@ -101,11 +101,15 @@ def main() -> int:
     parser.add_argument('--val', default='val20k')
     parser.add_argument('--rebuild-pairs', action='store_true')
     parser.add_argument('--device', default='cpu')
+    parser.add_argument('--no-ablations', action='store_true')
+    parser.add_argument('--emb', action='store_true', help='use the embedding-channel candidate sets <name>E and the 76-feature variant')
     args = parser.parse_args()
     started = time.perf_counter()
+    if args.emb:
+        args.train, args.val = args.train + 'E', args.val + 'E'
     for name in (args.val, args.train):
         ensure_pairs(name, args.rebuild_pairs)
-    features = rp.MODEL_FEATURES
+    features = rp.MODEL_FEATURES_E if args.emb else rp.MODEL_FEATURES
     train, val = load(args.train, features), load(args.val, features)
     print(f'train pairs {len(train["y"]):,} ({int(train["y"].sum()):,} positive) over {len(train["ids"]):,} queries; val pairs {len(val["y"]):,} over {len(val["ids"]):,} queries', flush=True)
 
@@ -196,9 +200,9 @@ def main() -> int:
 
     # ---- ablations by feature group (same protocol; policy re-tuned on val-A each time)
     ablations = []
-    for tag, cols in (('base features only (no retrieval provenance)', [c for c in features if c not in GROUPS['retrieval']]),
+    for tag, cols in ([] if args.no_ablations else (('base features only (no retrieval provenance)', [c for c in features if c not in GROUPS['retrieval']]),
                       ('name features + retrieval', GROUPS['name'] + GROUPS['retrieval']),
-                      ('address features + retrieval', GROUPS['address'] + GROUPS['retrieval'])):
+                      ('address features + retrieval', GROUPS['address'] + GROUPS['retrieval']))):
         _m, _iso, _raw, p = fit_and_score(cols, tag)
         best, _s = rm.search_threshold_policy(qa, p[A_rows], ya, na, taus, (1, 2, 3, 5, 8, 12))
         ablations.append({'features': tag, 'n_features': len(cols), 'val_B_macro_f05': rm.macro_f05_from_selection(qb, yb, rm.select_threshold(qb, p[B_rows], best['tau'], best['top_k']), nb),
@@ -206,15 +210,16 @@ def main() -> int:
     importances = sorted(zip(features, model.feature_importances_), key=lambda x: -x[1])[:20]
 
     MODELS.mkdir(parents=True, exist_ok=True)
-    model.save_model(str(MODELS / 'xgb_ranker_v1.json'))
-    (MODELS / 'isotonic_v1.pkl').write_bytes(pickle.dumps(iso))
+    tag = 'v2_emb' if args.emb else 'v1'
+    model.save_model(str(MODELS / f'xgb_ranker_{tag}.json'))
+    (MODELS / f'isotonic_{tag}.pkl').write_bytes(pickle.dumps(iso))
     result = {'train': args.train, 'val': args.val, 'train_pairs': int(len(train['y'])), 'train_positives': int(train['y'].sum()), 'train_queries': int(len(train['ids'])),
               'val_pairs': int(len(val['y'])), 'val_queries': int(len(val['ids'])), 'val_A_queries': int(val_a.sum()), 'val_B_queries': int((~val_a).sum()),
               'diagnostics': diag, 'threshold_policy': {**best_thr, 'val_A': score_a, 'val_B': f_thr}, 'expected_f_policy': {**best_exp, 'val_A': score_a_exp, 'val_B': f_exp},
               'chosen': chosen_name, 'oracle_val_B': oracle, 'all_empty_val_B': all_empty, 'slices': slices, 'singleton_false_positive_rate': single_fp,
               'mean_selected_per_query': float(sel_per_q.mean()), 'mean_true_positives_per_query': float(tp_per_q.mean()), 'ablations': ablations,
               'top_features': [(n, float(v)) for n, v in importances], 'seconds': time.perf_counter() - started}
-    (OUT / 'ranker_v1_results.json').write_text(json.dumps(result, indent=2, default=float) + '\n', encoding='utf-8', newline='\n')
+    (OUT / f'ranker_{tag}_results.json').write_text(json.dumps(result, indent=2, default=float) + '\n', encoding='utf-8', newline='\n')
     print(json.dumps({k: result[k] for k in ('chosen', 'oracle_val_B', 'all_empty_val_B', 'singleton_false_positive_rate')}, default=float), flush=True)
     return 0
 

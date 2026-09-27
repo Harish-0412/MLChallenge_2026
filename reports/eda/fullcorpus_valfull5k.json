@@ -1,0 +1,80 @@
+{
+  "name": "valfull5k",
+  "queries": 5000,
+  "pairs": 1540762,
+  "frozen_policy": {
+    "tau": 0.5,
+    "top_k": 8,
+    "margin": 0.0
+  },
+  "val-B queries (not used to tune the policy)": {
+    "queries": 2520,
+    "macro_f05": 0.9418583920357315,
+    "oracle_macro_f05": 0.988335803448464,
+    "all_empty": 0.05119047619047619,
+    "links": 8719,
+    "links_in_candidates": 8429,
+    "recall": 0.9667393049661659,
+    "zero_candidate_rate": 0.0,
+    "candidates_mean": 307.9035714285714,
+    "candidates_p99": 448.0,
+    "tp": 7988,
+    "fp": 293,
+    "singleton_false_positive_rate": 0.13178294573643412,
+    "by_country": {
+      "India": 0.9378905192739406,
+      "US": 0.945611785188777
+    }
+  },
+  "all sampled queries": {
+    "queries": 5000,
+    "macro_f05": 0.9408745031125741,
+    "oracle_macro_f05": 0.98900768437968,
+    "all_empty": 0.0532,
+    "links": 17344,
+    "links_in_candidates": 16759,
+    "recall": 0.9662707564575646,
+    "zero_candidate_rate": 0.0,
+    "candidates_mean": 308.1524,
+    "candidates_p99": 454.0100000000002,
+    "tp": 15854,
+    "fp": 586,
+    "singleton_false_positive_rate": 0.15413533834586465,
+    "by_country": {
+      "India": 0.9365463827679822,
+      "US": 0.9452060873389949
+    }
+  },
+  "policy_variants_val_B": {
+    "(i) frozen policy tuned on the small validation corpus": {
+      "policy": {
+        "tau": 0.5,
+        "top_k": 8
+      },
+      "val_B_macro_f05": 0.9418583920357315,
+      "tp": 7988,
+      "fp": 293,
+      "singleton_fp_rate": 0.13178294573643412
+    },
+    "(ii) tuned on protocol-B val-A queries": {
+      "policy": {
+        "tau": 0.7,
+        "top_k": 8
+      },
+      "val_B_macro_f05": 0.9459076098864722,
+      "tp": 7810,
+      "fp": 168,
+      "singleton_fp_rate": 0.08527131782945736
+    },
+    "(iii) tuned on the dev calibration queries (dev corpus, matched density)": {
+      "policy": {
+        "tau": 0.7,
+        "top_k": 12
+      },
+      "val_B_macro_f05": 0.9459016851254597,
+      "tp": 7815,
+      "fp": 170,
+      "singleton_fp_rate": 0.08527131782945736
+    }
+  }
+}

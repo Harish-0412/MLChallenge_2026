@@ -1,0 +1,76 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ManageProjectPipelinesAndJobs",
+      "Effect": "Allow",
+      "Action": [
+        "sagemaker:CreatePipeline", "sagemaker:UpdatePipeline", "sagemaker:StartPipelineExecution",
+        "sagemaker:StopPipelineExecution", "sagemaker:DescribePipeline", "sagemaker:DescribePipelineExecution",
+        "sagemaker:ListPipelineExecutions", "sagemaker:ListPipelineExecutionSteps", "sagemaker:AddTags"
+      ],
+      "Resource": "arn:aws:sagemaker:us-east-1:351405419703:pipeline/entity-resolution-*"
+    },
+    {
+      "Sid": "DiagnoseProjectJobs",
+      "Effect": "Allow",
+      "Action": ["sagemaker:DescribeProcessingJob", "sagemaker:DescribeTrainingJob"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadSageMakerLogs",
+      "Effect": "Allow",
+      "Action": ["logs:DescribeLogGroups"],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadSageMakerLogStreams",
+      "Effect": "Allow",
+      "Action": ["logs:DescribeLogStreams", "logs:GetLogEvents", "logs:FilterLogEvents"],
+      "Resource": "arn:aws:logs:us-east-1:351405419703:log-group:/aws/sagemaker/*"
+    },
+    {
+      "Sid": "PassOnlyProjectExecutionRole",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::351405419703:role/SageMakerEntityResolutionExecution",
+      "Condition": {"StringEquals": {"iam:PassedToService": "sagemaker.amazonaws.com"}}
+    },
+    {
+      "Sid": "ReadProjectExecutionRole",
+      "Effect": "Allow",
+      "Action": "iam:GetRole",
+      "Resource": "arn:aws:iam::351405419703:role/SageMakerEntityResolutionExecution"
+    },
+    {
+      "Sid": "UploadProjectArtifacts",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetBucketLocation", "s3:ListBucket", "s3:GetObject", "s3:PutObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::modeltrain20-use1",
+        "arn:aws:s3:::modeltrain20-use1/entity-resolution/*"
+      ]
+    },
+    {
+      "Sid": "EcrLogin",
+      "Effect": "Allow",
+      "Action": "ecr:GetAuthorizationToken",
+      "Resource": "*"
+    },
+    {
+      "Sid": "ManageProjectImages",
+      "Effect": "Allow",
+      "Action": [
+        "ecr:BatchCheckLayerAvailability", "ecr:CompleteLayerUpload", "ecr:InitiateLayerUpload",
+        "ecr:PutImage", "ecr:UploadLayerPart", "ecr:DescribeRepositories", "ecr:DescribeImages",
+        "ecr:BatchGetImage"
+      ],
+      "Resource": [
+        "arn:aws:ecr:us-east-1:351405419703:repository/entity-resolution-cpu",
+        "arn:aws:ecr:us-east-1:351405419703:repository/entity-resolution-neural"
+      ]
+    }
+  ]
+}

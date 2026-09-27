@@ -1,0 +1,177 @@
+{
+  "train": "train50kE",
+  "val": "val20kE",
+  "train_pairs": 17442727,
+  "train_positives": 169556,
+  "train_queries": 50000,
+  "val_pairs": 7095059,
+  "val_queries": 20000,
+  "val_A_queries": 9993,
+  "val_B_queries": 10007,
+  "diagnostics": {
+    "auc": 0.9999466652388529,
+    "average_precision": 0.995999938690761,
+    "logloss_calibrated": 0.0016411123797297478
+  },
+  "threshold_policy": {
+    "tau": 0.55,
+    "top_k": 8,
+    "margin": 0.0,
+    "val_A": 0.9710588832748045,
+    "val_B": 0.9726753044131236
+  },
+  "expected_f_policy": {
+    "top_k": 12,
+    "empty_bias": 0.05,
+    "recall_est": 0.9961201030778585,
+    "val_A": 0.9702860050479749,
+    "val_B": 0.9721417069666558
+  },
+  "chosen": "threshold",
+  "oracle_val_B": 0.9991425980286552,
+  "all_empty_val_B": 0.05506145698011392,
+  "slices": [
+    {
+      "slice": "all val-B queries",
+      "queries": 10007,
+      "macro_f05": 0.9726753044131236
+    },
+    {
+      "slice": "India",
+      "queries": 3969,
+      "macro_f05": 0.9699594941961938
+    },
+    {
+      "slice": "US",
+      "queries": 6038,
+      "macro_f05": 0.9744605065911616
+    },
+    {
+      "slice": "singleton queries (0 true links)",
+      "queries": 551,
+      "macro_f05": 0.9582577132486388
+    },
+    {
+      "slice": "match count 1",
+      "queries": 540,
+      "macro_f05": 0.9376678876678878
+    },
+    {
+      "slice": "match count 2",
+      "queries": 1667,
+      "macro_f05": 0.9663543481779835
+    },
+    {
+      "slice": "match count 3-4",
+      "queries": 4633,
+      "macro_f05": 0.9763208084238291
+    },
+    {
+      "slice": "match count 5+",
+      "queries": 2616,
+      "macro_f05": 0.9805099801533518
+    },
+    {
+      "slice": "has a cross-script target",
+      "queries": 1219,
+      "macro_f05": 0.9658994212833422
+    },
+    {
+      "slice": "has a target with missing address",
+      "queries": 1434,
+      "macro_f05": 0.9616114660831401
+    },
+    {
+      "slice": "has a target with a conflicting number",
+      "queries": 1800,
+      "macro_f05": 0.9415044980734092
+    }
+  ],
+  "singleton_false_positive_rate": 0.041742286751361164,
+  "mean_selected_per_query": 3.3397621664834616,
+  "mean_true_positives_per_query": 3.2953932247426803,
+  "ablations": [],
+  "top_features": [
+    [
+      "score_eq_skeleton_number",
+      0.914357602596283
+    ],
+    [
+      "address_token_jaccard",
+      0.03415107727050781
+    ],
+    [
+      "n_sparse_channels",
+      0.010726063512265682
+    ],
+    [
+      "name_skeleton_ratio",
+      0.006507632322609425
+    ],
+    [
+      "address_missing_any",
+      0.0056665316224098206
+    ],
+    [
+      "retrieval_rank_best",
+      0.003245848696678877
+    ],
+    [
+      "address_number_conflicts",
+      0.0031267902813851833
+    ],
+    [
+      "score_eq_address_tokset",
+      0.0022969888523221016
+    ],
+    [
+      "retrieval_channel_count",
+      0.0020894098561257124
+    ],
+    [
+      "address_segment_jaccard",
+      0.0015146678779274225
+    ],
+    [
+      "name_core_char3_dice",
+      0.00149953318759799
+    ],
+    [
+      "candidate_block_size",
+      0.0012661266373470426
+    ],
+    [
+      "address_char3_dice",
+      0.001010417239740491
+    ],
+    [
+      "rank_eq_skeleton_number",
+      0.0008826199336908758
+    ],
+    [
+      "name_translit_ratio",
+      0.0008442790131084621
+    ],
+    [
+      "name_domain_any",
+      0.0008366891415789723
+    ],
+    [
+      "address_canon_ratio",
+      0.0006795736262574792
+    ],
+    [
+      "address_number_jaccard",
+      0.0005500769475474954
+    ],
+    [
+      "address_city_overlap",
+      0.0005366712575778365
+    ],
+    [
+      "name_key_equal",
+      0.0005245075444690883
+    ]
+  ],
+  "seconds": 4525.446793000003
+}

@@ -115,5 +115,32 @@ class GuardTests(unittest.TestCase):
         self.assertAlmostEqual(np.mean(np.array(a) < 80), 0.8, delta=0.03)
 
 
+class OneOwnerTests(unittest.TestCase):
+    def test_competitor_max_equals_brute_force(self):
+        from ranking import owner
+        rng = random.Random(2)
+        n = 400
+        pairs = rng.sample([(a, b) for a in range(60) for b in range(80)], n)          # a (query, target) pair occurs once, as in real candidate sets
+        q = np.array([a for a, _b in pairs])
+        t = np.array([b for _a, b in pairs])
+        p = np.array([rng.random() for _ in range(n)])
+        got = owner.competitor_max(t, q, p)
+        for i in range(n):
+            others = [p[j] for j in range(n) if t[j] == t[i] and q[j] != q[i]]
+            self.assertAlmostEqual(got[i], max(others, default=0.0), places=12)
+
+    def test_rule_keeps_the_most_probable_owner_only(self):
+        from ranking import owner
+        q = np.array([0, 1, 2, 0])
+        t = np.array([7, 7, 8, 9])
+        p = np.array([0.6, 0.9, 0.8, 0.7])
+        sel = np.ones(4, bool)
+        self.assertEqual(owner.apply_one_owner(sel, t, q, p).tolist(), [False, True, True, True])
+        self.assertEqual(owner.apply_one_owner(sel, t, q, p, margin=0.5).tolist(), [True, True, True, True])         # margin 0.5 tolerates the 0.3 gap
+        unsel = np.array([True, False, True, True])
+        self.assertEqual(owner.apply_one_owner(unsel, t, q, p, among='selected').tolist(), [True, False, True, True])   # the competitor was not selected
+        self.assertEqual(owner.apply_one_owner(unsel, t, q, p, among='all').tolist(), [False, False, True, True])
+
+
 if __name__ == '__main__':
     unittest.main()

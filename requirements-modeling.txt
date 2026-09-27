@@ -1,0 +1,9 @@
+# Phase 0-2 modeling stack. Licenses: scikit-learn BSD-3-Clause,
+# XGBoost Apache-2.0, LightGBM MIT. Keep in sync with the tested environment.
+-r requirements-features.txt
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost-cpu==3.4.1
+lightgbm==4.7.0
+joblib==1.6.0

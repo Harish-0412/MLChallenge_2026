@@ -64,29 +64,21 @@ def main() -> int:
             targets = targets[:args.limit_corpus]
         print(f'[{country}] {len(queries):,} queries, {len(targets):,} targets; encoding', flush=True)
         q_emb = torch.from_numpy(encode(model, [r[1] for r in queries])).to(device)
-        t_emb = encode(model, [r[1] for r in targets])
-        print(f'[{country}] encoded in {time.perf_counter() - t0:.0f}s; searching', flush=True)
         t_ids = np.array([r[0] for r in targets])
         k = min(args.k, len(targets))
-        res_s, res_i = [], []
-        t_gpu = torch.from_numpy(t_emb).to(device) if len(targets) <= 1_500_000 else None
-        for q0 in range(0, len(queries), 512):                          # query blocks keep the similarity matrix small
-            qb = q_emb[q0:q0 + 512]
-            best_s = best_i = None
-            for start in range(0, len(targets), 200_000):
-                block = t_gpu[start:start + 200_000] if t_gpu is not None else torch.from_numpy(t_emb[start:start + 200_000]).to(device)
-                s_, i_ = torch.topk((qb @ block.T).float(), min(k, block.shape[0]), dim=1)
-                i_ = i_ + start
-                if best_s is None:
-                    best_s, best_i = s_, i_
-                else:
-                    s2, i2 = torch.cat([best_s, s_], 1), torch.cat([best_i, i_], 1)
-                    best_s, sel = torch.topk(s2, k, dim=1)
-                    best_i = torch.gather(i2, 1, sel)
-            res_s.append(best_s)
-            res_i.append(best_i)
-        best_s, best_i = torch.cat(res_s), torch.cat(res_i)
-        del t_gpu
+        best_s = torch.full((len(queries), k), -2.0, device=device)
+        best_i = torch.zeros((len(queries), k), dtype=torch.long, device=device)
+        chunk = 100_000                                                   # stream the corpus: encode a chunk, search it, discard it (memory stays constant)
+        for start in range(0, len(targets), chunk):
+            t_chunk = torch.from_numpy(encode(model, [r[1] for r in targets[start:start + chunk]])).to(device)
+            for q0 in range(0, len(queries), 2048):
+                s_, i_ = torch.topk((q_emb[q0:q0 + 2048] @ t_chunk.T).float(), min(k, t_chunk.shape[0]), dim=1)
+                cs, ci = torch.cat([best_s[q0:q0 + 2048], s_], 1), torch.cat([best_i[q0:q0 + 2048], i_ + start], 1)
+                top_s, sel = torch.topk(cs, k, dim=1)
+                best_s[q0:q0 + 2048], best_i[q0:q0 + 2048] = top_s, torch.gather(ci, 1, sel)
+            del t_chunk
+            if (start // chunk) % 10 == 0:
+                print(f'[{country}] {min(start + chunk, len(targets)):,}/{len(targets):,} targets ({time.perf_counter() - t0:.0f}s)', flush=True)
         best_s, best_i = best_s.cpu().numpy(), best_i.cpu().numpy()
         for qi, (q, _n) in enumerate(queries):
             for rank in range(best_i.shape[1]):

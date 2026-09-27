@@ -1,0 +1,124 @@
+{
+  "train": "train50k",
+  "val": "val20k",
+  "variants": [
+    {
+      "policy": {
+        "tau": 0.5,
+        "top_k": 8,
+        "margin": 0.0
+      },
+      "val_A": 0.9696927524581102,
+      "val_B": 0.9708349245320304,
+      "singleton_fp_rate": 0.041742286751361164,
+      "tp": 32833,
+      "fp": 462,
+      "variant": "xgboost depth 6 (baseline)",
+      "seconds": 408.47648359999584
+    },
+    {
+      "policy": {
+        "tau": 0.55,
+        "top_k": 12,
+        "margin": 0.0
+      },
+      "val_A": 0.9680259868961466,
+      "val_B": 0.9697853296176064,
+      "singleton_fp_rate": 0.034482758620689655,
+      "tp": 32630,
+      "fp": 413,
+      "variant": "xgboost depth 4",
+      "seconds": 339.24183380000613
+    },
+    {
+      "policy": {
+        "tau": 0.6,
+        "top_k": 8,
+        "margin": 0.0
+      },
+      "val_A": 0.9687692343633512,
+      "val_B": 0.970014771490415,
+      "singleton_fp_rate": 0.032667876588021776,
+      "tp": 32577,
+      "fp": 370,
+      "variant": "xgboost depth 8",
+      "seconds": 339.98510089999763
+    },
+    {
+      "policy": {
+        "tau": 0.45,
+        "top_k": 8,
+        "margin": 0.0
+      },
+      "val_A": 0.9685660788770662,
+      "val_B": 0.9712035062594174,
+      "singleton_fp_rate": 0.036297640653357534,
+      "tp": 32865,
+      "fp": 467,
+      "variant": "lightgbm 63 leaves",
+      "seconds": 277.8693687999985
+    },
+    {
+      "policy": {
+        "tau": 0.6,
+        "top_k": 12,
+        "margin": 0.0
+      },
+      "val_A": 0.9697677999211305,
+      "val_B": 0.9707195471291749,
+      "singleton_fp_rate": 0.034482758620689655,
+      "tp": 32559,
+      "fp": 322,
+      "variant": "lightgbm 255 leaves",
+      "seconds": 145.4790978000019
+    },
+    {
+      "policy": {
+        "tau": 0.6,
+        "top_k": 12,
+        "margin": 0.0
+      },
+      "val_A": 0.9692565189705243,
+      "val_B": 0.9708755915438534,
+      "singleton_fp_rate": 0.030852994555353903,
+      "tp": 32515,
+      "fp": 308,
+      "variant": "xgboost depth 6, hard negatives x3 (round 2)",
+      "seconds": 392.1587090999965
+    }
+  ],
+  "winner_by_val_A": "lightgbm 255 leaves",
+  "calibration": [
+    {
+      "calibration": "none (raw scores)",
+      "policy": {
+        "tau": 0.55,
+        "top_k": 12,
+        "margin": 0.0
+      },
+      "val_A": 0.9696738824425871,
+      "val_B": 0.9710486048436506
+    },
+    {
+      "calibration": "Platt (sigmoid)",
+      "policy": {
+        "tau": 0.4,
+        "top_k": 12,
+        "margin": 0.0
+      },
+      "val_A": 0.969834220192944,
+      "val_B": 0.9709200685955658
+    },
+    {
+      "calibration": "isotonic (used)",
+      "policy": {
+        "tau": 0.6,
+        "top_k": 12,
+        "margin": 0.0
+      },
+      "val_A": 0.9697677999211305,
+      "val_B": 0.9707195471291749
+    }
+  ],
+  "features": 73
+}

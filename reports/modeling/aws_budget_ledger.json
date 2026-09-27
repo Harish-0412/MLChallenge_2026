@@ -1,0 +1,212 @@
+{
+  "allocations_usd": {
+    "contingency": 40,
+    "embeddings": 60,
+    "gbdt": 35,
+    "infrastructure": 15,
+    "reranker": 50
+  },
+  "entries": [
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.50",
+      "job_name": "sample-v1-gbdt",
+      "note": "reserved before sample pipeline start",
+      "stage": "gbdt",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.50",
+      "job_name": "sample-v1-processing-1",
+      "note": "reserved before sample pipeline start",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.50",
+      "job_name": "sample-v1-processing-2",
+      "note": "reserved before sample pipeline start",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.50",
+      "job_name": "sample-v1-processing-3",
+      "note": "reserved before sample pipeline start",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.50",
+      "job_name": "sample-v1-processing-4",
+      "note": "reserved before sample pipeline start",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v2-gbdt",
+      "note": "reserved before sample pipeline start",
+      "stage": "gbdt",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0.01",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v2-processing-1",
+      "note": "failed during metric emission after container start; conservative actual estimate",
+      "stage": "infrastructure",
+      "status": "failed"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v2-processing-2",
+      "note": "reserved before sample pipeline start",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v2-processing-3",
+      "note": "reserved before sample pipeline start",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v2-processing-4",
+      "note": "reserved before sample pipeline start",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v3-gbdt",
+      "note": "candidate-quality failure prevented training from starting",
+      "stage": "gbdt",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0.01",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v3-processing-1",
+      "note": "failed after 39 seconds while resolving the CloudWatch region; conservative rounded estimate",
+      "stage": "infrastructure",
+      "status": "failed"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v3-processing-2",
+      "note": "reserved before sample pipeline start",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v3-processing-3",
+      "note": "reserved before sample pipeline start",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v3-processing-4",
+      "note": "reserved before sample pipeline start",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0.01",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v4-gbdt",
+      "note": "failed after container start because the entry point rejected SageMaker's train command; conservative rounded estimate",
+      "stage": "gbdt",
+      "status": "failed"
+    },
+    {
+      "actual_usd": "0.01",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v4-processing-1",
+      "note": "candidate-quality processing completed successfully; conservative rounded estimate",
+      "stage": "infrastructure",
+      "status": "completed"
+    },
+    {
+      "actual_usd": "0.01",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v4-processing-2",
+      "note": "pair construction completed successfully; conservative rounded estimate",
+      "stage": "infrastructure",
+      "status": "completed"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v4-processing-3",
+      "note": "training failure prevented evaluation from starting",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v4-processing-4",
+      "note": "training failure prevented export from starting",
+      "stage": "infrastructure",
+      "status": "failed-before-start"
+    },
+    {
+      "actual_usd": "0.01",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v5-gbdt",
+      "note": "completed successfully; 43 billable seconds on ml.m5.xlarge, conservatively rounded",
+      "stage": "gbdt",
+      "status": "completed"
+    },
+    {
+      "actual_usd": "0.01",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v5-processing-1",
+      "note": "candidate-quality processing completed in 38.473 seconds; conservatively rounded",
+      "stage": "infrastructure",
+      "status": "completed"
+    },
+    {
+      "actual_usd": "0.01",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v5-processing-2",
+      "note": "pair construction completed in 38.450 seconds; conservatively rounded",
+      "stage": "infrastructure",
+      "status": "completed"
+    },
+    {
+      "actual_usd": "0.01",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v5-processing-3",
+      "note": "locked-holdout evaluation completed in 38.521 seconds; conservatively rounded",
+      "stage": "infrastructure",
+      "status": "completed"
+    },
+    {
+      "actual_usd": "0.01",
+      "estimated_usd": "0.25",
+      "job_name": "sample-v5-processing-4",
+      "note": "submission export completed in 43.562 seconds; conservatively rounded",
+      "stage": "infrastructure",
+      "status": "completed"
+    }
+  ],
+  "total_credit_envelope_usd": 200
+}
