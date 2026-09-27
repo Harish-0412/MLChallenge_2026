@@ -108,10 +108,11 @@ def _featurise_shard(args):
     return rows
 
 
-def aggregate_candidates(cand_parquet: str, queries_parquet: str, out_parquet: str, truth_parquet: str = '') -> Dict[str, int]:
-    """Write the candidate_v1 table. ``truth_parquet`` (columns q, t) labels the pairs (is_positive 1/0); without it is_positive = -1 (inference)."""
+def aggregate_candidates(cand_parquet: str, queries_parquet: str, out_parquet: str, truth_parquet: str = '', threads: int = 4, memory: str = '12GB') -> Dict[str, int]:
+    """Write the candidate_v1 table. ``truth_parquet`` (columns q, t) labels the pairs (is_positive 1/0); without it is_positive = -1 (inference).
+    Raise ``threads``/``memory`` for a large (test-scale) candidate table; the 12GB/4-thread default suits the ~15M-pair training scale."""
     con = duckdb.connect()
-    con.execute("SET threads=4; SET memory_limit='12GB'; SET preserve_insertion_order=false")
+    con.execute(f"SET threads={threads}; SET memory_limit='{memory}'; SET preserve_insertion_order=false")
     (ROOT / 'data' / 'scratch' / 'duckdb_tmp').mkdir(parents=True, exist_ok=True)
     con.execute(f"SET temp_directory='{(ROOT / 'data' / 'scratch' / 'duckdb_tmp').as_posix()}'")
     label = ("CASE WHEN tr.t IS NULL THEN 0 ELSE 1 END" if truth_parquet else '-1')

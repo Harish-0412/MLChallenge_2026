@@ -79,7 +79,7 @@ def main() -> int:
     cand_v1 = TEST_OUT / '_candidate_v1.parquet'
     if cand_v1.exists():
         cand_v1.unlink()
-    info = rp.aggregate_candidates(cand_all.as_posix(), queries_file.as_posix(), cand_v1.as_posix())
+    info = rp.aggregate_candidates(cand_all.as_posix(), queries_file.as_posix(), cand_v1.as_posix(), threads=args.workers, memory=args.memory)
     print(f'candidate_v1: {info} ({time.perf_counter() - started:.0f}s)', flush=True)
 
     pairs_file = TEST_OUT / '_pairs.parquet'
