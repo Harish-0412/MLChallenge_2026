@@ -49,6 +49,30 @@ class DecisionTests(unittest.TestCase):
                     want[chosen] = True
             self.assertTrue((got == want).all(), (tau, k, margin))
 
+    def test_per_slice_threshold_selection_equals_brute_force(self):
+        q, p, y, n = random_problem(seed=11)
+        rng = random.Random(11)
+        slices = np.array([rng.randint(0, 2) for _ in range(len(p))])
+        tau_by_slice = np.array([0.2, 0.5, 0.8])
+        got = rm.select_threshold_by_slice(q, p, slices, tau_by_slice, top_k=4, margin=0.1)
+        want = np.zeros(len(p), bool)
+        for code in np.unique(q):
+            rows = np.flatnonzero(q == code)
+            order = sorted(rows, key=lambda r: (-p[r], r))          # rank is by probability alone: a per-slice tau is a floor, not a pre-filter,
+            second = p[order[1]] if len(order) > 1 else 0.0          # so it must not shift who counts as "top-k most confident" for this query
+            if p[order[0]] - second >= 0.1:
+                for rank, r in enumerate(order[:4]):
+                    if p[r] >= tau_by_slice[slices[r]]:
+                        want[r] = True
+        self.assertTrue((got == want).all())
+
+    def test_per_slice_threshold_reduces_to_plain_threshold_when_all_slices_share_one_tau(self):
+        q, p, y, n = random_problem(seed=12)
+        slices = np.zeros(len(p), dtype=int)
+        got = rm.select_threshold_by_slice(q, p, slices, np.array([0.6]), top_k=5, margin=0.0)
+        want = rm.select_threshold(q, p, 0.6, 5, 0.0)
+        self.assertTrue((got == want).all())
+
     def test_expected_f_selection_equals_brute_force(self):
         q, p, y, n = random_problem(seed=9)
         got = rm.select_expected_f(q, p, recall_est=0.95, top_k=6, empty_bias=0.02)

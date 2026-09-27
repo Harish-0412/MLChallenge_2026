@@ -1,0 +1,52 @@
+{
+  "valfull5k_pairs": 1540762,
+  "valfull5k_queries": 5000,
+  "baselines": {
+    "small-corpus-tuned (ranker_v1_results.json)": {
+      "policy": {
+        "tau": 0.5,
+        "top_k": 8,
+        "margin": 0.0,
+        "val_A": 0.9696927524581102,
+        "val_B": 0.9708349245320304
+      },
+      "val_B_no_one_owner": 0.9533919651283076,
+      "val_B_with_one_owner": 0.9533919651283076
+    },
+    "actual DGX submission default (test_export.py)": {
+      "policy": {
+        "tau": 0.7,
+        "top_k": 12,
+        "margin": 0.0
+      },
+      "val_B_no_one_owner": 0.9575665434848689,
+      "val_B_with_one_owner": 0.9575665434848689
+    }
+  },
+  "global_retune": {
+    "policy": {
+      "tau": 0.7,
+      "top_k": 8,
+      "margin": 0.0,
+      "owner_margin": null
+    },
+    "val_A": 0.9541865178573067,
+    "val_B": 0.9575740179015237
+  },
+  "per_slice_retune": {
+    "tau_by_slice": {
+      "exact_v1_key": 0.75,
+      "cleaned_equal": 0.7,
+      "skeleton_or_secondary": 0.9,
+      "sparse_name": 0.6,
+      "sparse_address_only": 0.85
+    },
+    "top_k": 8,
+    "margin": 0.0,
+    "owner_margin": null,
+    "val_A": 0.9551641783152546,
+    "val_B": 0.9569301468773439
+  },
+  "one_owner_note": "only 5,000 of 1,732,544 real queries sampled here; one-owner collisions are structurally rare at this scale. Trust the real DGX run (168,952 matches dropped) over this small-sample owner_margin search.",
+  "recommendation": "global"
+}

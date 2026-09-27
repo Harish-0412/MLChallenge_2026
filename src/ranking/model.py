@@ -58,6 +58,26 @@ def select_threshold(qcodes: np.ndarray, probs: np.ndarray, tau: float, top_k: i
     return out
 
 
+def select_threshold_by_slice(qcodes: np.ndarray, probs: np.ndarray, slice_codes: np.ndarray, tau_by_slice: np.ndarray, top_k: int, margin: float = 0.0) -> np.ndarray:
+    """Like ``select_threshold``, but the probability floor is looked up per row from ``tau_by_slice[slice_codes[i]]`` instead of one scalar tau.
+    ``slice_codes`` is any small-integer coding of a label-free, inference-time-available category (e.g. the retrieval channel a candidate came
+    from); ``tau_by_slice`` has one entry per distinct code. Rank/top_k and the leader-margin check are still computed on the raw probability,
+    exactly as in ``select_threshold``."""
+    order = sort_by_query(qcodes, probs)
+    q, p, s = qcodes[order], probs[order], slice_codes[order]
+    b = _boundaries(q)
+    rank = np.arange(len(p)) - np.repeat(b[:-1], np.diff(b))
+    sel = (p >= tau_by_slice[s]) & (rank < top_k)
+    if margin > 0:
+        has2 = np.diff(b) > 1
+        second_vals = np.where(has2, p[np.minimum(b[:-1] + 1, len(p) - 1)], 0.0)
+        gap_ok = (p[b[:-1]] - second_vals) >= margin
+        sel &= np.repeat(gap_ok, np.diff(b))
+    out = np.zeros(len(p), dtype=bool)
+    out[order] = sel
+    return out
+
+
 def select_expected_f(qcodes: np.ndarray, probs: np.ndarray, recall_est: float, top_k: int = 12, empty_bias: float = 0.0) -> np.ndarray:
     """Per query, choose the number of top candidates m (0..top_k) maximising the plug-in expected F0.5.
 
